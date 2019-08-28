@@ -1,0 +1,21 @@
+<div class="search-filters--sidebar--row">
+    <!--<span class="search-filters__dropdown-label"><?php echo JText::_('Transportation')?></span>-->
+    <div class="input-textbox--wrapper">
+        <select ng-model="searchfilter.transport_line"
+                ng-options="k as get_transport_name_in_current_language(item) for (k,item) in stations_data">
+            <option value=""><?php echo JText::_('TRANSPORTATION')?></option>
+        </select>
+    </div>
+</div>
+
+<div ng-show="searchfilter.transport_line != null" class="search-filters--sidebar--row">
+    <!--<span class="search-filters__dropdown-label"><?php echo JText::_('Station')?></span>-->
+    <div class="input-textbox--wrapper">
+        <select ng-model="searchfilter.transport_station"
+                ng-change="selected_transport_station(searchfilter.transport_station)"
+                ng-options="train.id as get_transport_name_in_current_language(train) for train in stations_data[searchfilter.transport_line].stations">
+            <option value=""><?php echo JText::_('Station')?></option>
+        </select>
+    </div>
+</div>
+

@@ -1,0 +1,97 @@
+<form ng-submit="submit()">
+    <div class="large-24 column" data-equalizer>
+
+        <!-- ++++++++++++++++++++++++++++COLUMN 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+        <div class="large-5 column panel" data-equalizer-watch>
+            <div>
+                <div class="search-filters--frontpage--row row collapse" >
+
+                    <a class="frontpage-search-select"
+                       ng-class="searchfilter.type_id == 2 ? 'active' : ''"
+                       ng-click="searchfilter.type_id = 2"
+                       ng-init="searchfilter.type_id = 2"><?php echo JText::_('Sale') ?></a>
+
+                </div>
+
+                <div class="search-filters--frontpage--row row collapse" >
+                    <a class="frontpage-search-select"
+                       ng-class="searchfilter.type_id == 3 ? 'active' : ''"
+                       ng-click="searchfilter.type_id = 3"><?php echo JText::_('Rent')?></a>
+                </div>
+
+                <div class="search-filters--frontpage--row row collapse" >
+                    <a class="frontpage-search-select"
+                       href="<?php echo WFactory::getHelper()->buildUrl('/properties-search/map')?>">
+                        <?php echo JText::_('Map')?></a>
+                </div>
+
+                <div class="no-pad-bottom align-bottom search-filters--frontpage--row row collapse" >
+                    <a class="frontpage-search-select"><?php echo JText::_('Transport')?></a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ++++++++++++++++++++++++++++COLUMN 2+3 ++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+        <div class="large-19 column panel" data-equalizer-watch>
+
+            <!------------------- ROW------------------>
+            <div class="search-filters--frontpage--row row collapse" style="height:  33.33%">
+
+                <div class="large-15 column">
+                    <div class="search-filters--frontpage--row row collapse">
+                        <div class="input-textbox--wrapper">
+                            <input type="text" ng-model="searchfilter.text" placeholder="Search Homes"/>
+                            <input type="submit" class="input-textbox--wrapper--search__button"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column large-8">
+                    <div class="row collapse">
+                        <filter-slider-price></filter-slider-price>
+                    </div>
+                </div>
+
+            </div>
+            <!------------------- ROW------------------>
+            <div class="search-filters--frontpage--row row collapse" style="height: 33.33%">
+
+                <div class="column large-15">
+                    <postal-code-select-frontpage></postal-code-select-frontpage>
+                </div>
+
+                <div class="column large-8">
+                    <filter-slider-rooms></filter-slider-rooms>
+                </div>
+
+            </div>
+            <!------------------- ROW------------------>
+            <div class="search-filters--frontpage--row row collapse" style="height:  33.33%">
+
+                <div class="column large-15">
+                    <prop-categories-select-frontpage></prop-categories-select-frontpage>
+                </div>
+
+                <div class="column large-8">
+                    <div class="row collapse">
+                        <div class="column large-15">
+                            <input type="submit" value="Search" class="input-submit red"/>
+                        </div>
+                        <div class="column large-8">
+                            <input type="button" value="Clear" ng-click="resetfilters()" class="input-submit"/>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+</form>

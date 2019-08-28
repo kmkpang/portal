@@ -1,0 +1,88 @@
+<!-- THIS IS USED IN AGENT / OFFICE / PROPERTY DETAILS PAGE -->
+<!-- NG INIT RESET IS USED TO RESET WHEN ONLY ON AGENT AND OFFICE PAGE, ON PROPERTY DETAILS PAGE THIS HAS NO EFFECT-->
+<form method="post" ng-submit="filterSidebarModule()" ng-init="resetfiltersForSideBarModule()">
+
+    <div ng-show="searchfilter.office_id">
+        <span class="search-filters__slider-label"><?php echo JText::_('Office') ?>
+            {{ searchfilter.office_name }}</span>
+    </div>
+    <div ng-show="searchfilter.sale_id">
+        <span class="search-filters__slider-label"><?php echo JText::_('Agent') ?> {{ searchfilter.sale_name }}</span>
+    </div>
+
+    <div class="search-filters--sidebar--row">
+        <div class="input-textbox--wrapper">
+            <input type="text" ng-model="searchfilter.text" placeholder="<?php echo JText::_('SEARCH HOMES')?>"/>
+        </div>
+    </div>
+
+
+    <div class="search-filters--sidebar--row row collapse">
+        <div class="column large-12">
+            <div class="search-filters__buy-rent--button left" ng-class="searchfilter.type_id == 2 ? 'active' : ''"
+                 ng-click="searchfilter.type_id = 2"><?php echo JText::_('Sale') ?></div>
+        </div>
+        <div class="column large-12">
+            <div class="search-filters__buy-rent--button right" ng-class="searchfilter.type_id == 3 ? 'active' : ''"
+                 ng-click="searchfilter.type_id = 3"><?php echo JText::_('Rent')?></div>
+        </div>
+    </div>
+
+    <filter-slider-price></filter-slider-price>
+
+    <filter-slider-rooms></filter-slider-rooms>
+
+    <!-- Independent Postal Block -->
+    <?php if (defined('__COUNTRY') && __COUNTRY == 'IS') { ?>
+    <?php } else { ?>
+    <div class="search-filters--sidebar--row">
+        <div class="input-textbox--wrapper">
+            <select ng-model="searchfilter.region_id" ng-options="region.id as region.name for region in postal_code_tree.regions">
+                <option value="" selected default><?php echo JText::_('PROVINCE') ?></option>
+            </select>
+        </div>
+    </div>
+
+    <div class="search-filters--sidebar--row">
+        <div class="input-textbox--wrapper">
+            <select ng-model="searchfilter.city_town_id" ng-options="town.id as town.name for town in postal_code_tree.towns | filter:filterTown">
+                <option value="" selected default><?php echo JText::_('DISTRICT') ?></option>
+            </select>
+        </div>
+    </div>
+    <?php } ?>
+
+    <?php if (defined('__COUNTRY') && __COUNTRY == 'IS') { ?>
+    <div class="search-filters--sidebar--row">
+        <div class="input-textbox--wrapper">
+            <select ng-model="searchfilter.zip_code_id" ng-options="postals.id as postals.name for postals in postal_code_tree.postals | filter:filterPostal">
+                <option value="" selected default><?php echo JText::_('POSTCODE') ?></option>
+            </select>
+        </div>
+    </div>
+
+    <?php } ?>
+
+    <div class="search-filters--sidebar--row">
+        <prop-categories-select-sidebar></prop-categories-select-sidebar>
+    </div>
+
+    <?php if (defined('__COUNTRY') && __COUNTRY == 'IS') { ?>
+    <?php } else { ?>
+    <transport-select></transport-select>
+    <?php } ?>
+
+    <div class="search-filters--sidebar--row">
+        <filter-currency></filter-currency>
+    </div>
+
+    <div class="search-filters--sidebar--row row collapse">
+        <div class="column large-15">
+            <input type="submit" value="<?php echo JText::_('SEARCH')?>" class="input-submit darkgreen"/>
+        </div>
+        <div class="column large-8">
+            <input type="button" value="<?php echo JText::_('CLEAR')?>" ng-click="resetfilters()" class="input-submit mediumgray"/>
+        </div>
+    </div>
+
+</form>

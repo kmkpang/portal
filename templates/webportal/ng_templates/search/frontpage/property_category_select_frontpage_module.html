@@ -1,0 +1,12 @@
+<div class="row">
+	<div class="large-8 column" style="height: 100px; overflow-y: scroll">
+	    <div ng-repeat="mode in prop_categories_tree">
+	        <label>{{mode['description']}}</label>
+
+	        <div ng-repeat="category in mode.categories">
+	            <input type="checkbox" ng-model="category.checked" ng-change="category_filter_changed()"/>
+	            <label>{{category['description']}}</label>
+	        </div>
+	    </div>
+	</div>
+</div>

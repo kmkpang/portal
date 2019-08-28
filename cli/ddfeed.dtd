@@ -1,0 +1,70 @@
+<!ELEMENT listing-data (property*)>
+        <!ELEMENT property (external-id, location, details, listing-type, agent-id, custom-name, custom-phone,  custom-mobile, custom-email, user?, tenure, sold, photo*)>
+        <!ELEMENT external-id (#PCDATA)>
+
+        <!ELEMENT location (streetname, streetnumber, post-code, area-code, district-code, region-code, longitude, latitude, property-name, property-type-group)>
+        <!ELEMENT streetname (#PCDATA)>
+        <!ELEMENT streetnumber (#PCDATA)>
+        <!ELEMENT post-code (#PCDATA)>
+        <!ELEMENT area-code (#PCDATA)>
+        <!ELEMENT district-code (#PCDATA)>
+        <!ELEMENT region-code (#PCDATA)>
+        <!ELEMENT longitude (#PCDATA)>
+        <!ELEMENT latitude (#PCDATA)>
+        <!ELEMENT property-name (#PCDATA)>
+        <!ELEMENT property-type-group (#PCDATA)>
+        <!ELEMENT details (title, description, features, amenities, price-details, rooms, furnishing, size-details, parking-spaces, numberoffloors, floor-level, facing)>
+        <!ELEMENT title (#PCDATA)>
+        <!ELEMENT description (#PCDATA)>
+        <!ELEMENT features (#PCDATA)>
+        <!ELEMENT amenities (#PCDATA)>
+        <!ELEMENT price-details (price, price-unit, price-description, price-type, currency-code)>
+        <!ELEMENT price (#PCDATA)>
+        <!ELEMENT price-unit (#PCDATA)>
+        <!ELEMENT price-description (#PCDATA)>
+        <!ELEMENT price-type (#PCDATA)>
+        <!ELEMENT currency-code (#PCDATA)>
+
+        <!ELEMENT rooms (num-bedrooms, extra-rooms, num-bathrooms)>
+        <!ELEMENT num-bedrooms (#PCDATA)>
+        <!ELEMENT extra-rooms (#PCDATA)>
+        <!ELEMENT num-bathrooms (#PCDATA)>
+        <!ELEMENT furnishing (#PCDATA)>
+        <!ELEMENT size-details ( floor-area, floor-size-x, floor-size-y, land-area, land-size-x, land-size-y)>
+        <!ELEMENT floor-area (#PCDATA)>
+        <!ELEMENT floor-size-x (#PCDATA)>
+        <!ELEMENT floor-size-y (#PCDATA)>
+        <!ELEMENT land-area (#PCDATA)>
+        <!ELEMENT land-size-x (#PCDATA)>
+        <!ELEMENT land-size-y (#PCDATA)>
+        <!ELEMENT parking-spaces (#PCDATA)>
+        <!ELEMENT numberoffloors (#PCDATA)>
+        <!ELEMENT floor-level (#PCDATA)>
+        <!ELEMENT facing (#PCDATA)>
+        <!ELEMENT listing-type (#PCDATA)>
+
+        <!ELEMENT agent-id (#PCDATA)>
+        <!ELEMENT custom-name (#PCDATA)>
+        <!ELEMENT custom-phone (#PCDATA)>
+        <!ELEMENT custom-mobile (#PCDATA)>
+        <!ELEMENT custom-email (#PCDATA)>
+
+        <!ELEMENT user (email, password, role, rule-code, firstname, lastname, mobile, agency-id, country, region, city)>
+        <!ELEMENT email (#PCDATA)>
+        <!ELEMENT password (#PCDATA)>
+        <!ELEMENT role (#PCDATA)>
+        <!ELEMENT rule-code (#PCDATA)>
+        <!ELEMENT firstname (#PCDATA)>
+        <!ELEMENT lastname (#PCDATA)>
+        <!ELEMENT mobile (#PCDATA)>
+        <!ELEMENT agency-id (#PCDATA)>
+        <!ELEMENT country (#PCDATA)>
+        <!ELEMENT region (#PCDATA)>
+        <!ELEMENT city (#PCDATA)>
+
+        <!ELEMENT tenure (#PCDATA)>
+        <!ELEMENT sold (#PCDATA)>
+
+        <!ELEMENT photo (picture-url, picture-caption)>
+        <!ELEMENT picture-url (#PCDATA)>
+        <!ELEMENT picture-caption (#PCDATA)>

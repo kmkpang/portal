@@ -1,0 +1,52 @@
+#!/usr/bin/php
+<?php
+/**
+ * Created by PhpStorm.
+ * User: khan
+ * Date: 3/10/16
+ * Time: 3:46 PM
+ */
+
+$portalAddress = $argv[1];
+$portalState = file_get_contents("http://$portalAddress/api/v1/monitoring/getStatus");
+
+
+if ($portalState === false) {
+    print "CRITICAL - Portal at http://$portalAddress unreachable ";
+    exit(2);
+}
+else if($portalState === null || strlen(trim($portalState)) === 0 || $portalState === "null"){
+    print "WARNING - Portal at http://$portalAddress does not respond to state request!";
+    exit(1);
+}else {
+    $result = json_decode($portalState);
+    $message = $result->message;
+    $message = implode(" | ",$message);
+    if($result->health){
+        print "OK -  $message";
+        exit(0);
+    }else{
+        print "WARNING - $message";
+        exit(1);
+    }
+
+}
+/*
+switch ($used_space) {
+    case "$used_space" < "85%":
+        print "OK - $used_space of disk space used.";
+        exit(0);
+
+    case "$used_space" == "85%":
+        print "WARNING - $used_space of disk space used.";
+        exit(1);
+
+    case $used_space > "85%":
+        print "CRITICAL - $used_space of disk space used.";
+        exit(2);
+
+    default:
+        print "UNKNOWN - $used_space of disk space used.";
+        exit(3);
+}
+*/

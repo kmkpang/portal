@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UploadXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <System>
+        <PublicKey>QzFPRjEyMjIwMTYwMjI2MTc1NjMzNTZEMDJGNjE4OTY2NjU2RDAyRjYxODk3MEU=</PublicKey>
+        <Version>MAP 1.1</Version>
+        <SystemName>Saga</SystemName>
+        <SentData Order="Create" SentDate="2016-06-14 04:58:54" Type="Property"/>
+    </System>
+    <Properties>
+        <Property>
+            <Address Country="TH">
+                <Title> Surin</Title>
+                <HouseAddress>2/243 , Sua Win Road</HouseAddress>
+                <Street>2/243 , Sua Win Road</Street>
+                <PostalCodeID>400507</PostalCodeID>
+                <TownID>4005</TownID>
+                <RegionID>40</RegionID>
+                <Latitude>13.75802</Latitude>
+                <Longitude>100.455505</Longitude>
+            </Address>
+            <Information>
+                <PropertyID>000-129-51</PropertyID>
+                <OfficeID>C1OF1022015092315360556026475CF46E</OfficeID>
+                <SaleID>C1AG2016022606593056CFF7D2F3342</SaleID>
+                <Mode Mode="2"/>
+                <PropertyCategory PropertyCategory="68"/>
+                <PropertyType PropertyType="2"/>
+                <CurrentListingPrice>4500000</CurrentListingPrice>
+                <PropertyAppraisal>0</PropertyAppraisal>
+                <FireAppraisal>0</FireAppraisal>
+                <Mortgage>0</Mortgage>
+                <CurrentListingCurrency CurrentListingCurrency="ISK"/>
+                <RentalPriceGranularity RentalPriceGranularity="2"/>
+                <PropertyStatus PropertyStatus="1"/>
+                <ListingStatus/>
+                <FloorLevel/>
+                <TotalArea>100</TotalArea>
+                <LivingArea>0</LivingArea>
+                <CubicVolume>0</CubicVolume>
+                <TotalNumberOfRooms>1</TotalNumberOfRooms>
+                <NumberOfBathrooms>2</NumberOfBathrooms>
+                <NumberOfLivingrooms>1</NumberOfLivingrooms>
+                <NumberOfBedrooms>0</NumberOfBedrooms>
+                <NumberOfToiletRooms>0</NumberOfToiletRooms>
+                <NumberOfFloors>0</NumberOfFloors>
+                <Entrance> - </Entrance>
+                <Garage>false</Garage>
+                <GarageArea>0</GarageArea>
+                <YearBuild>0000</YearBuild>
+                <UnitOfMeasue UnitOfMeasue="m2"/>
+                <PossessionDate>0001-01-01T00:00:00</PossessionDate>
+                <AvailabilityDate>0001-01-01T00:00:00</AvailabilityDate>
+                <OrigListingDate>2016-06-06T00:00:00</OrigListingDate>
+                <ExpiryDate>0001-01-01T00:00:00</ExpiryDate>
+                <AlternateURL/>
+                <VirtualTour/>
+                <Elevator>false</Elevator>
+            </Information>
+            <Description>
+                <LanguageID/>
+                <DescriptionText>&lt;p style="box-sizing: border-box; margin: 0px 0px 1.6666666667rem; padding: 0px; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif; font-size: 12px; line-height: 1.6; text-rendering: optimizeLegibility; color: #3b444f;"&gt;&lt;span style="color: #0000ff; font-family: helvetica; font-size: small;"&gt;&lt;span style="letter-spacing: 1.06667px; line-height: 11.5px;"&gt;เธเธตเธงเธดเธ•เน€เธเนเธเน€เธฃเธทเนเธญเธเธเนเธฒเธขเนเธเธเธฒเธฃเธ—เธณเธเธฒเธเธชเธนเธ, เธชเธ”, เธเธงเธฒเธกเธชเธฐเธ”เธงเธเธชเธเธฒเธขเนเธฅเธฐเธฃเนเธงเธกเธชเธกเธฑเธขเธ—เธตเนเธกเธตเธเธญเธเนเธ”เธงเธดเธงเธ—เธฐเน€เธฅเนเธฅเธฐเธญเธณเน€เธ เธญเธ—เธตเนเธ•เธฑเนเธเธญเธขเธนเนเธ เธฒเธขเนเธ 400 เน€เธกเธ•เธฃเธ—เธฃเธฒเธขเธเธญเธเธซเธฒเธ”เธชเธธเธฃเธดเธเธ—เธฃเน&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+                    &lt;p style="box-sizing: border-box; margin: 0px 0px 1.6666666667rem; padding: 0px; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif; font-size: 12px; line-height: 1.6; text-rendering: optimizeLegibility; color: #3b444f;"&gt;&lt;span style="color: #0000ff; font-family: helvetica; font-size: small;"&gt;&lt;span style="letter-spacing: 1.06667px; line-height: 11.5px;"&gt;&lt;br /&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+                    &lt;p style="box-sizing: border-box; margin: 0px 0px 1.6666666667rem; padding: 0px; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif; font-size: 12px; line-height: 1.6; text-rendering: optimizeLegibility; color: #3b444f;"&gt;&lt;span style="color: #0000ff; font-family: helvetica; font-size: small;"&gt;&lt;span style="letter-spacing: 1.06667px; line-height: 11.5px;"&gt;เนเธญเธเธฒเธชเธ—เธตเนเธขเธญเธ”เน€เธขเธตเนเธขเธกเธ—เธตเนเธเธฐเธเธทเนเธญเธเธญเธเนเธ”เธชเธ•เธนเธ”เธดเนเธญเธเธฃเธตเนเธฎเธฅเธ”เนเธเธฑเธเธซเนเธญเธเธเนเธณเธ—เธตเนเธซเธฃเธนเธซเธฃเธฒเนเธเธ•เธฑเธงเน€เธชเธทเนเธญเธเธฅเธธเธกเธเธฃเธฑเธงเธกเธฒเธ•เธฃเธเธฒเธเธขเธธเนเธฃเธเนเธฅเธฐเธเธทเนเธเธ—เธตเนเนเธเนเธชเธญเธข เธฃเธฐเน€เธเธตเธขเธเธเธเธฒเธ”เนเธซเธเนเน€เธเนเธเธชเธญเธเน€เธ—เนเธฒเนเธเธเธฒเธเธฐเธ—เธตเนเน€เธเนเธเธ—เธตเนเธญเธฒเธจเธฑเธขเธญเธขเธนเนเธเธฅเธฒเธเนเธเนเธเธ—เธตเนเธกเธตเธเธทเนเธเธ—เธตเนเธญเธขเนเธฒเธเน€เธเนเธเธ—เธฒเธเธเธฒเธฃเธชเธณเธซเธฃเธฑเธเธเธงเธฒเธกเธเธฑเธเน€เธ—เธดเธ&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+                    &lt;p style="box-sizing: border-box; margin: 0px 0px 1.6666666667rem; padding: 0px; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif; font-size: 12px; line-height: 1.6; text-rendering: optimizeLegibility; color: #3b444f;"&gt;&lt;span style="color: #0000ff; font-family: helvetica; font-size: small;"&gt;&lt;span style="letter-spacing: 1.06667px; line-height: 11.5px;"&gt;&lt;br /&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+                    &lt;p style="box-sizing: border-box; margin: 0px 0px 1.6666666667rem; padding: 0px; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif; font-size: 12px; line-height: 1.6; text-rendering: optimizeLegibility; color: #3b444f;"&gt;&lt;span style="color: #0000ff; font-family: helvetica; font-size: small;"&gt;&lt;span style="letter-spacing: 1.06667px; line-height: 11.5px;"&gt;เธเธญเธเนเธ”เนเธซเนเธเธเธตเนเน€เธเนเธเธ—เธตเนเธชเธกเธเธนเธฃเธ“เนเนเธเธเธชเธณเธซเธฃเธฑเธเธเธนเนเธซเธฃเธทเธญเน€เธเนเธเธชเธ–เธฒเธเธ—เธตเนเธเธฑเธเธเนเธญเธเธงเธฑเธเธซเธขเธธเธ” เธกเธฑเธเธญเธขเธนเนเนเธเธ•เธณเนเธซเธเนเธเธ—เธตเนเธเธฐเน€เธเธฅเธดเธ”เน€เธเธฅเธดเธเนเธเธเธฑเธเธเธงเธฒเธกเธเธถเธเธเธดเธ”เธเธงเธฒเธกเนเธเธฅเนเธเธดเธ”เธเธฑเธเธเธฒเธขเธซเธฒเธ”, เธฃเนเธฒเธเธเธฒเนเธ, เธเนเธญเธเธเธดเนเธเนเธฅเธฐเธเธฒเธฃเน€เธฅเธทเธญเธเธเธญเธเธเธตเธเธเธฅเธฑเธเธเธฑเนเธเธเธณเนเธฅเธฐเธฃเนเธฒเธเธญเธฒเธซเธฒเธฃ&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+                    &lt;p style="box-sizing: border-box; margin: 0px 0px 1.6666666667rem; padding: 0px; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif; font-size: 12px; line-height: 1.6; text-rendering: optimizeLegibility; color: #3b444f;"&gt;&lt;span style="color: #0000ff; font-family: helvetica; font-size: small;"&gt;&lt;span style="letter-spacing: 1.06667px; line-height: 11.5px;"&gt;&lt;br /&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+                    &lt;p style="box-sizing: border-box; margin: 0px 0px 1.6666666667rem; padding: 0px; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif; font-size: 12px; line-height: 1.6; text-rendering: optimizeLegibility; color: #3b444f;"&gt;&lt;span style="color: #0000ff; font-family: helvetica; font-size: small;"&gt;&lt;span style="letter-spacing: 1.06667px; line-height: 11.5px;"&gt;เธซเธเนเธงเธขเธเธเธดเธ”เน€เธ”เธตเธขเธงเธเธฑเธเธชเธฒเธกเธฒเธฃเธ–เนเธเนเนเธ”เนเน€เธเนเธเธเธฒเธฃเน€เธเนเธฒ 4.2MB เธเธฒเธ—&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+                    &lt;p style="box-sizing: border-box; margin: 0px 0px 1.6666666667rem; padding: 0px; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif; font-size: 12px; line-height: 1.6; text-rendering: optimizeLegibility; color: #3b444f;"&gt;&lt;span style="color: #0000ff; font-family: helvetica; font-size: small;"&gt;&lt;span style="letter-spacing: 1.06667px; line-height: 11.5px;"&gt;&lt;br /&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+                    &lt;p style="box-sizing: border-box; margin: 0px 0px 1.6666666667rem; padding: 0px; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif; font-size: 12px; line-height: 1.6; text-rendering: optimizeLegibility; color: #3b444f;"&gt;&lt;span style="color: #0000ff; font-family: helvetica; font-size: small;"&gt;&lt;span style="letter-spacing: 1.06667px; line-height: 11.5px;"&gt;* เนเธเธฃเนเธเธฃเธกเธเธฒเธฃเธเธฑเธ”เธเธฒเธฃเน€เธเนเธฒเน€เธกเธทเนเธญเน€เธเนเธฒเธเธฑเธ (เนเธกเนเธเธณเน€เธเนเธ)&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</DescriptionText>
+            </Description>
+            <EnglishDescription>
+                <LanguageID/>
+                <DescriptionText>&lt;p style="box-sizing: border-box; margin: 0px 0px 1.6666666667rem; padding: 0px; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif; font-size: 12px; line-height: 1.6; text-rendering: optimizeLegibility; color: #3b444f;"&gt;&lt;span style="box-sizing: border-box; color: #0000ff; font-family: helvetica; font-size: small;"&gt;&lt;span style="box-sizing: border-box; line-height: 11.5px; letter-spacing: 0.8pt;"&gt;The living is easy in&amp;nbsp;&lt;/span&gt;&lt;span style="box-sizing: border-box; line-height: 11.5px; letter-spacing: 0.6pt; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;"&gt;a highly functional, a fresh, comfortable and contemporary condo&amp;nbsp;&lt;/span&gt;&lt;span style="box-sizing: border-box; line-height: 11.5px; letter-spacing: 0.8pt;"&gt;with&amp;nbsp;&lt;strong style="box-sizing: border-box; line-height: inherit;"&gt;sea&lt;/strong&gt;&amp;nbsp;&lt;strong style="box-sizing: border-box; line-height: inherit;"&gt;and district views&lt;/strong&gt;, located within&amp;nbsp;&lt;strong style="box-sizing: border-box; line-height: inherit;"&gt;400 meters to the sand of Surin beach&lt;/strong&gt;.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+                    &lt;p style="box-sizing: border-box; margin: 0px 0px 1.6666666667rem; padding: 0px; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif; font-size: 12px; line-height: 1.6; text-rendering: optimizeLegibility; color: #3b444f;"&gt;&lt;span style="box-sizing: border-box; color: #0000ff; font-family: helvetica; font-size: small;"&gt;&lt;span style="box-sizing: border-box; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;"&gt;Fantastic opportunity to purchase this&lt;strong style="box-sizing: border-box; line-height: inherit;"&gt;&amp;nbsp;Freehold&lt;/strong&gt;&amp;nbsp;studio&amp;nbsp;&lt;em style="box-sizing: border-box; line-height: inherit;"&gt;&lt;span style="box-sizing: border-box; font-style: normal; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;"&gt;condo&amp;nbsp;&lt;/span&gt;&lt;/em&gt;&lt;span class="apple-converted-space" style="box-sizing: border-box;"&gt;&lt;span style="box-sizing: border-box; letter-spacing: 0.8pt; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;"&gt;with luxurious bathroom, built-in robe,&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;span style="box-sizing: border-box; letter-spacing: 0.6pt; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;"&gt;&lt;span style="box-sizing: border-box; line-height: 11.5px; letter-spacing: 0.6pt; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;"&gt;a European Standards kitchen and living area. The&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;strong style="box-sizing: border-box; line-height: inherit;"&gt;&lt;span style="box-sizing: border-box; letter-spacing: 0.8pt; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;"&gt;large terrace&lt;/span&gt;&lt;/strong&gt;&lt;span style="box-sizing: border-box; letter-spacing: 0.6pt; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;"&gt;&lt;span style="box-sizing: border-box; line-height: 11.5px; letter-spacing: 0.6pt; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;"&gt;&amp;nbsp;doubles as an outdoor living with formal areas for entertaining&lt;/span&gt;&lt;/span&gt;&lt;span style="box-sizing: border-box; letter-spacing: 0.8pt; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;"&gt;.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+                    &lt;p style="box-sizing: border-box; margin: 0px 0px 1.6666666667rem; padding: 0px; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif; font-size: 12px; line-height: 1.6; text-rendering: optimizeLegibility; color: #3b444f;"&gt;&lt;span style="box-sizing: border-box; letter-spacing: 0.8pt; line-height: 11.5px; color: #0000ff; font-family: helvetica; font-size: small;"&gt;This condo is perfect for a couple or as a holiday retreat. It is ideally positioned to enjoy the proximity to beaches, cafes, shopping, and a selection of premier beach clubs and restaurants.&lt;/span&gt;&lt;span style="box-sizing: border-box; font-family: helvetica; letter-spacing: 0.8pt; line-height: 11.5px; font-size: small; color: #0000ff;"&gt;&lt;br style="box-sizing: border-box;" /&gt;&lt;br style="box-sizing: border-box;" /&gt;&lt;span style="box-sizing: border-box; color: #ff0000;"&gt;The same type unit is available as leasehold for THB 4.2MB&lt;/span&gt;&amp;nbsp;&amp;nbsp;&lt;br style="box-sizing: border-box;" /&gt;&lt;br style="box-sizing: border-box;" /&gt;&lt;em style="box-sizing: border-box; line-height: 18px; letter-spacing: 0.800000011920929px;"&gt;* Rental management program upon occupancy (optional)&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;</DescriptionText>
+            </EnglishDescription>
+            <Note/>
+            <Features>
+                <FeatureID>2</FeatureID>
+                <FeatureID>3</FeatureID>
+                <FeatureID>6</FeatureID>
+                <FeatureID>7</FeatureID>
+                <FeatureID>9</FeatureID>
+                <FeatureID>10</FeatureID>
+                <FeatureID>13</FeatureID>
+                <FeatureID>15</FeatureID>
+                <FeatureID>19</FeatureID>
+                <FeatureID>33</FeatureID>
+                <FeatureID>34</FeatureID>
+                <FeatureID>37</FeatureID>
+                <FeatureID>42</FeatureID>
+            </Features>
+            <Registration>
+                <OpenHouseStart>0001-01-01 00:00:00</OpenHouseStart>
+                <OpenHouseEnd>0001-01-01 00:00:00</OpenHouseEnd>
+                <RegDateRequested>0001-01-01</RegDateRequested>
+            </Registration>
+            <Commercial>
+                <CommNumberOfOffices>0</CommNumberOfOffices>
+                <CommNumberOfFloors>0</CommNumberOfFloors>
+                <CommTotalNumberOfRooms>1</CommTotalNumberOfRooms>
+                <CommBuildingFrontage/>
+                <CommClearanceHeight/>
+                <CommElevators>false</CommElevators>
+                <CommLeaseArea>0</CommLeaseArea>
+                <CommManufacturingSpace/>
+                <CommOfficeSpace/>
+                <CommParking/>
+                <CommPossessionDate/>
+                <CommPricePerArea>0</CommPricePerArea>
+                <CommRetailSpace/>
+                <CommTotalArea>0</CommTotalArea>
+                <CommUseableArea>0</CommUseableArea>
+                <CommWarehouseSpace/>
+                <CommYearBuilt>0000</CommYearBuilt>
+                <CommZoning/>
+            </Commercial>
+            <Images>
+                <DefaultImageSequenceNumber>1</DefaultImageSequenceNumber>
+                <Image>
+                    <SequenceNumber>1</SequenceNumber>
+                    <FileName>http://dev.softverk.is/saga.transport/map/539/1000000064/1.jpg</FileName>
+                    <DescriptiveName/>
+                    <Alt/>
+                </Image>
+                <Image>
+                    <SequenceNumber>2</SequenceNumber>
+                    <FileName>http://dev.softverk.is/saga.transport/map/539/1000000064/2.jpg</FileName>
+                    <DescriptiveName/>
+                    <Alt/>
+                </Image>
+                <Image>
+                    <SequenceNumber>3</SequenceNumber>
+                    <FileName>http://dev.softverk.is/saga.transport/map/539/1000000064/3.jpg</FileName>
+                    <DescriptiveName/>
+                    <Alt/>
+                </Image>
+                <Image>
+                    <SequenceNumber>4</SequenceNumber>
+                    <FileName>http://dev.softverk.is/saga.transport/map/539/1000000064/4.jpg</FileName>
+                    <DescriptiveName/>
+                    <Alt/>
+                </Image>
+                <Image>
+                    <SequenceNumber>5</SequenceNumber>
+                    <FileName>http://dev.softverk.is/saga.transport/map/539/1000000064/5.jpg</FileName>
+                    <DescriptiveName/>
+                    <Alt/>
+                </Image>
+                <Image>
+                    <SequenceNumber>6</SequenceNumber>
+                    <FileName>http://dev.softverk.is/saga.transport/map/539/1000000064/6.jpg</FileName>
+                    <DescriptiveName/>
+                    <Alt/>
+                </Image>
+                <Image>
+                    <SequenceNumber>7</SequenceNumber>
+                    <FileName>http://dev.softverk.is/saga.transport/map/539/1000000064/7.jpg</FileName>
+                    <DescriptiveName/>
+                    <Alt/>
+                </Image>
+                <Image>
+                    <SequenceNumber>8</SequenceNumber>
+                    <FileName>http://dev.softverk.is/saga.transport/map/539/1000000064/8.jpg</FileName>
+                    <DescriptiveName/>
+                    <Alt/>
+                </Image>
+                <Image>
+                    <SequenceNumber>9</SequenceNumber>
+                    <FileName>http://dev.softverk.is/saga.transport/map/539/1000000064/9.jpg</FileName>
+                    <DescriptiveName/>
+                    <Alt/>
+                </Image>
+                <Image>
+                    <SequenceNumber>10</SequenceNumber>
+                    <FileName>http://dev.softverk.is/saga.transport/map/539/1000000064/10.jpg</FileName>
+                    <DescriptiveName/>
+                    <Alt/>
+                </Image>
+            </Images>
+            <Files>
+                <File>
+                    <SequenceNumber>1</SequenceNumber>
+                    <FileName/>
+                    <FileType/>
+                    <URL/>
+                    <Description/>
+                </File>
+            </Files>
+            <Videos>
+                <DefaultVideoSequenceNumber>1</DefaultVideoSequenceNumber>
+                <Video>
+                    <SequenceNumber>1</SequenceNumber>
+                    <Url>https://www.youtube.com/watch?v=KXXdxhoFncs</Url>
+                    <DescriptiveName>another house</DescriptiveName>
+                    <Alt/>
+                </Video>
+                <Video>
+                    <SequenceNumber>2</SequenceNumber>
+                    <Url>https://www.youtube.com/watch?v=jx3G0CoZjAc</Url>
+                    <DescriptiveName>House</DescriptiveName>
+                    <Alt/>
+                </Video>
+            </Videos>
+        </Property>
+    </Properties>
+</UploadXML>

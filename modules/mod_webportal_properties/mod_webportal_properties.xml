@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+        type="module"
+        version="0.0.1"
+        client="site"
+        method="upgrade">
+    <name>mod_webportal_properties</name>
+    <author>Softverk</author>
+    <creationDate>June 16, 2011</creationDate>
+    <copyright>Copyright (C) 2011 Softverk. All rights reserved.</copyright>
+    <license>GNU/GPL</license>
+    <authorEmail>admin@softverk.is</authorEmail>
+    <authorUrl>www.softverk.is</authorUrl>
+    <version>1.6.0</version>
+    <description>Webportal Properties</description>
+    <files>
+        <filename module="mod_webportal_properties">mod_webportal_properties.php</filename>
+        <folder>tmpl</folder>
+        <filename>index.html</filename>
+        <filename>mod_webportal_properties.xml</filename>
+    </files>
+    <languages>
+        <language tag="en-GB">en-GB.mod_webportal_properties.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+
+                <field name="property_type"
+                       type="list"
+                       default="random"
+                       label="Property Selection Method"
+                       description="How are the properties selected ? "
+                        >
+                    <option value="random">Random Properties</option>
+                    <option value="newest">Newest Properties</option>
+                    <option value="featured">Featured Properties</option>
+                    <option value="investment">Investment Properties</option>
+                    <option value="open_house">Open House Properties ( Rest will be filled with newest properties )
+                    </option>
+                    <option value="next_previous">Next Previous Properties</option>
+                </field>
+
+                <field name="template"
+                       type="list"
+                       default="random"
+                       label="Template"
+                       description="Select display template"
+                        >
+                    <option value="template">Default</option>
+                    <option value="featured_article">Featured Article ( front page / Sidebar )</option>
+                    <option value="inline_article">Inside Articles</option>
+                    <option value="newest_properties_frontpage">Newest properties - front page</option>
+                    <option value="random_properties_frontpage">Random properties - front page</option>
+                    <option value="carousel">Six Cycle Carousel - front page</option>
+                    <option value="carousel_property_detail_page">Six Cycle Carousel - property detail page</option>
+                </field>
+
+                <field name="category_id" type="sql" default="" label="Category"
+                       description="Select properties by specific category"
+                       query="SELECT 0 as id, 'Select Category' as name
+                              UNION ALL
+                              SELECT id, description as name FROM #__portal_property_categories order by id"
+                       key_field="id"
+                       value_field="name"
+                       required="false"/>
+
+                <field name="office_id" type="sql" default="" label="Office"
+                       description="Select properties by specific office"
+                       query="SELECT 0 as id, 'Select Office' as office_name
+                              UNION ALL
+                              SELECT id, office_name FROM #__portal_offices  where show_on_web = 1 order by id"
+                       key_field="id"
+                       value_field="office_name"
+                       required="false"/>
+
+                <field name="agent_id" type="sql" default="" label="Agent"
+                       description="Select properties by specific agent"
+                       query="SELECT 0 as id, 'Select Agent' as name
+                              UNION ALL
+                              SELECT id, concat(first_name,' ',last_name) as name FROM #__portal_sales  where is_deleted = 0 and show_on_web = 1 order by id"
+                       key_field="id"
+                       value_field="name"
+                       required="false"/>
+
+
+                <field name="region_id" type="sql" default="" label="Province"
+                       description="Select properties by specific province"
+                       query="SELECT 0 as id, 'Select Province' as name
+                              UNION ALL
+                              SELECT id, name_en as name FROM #__geography_regions order by id"
+                       key_field="id"
+                       value_field="name"
+                       required="false"/>
+
+                <field name="city_town_id" type="sql" default="" label="District"
+                       description="Select properties by specific district"
+                       query="SELECT 0 as id, 'Select District' as name
+                              UNION ALL
+                              SELECT id, name_en as name FROM #__geography_towns order by id"
+                       key_field="id"
+                       value_field="name"
+                       required="false"/>
+
+                <field name="zip_code_id" type="sql" default="" label="Postal Codes"
+                       description="Select properties by specific Postal Codes"
+                       query="SELECT 0 as id, 'Select Postal Code' as name
+                              UNION ALL
+                              SELECT id, name_en as name FROM #__geography_postal_codes order by id"
+                       key_field="id"
+                       value_field="name"
+                       required="false"/>
+
+
+                <field
+                        name="rows"
+                        type="text"
+                        label="Rows"
+                        description="How many rows ? "/>
+
+
+                <field
+                        name="columns"
+                        type="text"
+                        label="Columns"
+                        description="How many columns"/>
+
+                <field
+                        name="viewall" type="radio" default="false"
+                        class="btn-group btn-group-yesno"
+                        label="View All"
+                        description="View All">
+                    <option value="true">on</option>
+                    <option value="false">off</option>
+                </field>
+
+            </fieldset>
+            <fieldset name="advanced">
+                <field
+                        name="moduleclass_sfx"
+                        type="text"
+                        default=""
+                        label="Module Class Suffix"
+                        description="PARAMMODULECLASSSUFFIX"/>
+
+            </fieldset>
+        </fields>
+    </config>
+</extension>

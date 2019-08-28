@@ -1,0 +1,59 @@
+id;type;en_type;feature;en_feature
+1;คุณสมบัติของทรัพย์;"Property Features";ระบบรักษาความปลอดภัย;"Security System"
+2;คุณสมบัติของทรัพย์;"Property Features";ความปลอดภัยของอาคาร;"Building Security "
+3;คุณสมบัติของทรัพย์;"Property Features";Furnished;Furnished
+4;คุณสมบัติของทรัพย์;"Property Features";Unfurnished;Unfurnished
+5;คุณสมบัติของทรัพย์;"Property Features";ตกแต่งแล้วบางส่วน;"Partially Furnished"
+6;คุณสมบัติของทรัพย์;"Property Features";ลิฟท์;Lift
+7;คุณสมบัติของทรัพย์;"Property Features";เครื่องปรับอากาศ;"Air Conditioning"
+8;คุณสมบัติของทรัพย์;"Property Features";ยิม;Gymnasium
+9;คุณสมบัติของทรัพย์;"Property Features";เคเบิ้ลทีวี;CATV/cable
+10;คุณสมบัติของทรัพย์;"Property Features";สระว่ายน้าด้านนอก;"Swimming Pool - Outdoor"
+11;คุณสมบัติของทรัพย์;"Property Features";สระว่ายน้ำภายใน;"Swimming Pool - Indoor"
+12;คุณสมบัติของทรัพย์;"Property Features";อ่างอาบน้ำ;Jacuzzi
+13;คุณสมบัติของทรัพย์;"Property Features";อาคารใหม่;"New Building"
+14;คุณสมบัติของทรัพย์;"Property Features";ที่จอดรถ;Parking
+15;คุณสมบัติของทรัพย์;"Property Features";ระเบียง;Balcony
+16;คุณสมบัติของทรัพย์;"Property Features";โรงรถ;Garage
+17;คุณสมบัติของทรัพย์;"Property Features";ตกแต่งใหม่;Renovated
+18;คุณสมบัติของทรัพย์;"Property Features";สวนสาธารณะในอาคาร;"Building Garden"
+19;คุณสมบัติของทรัพย์;"Property Features";เจ้าของจะทำการตกแต่งให้;"To Be Renovated"
+20;คุณสมบัติของทรัพย์;"Property Features";จำเป็นต้องตกแต่งเอง;"Needs Renovation"
+21;คุณสมบัติของทรัพย์;"Property Features";สวนส่วนตัว;"Private Garden"
+22;คุณสมบัติของทรัพย์;"Property Features";คิดค่าไฟโดยการไฟฟ้า;"Government Electricity Meter"
+23;คุณสมบัติของทรัพย์;"Property Features";บริการทำความสะอาด;"Cleaning Service "
+24;คุณสมบัติของทรัพย์;"Property Features";เหมาะสำหรับผู้ใช้รถเข็น;"Wheelchair Accessible"
+25;คุณสมบัติของทรัพย์;"Property Features";ถังแก๊ส;"Cooking Gas"
+26;คุณสมบัติของทรัพย์;"Property Features";เครื่องซักผ้าในอาคาร;"Laundry (in building)"
+27;คุณสมบัติของทรัพย์;"Property Features";คิดค่าไฟโดยการประปา;"Public Water Meter"
+28;คุณสมบัติของทรัพย์;"Property Features";ไวไฟ/อินเตอร์เน็ต;"WiFi / Internet"
+29;คุณสมบัติของทรัพย์;"Property Features";สัตว์เลี้ยง;"Pet allowed "
+30;คุณสมบัติของทรัพย์;"Property Features";เครื่องใช้ในครัว;"Kitchen Appliances "
+31;ที่ตั้งของทรัพย์;"Property Location";ทิศเหนือ;North
+32;ที่ตั้งของทรัพย์;"Property Location";ทิศใต้;South
+33;ที่ตั้งของทรัพย์;"Property Location";ทิศตะวันออก;East
+34;ที่ตั้งของทรัพย์;"Property Location";ทิศตะวันตก;West
+35;ที่ตั้งของทรัพย์;"Property Location";ฝั่งชายหาด;"Beach Side"
+36;ที่ตั้งของทรัพย์;"Property Location";ฝั่งภูเขา;"Mountains Side"
+37;ที่ตั้งของทรัพย์;"Property Location";วิวทะเล;"Sea View"
+38;ที่ตั้งของทรัพย์;"Property Location";ใกล้เมือง;"City Center"
+39;ที่ตั้งของทรัพย์;"Property Location";ใกล้ชายหาด;"Near Beach"
+40;ที่ตั้งของทรัพย์;"Property Location";ใกล้ร้านอาหาร;"Restaurant Area"
+41;ที่ตั้งของทรัพย์;"Property Location";ศูนย์ธุรกิจ;"Business Center"
+42;ที่ตั้งของทรัพย์;"Property Location";หมู่บ้าน;"Village (Moo Baan)"
+43;การคมนาคม;Transportation;MRT;MRT
+44;การคมนาคม;Transportation;BTS;BTS
+45;การคมนาคม;Transportation;"Airport Link";"Airport Link"
+46;ที่ตั้งทรัพย์ใกล้กับ;"The Property Near By";สนามบิน;Airport
+47;ที่ตั้งทรัพย์ใกล้กับ;"The Property Near By";ขนส่งมวลชน;"Public Transportation"
+48;ที่ตั้งทรัพย์ใกล้กับ;"The Property Near By";สถานีรถไฟ;"Railway station"
+49;ที่ตั้งทรัพย์ใกล้กับ;"The Property Near By";ห้างสรรพสินค้า;"Shopping Mall"
+50;ที่ตั้งทรัพย์ใกล้กับ;"The Property Near By";ป้ายรถประจำทาง;"Bus Station "
+51;ที่ตั้งทรัพย์ใกล้กับ;"The Property Near By";สถานรับเลี้ยงเด็กเล็ก;Nursery
+52;ที่ตั้งทรัพย์ใกล้กับ;"The Property Near By";โรงพยาบาล;Hospital
+53;ที่ตั้งทรัพย์ใกล้กับ;"The Property Near By";สวนสาธารณะ;"Public Park"
+54;ที่ตั้งทรัพย์ใกล้กับ;"The Property Near By";ทางด่วน;Highway
+55;ที่ตั้งทรัพย์ใกล้กับ;"The Property Near By";โรงเรียนนานาชาติ;"International School"
+56;ที่ตั้งทรัพย์ใกล้กับ;"The Property Near By";สนามกอล์ฟ;"Golf Course"
+57;ที่ตั้งทรัพย์ใกล้กับ;"The Property Near By";โรงเรียน;Schools
+58;ที่ตั้งทรัพย์ใกล้กับ;"The Property Near By";มหาวิทยาลัย;University

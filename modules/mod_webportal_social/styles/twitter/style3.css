@@ -1,0 +1,76 @@
+div.Tweet {
+    float: left;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    font-size: 11px;
+}
+div.Tweet > div {
+    border: 1px solid #bbb;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    margin: 6px;
+    padding: 8px;
+    background: #fff;
+    -moz-box-shadow: 0 3px 3px 0 #e7e7e7;
+    -webkit-box-shadow: 0 3px 3px 0 #e7e7e7;
+    box-shadow: 0 3px 3px 0 #e7e7e7;
+    -moz-transition: -moz-background 0.8s linear;
+    -o-transition: -o-background 0.8s linear;
+    -webkit-transition: -webkit-background 0.8s linear;
+    transition: background 0.8s linear;
+}
+div.Tweet > div:hover { background: #d5ecf5 }
+p.TweetContent {
+    font-size: 15px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    margin: 10px 10px 5px 10px;
+    line-height: 20px;
+}
+div.Tweet > div > img {
+    height: 100%;
+    float: left;
+    width: 32px;
+    height: 32px;
+    margin: 0 15px 0 10px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+}
+span.TweetName a {
+    color: #333;
+    font-weight: bold;
+    font-size: 13px;
+    display: block;
+    line-height: 12px;
+}
+span.TweetName small {
+    font-size: 11px;
+    color: #999;
+}
+div.Tweet > div a:hover { color: #135e8e }
+p.TweetContent a { color: #000 }
+div.Tweet > div p { word-wrap: break-word }
+div.Tweet > div > span.TweetInfo {
+    font-size: 10px;
+    margin-left: 11px;
+}
+div.Tweet > div > span.TweetInfo a:first-child { padding-right: 10px }
+div.Tweet > div > span.TweetInfo a {
+    padding-left: 20px;
+    background: url(../../images/twitterSprite.png) no-repeat 0 -1px transparent;
+    margin-left: 8px;
+    float: right;
+    line-height: 14px;
+}
+span.TweetInfo,
+span.TweetInfo a { color: #999 }
+div.Tweet > div > span.TweetInfo a:first-child { margin-left: 5px }
+div.Tweet > div > span.TweetInfo a.reply { background-position: 0 -1px }
+div.Tweet > div > span.TweetInfo a.reply:hover { background-position: 0 -18px }
+div.Tweet > div > span.TweetInfo a.retweet { background-position: 0 -66px }
+div.Tweet > div > span.TweetInfo a.retweet:hover { background-position: 0 -81px }
+div.Tweet > div > span.TweetInfo a.favorite { background-position: 0 -34px }
+div.Tweet > div > span.TweetInfo a.favorite:hover { background-position: 0 -50px }
+div.Divider { clear: both; width: 100% }

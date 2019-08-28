@@ -1,0 +1,236 @@
+/*------------------------------------*\
+    $OVERRIDE
+\*------------------------------------*/
+/**
+ * VARIABLES...........Variables for easy customization
+ * INIT................Styles that support the Skeleton Model
+ * UTILITY.............
+ * SKELETON............DOM Skeleton Model
+ * MODULES.............Dynamic Modules ie Pop-ups, Tooltips
+ */
+
+/*------------------------------------*\
+    $INIT
+\*------------------------------------*/
+
+@font-face {
+  font-family: 'SukhumvitSet';
+  src: url($template-path + '/fonts/SukhumvitSet-Text.eot?#iefix') format('embedded-opentype'),  url($template-path + '/fonts/SukhumvitSet-Text.woff') format('woff'), url($template-path + '/fonts/SukhumvitSet-Text.ttf')  format('truetype'), url($template-path + '/fonts/SukhumvitSet-Text.svg#SukhumvitSet-Text') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SukhumvitSet';
+  src: url($template-path + '/fonts/SukhumvitSet-Bold.eot?#iefix') format('embedded-opentype'),  url($template-path + '/fonts/SukhumvitSet-Bold.woff') format('woff'), url($template-path + '/fonts/SukhumvitSet-Bold.ttf')  format('truetype'), url($template-path + '/fonts/SukhumvitSet-Bold.svg#SukhumvitSet-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  font-family: 'SukhumvitSet', "Helvetica Neue", Helvetica, Arial, Tahoma, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'SukhumvitSet', "Helvetica Neue", Helvetica, Arial, Tahoma, sans-serif;
+  font-weight: bold;
+}
+
+/*------------------------------------*\
+    $Header
+\*------------------------------------*/
+
+.top-logo {
+  position: static;
+
+  a {
+    display: inline;
+
+    img {
+      height: 75px;
+      position: absolute;
+      top: 0;
+      z-index: 11000;
+      }
+    }
+
+  &.block {
+    a {
+      display: inline;
+
+      img {
+        height: 55px;
+        position: absolute;
+        top: 0;
+        z-index: 11000;
+      }
+    }
+
+    @media #{$small-only} {
+      height: 36px;
+      padding-left: 1.25em;
+      a {
+        img {
+          height: 36px;
+          top: 0;
+        }
+      }
+    }
+  }
+
+  @media #{$medium-only} {
+    text-align: left;
+    position: absolute;
+    a {
+      img {
+        left: 0;
+        top: 4px;
+        margin-left: 1.25em !important;
+      }
+    }
+  }
+
+  @media #{$small-only} {
+    text-align: left;
+    position: absolute;
+    a {
+      img {
+        left: 0;
+        top: 4px;
+        margin-left: 1.25em !important;
+        height: 36px;
+      }
+    }
+  }
+}
+
+/*----- Menu ----*/
+
+.nav--main {
+
+  @media #{$large-up} {
+    //text-align: center;
+  }
+}
+
+.nav--main .nav__item {
+
+  @media #{$large-up} {
+
+    a {
+      display: inline-block;
+      padding: 0 25px;
+    }
+
+    &:hover > .nav--child {
+      display: block;
+    }
+
+    &:nth-child(1) {
+      display: none;
+    }
+
+    &:nth-child(4) {
+      //margin-left: 200px;
+    }
+
+    &.lang {
+      position: absolute;
+    }
+  }
+}
+
+.nav--child {
+  .nav__item {
+
+    a {
+      display: block;
+    }
+
+    &:nth-child(1) {
+      display: block;
+    }
+
+    &:nth-child(4) {
+      margin-left: 0;
+    }
+
+  }
+}
+/*------------------------------------*\
+    $HOME Styles
+\*------------------------------------*/
+
+.home__caption {
+  font-family: 'SukhumvitSet-Bold';
+}
+
+.search--feature {
+  border: 1px solid $generic-primary-color-medium;
+  background: rgba($generic-primary-color-dark, $search-opacity);
+
+  text {
+    fill: #fff;
+  }
+
+  .search-filters__slider-label {
+    color: #fff;
+  }
+
+  &.half--width {
+
+    .search-filters__label {
+      color: $generic-primary-color-light;
+      cursor: pointer;
+      @include transition(all 0.3s ease);
+
+      &:hover {
+        color: #FFF;
+      }
+    }
+
+  }
+}
+
+.front-page--wrapper {
+  .search-filters--frontpage__advance-filters--row {
+    padding: 1em 0 0 0;
+    color: $generic-primary-color-light;
+    @include transition(all 0.3s ease);
+
+    a {
+      color: $generic-primary-color-light;
+
+      &:hover {
+        color: #FFF;
+      }
+    }
+  }
+}
+
+.search-filters--frontpage__advance-filters--row {
+  padding: 1em 0;
+  color: $generic-primary-color-dark;
+  @include transition(all 0.3s ease);
+
+  a {
+    color: $generic-primary-color-dark;
+
+    &:hover {
+      color: #FFF;
+    }
+  }
+}
+
+.search-filters__label--home {
+  &:hover {
+    color: #FFF;
+  }
+}
+
+.agent__img {
+  -webkit-border-radius: $border-radius !important;
+  -moz-border-radius: $border-radius !important;
+  border-radius: $border-radius !important;
+  border: solid 1px #eee !important;
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.4" client="site" type="language" method="upgrade">
+	<name>Tagalog (Philippine)</name>
+	<tag>tl-TL</tag>
+	<version>3.4.2</version>
+	<creationDate>2015-12-24</creationDate>
+	<author>Jonathan Ablanida</author>
+	<authorEmail>jonathan@softverk.is</authorEmail>
+	<authorUrl>http://www.softverk.is</authorUrl>
+	<copyright>Copyright © 2015 Softverk Ltd, All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<description>tl-TL site language</description>
+	<files>
+		<filename>tl-TL.com_webportal.ini</filename>
+		<filename>tl-TL.ini</filename>
+		<filename file="meta">install.xml</filename>
+		<filename file="meta">tl-TL.xml</filename>
+	</files>
+	<params />
+</extension>

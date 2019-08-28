@@ -1,0 +1,15 @@
+<div class="slider--prices--container">
+    <!-- hidden  1= ALL,2=RESIDENTIAL,3=COMMERCIAL -->
+    <div class="slider--wrapper"
+         ng-class="loaded && ( searchfilter.mode_id == 1 || searchfilter.mode_id == 2 ) ? '' : 'render--offcanvas' ">
+        <span class="search-filters__slider-label"><?php echo JText::_('BATHROOMS') ?></span>
+        <slider
+                ng-model="searchfilter.number_of_bathrooms[0]"
+                ng-model-range="searchfilter.number_of_bathrooms[1]"
+                translate-fn="rooms_scale"
+                translate-range-fn=""
+                floor="{{sliders.number_of_bathrooms.floor}}"
+                ceiling="{{sliders.number_of_bathrooms.ceiling}}"></slider>
+    </div>
+
+</div>

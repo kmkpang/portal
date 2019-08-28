@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<phpdox xmlns="http://phpdox.net/config">
+    <project name="Components" source="${basedir}/components/com_webportal/" workdir="${basedir}/build/api/xml">
+        <collector backend="parser">
+            <include mask="*.php"/>
+        </collector>
+        <generator output="${basedir}/build/api">
+            <build engine="html" output="html"/>
+        </generator>
+    </project>
+    <project name="Modules" source="${basedir}/modules/" workdir="${basedir}/build/api/xml">
+        <collector backend="parser">
+            <include mask="**webportal**"/>
+        </collector>
+        <generator output="${basedir}/build/api">
+            <build engine="html" output="html"/>
+        </generator>
+    </project>
+    <project name="Plugins" source="${basedir}/plugins/" workdir="${basedir}/build/api/xml">
+        <collector backend="parser">
+            <include mask="**webportal**"/>
+        </collector>
+        <generator output="${basedir}/build/api">
+            <build engine="html" output="html"/>
+        </generator>
+    </project>
+    <project name="Libraries" source="${basedir}/libraries/" workdir="${basedir}/build/api/xml">
+        <collector backend="parser">
+            <include mask="**webportal**"/>
+        </collector>
+        <generator output="${basedir}/build/api">
+            <build engine="html" output="html"/>
+        </generator>
+    </project>
+</phpdox>
+

@@ -1,0 +1,73 @@
+@import "normalize";
+@import "settings";
+@import "mixins";
+@import "animations";
+
+
+
+// Make sure the charset is set appropriately
+@charset "UTF-8";
+
+///var/www/softverk-webportal-remaxth/assets/bower_components/font-awesome/css/font-awesome.css
+
+
+// Behold, here are all the Foundation components.
+@import
+"foundation/components/grid",
+"foundation/components/block-grid",
+
+  // "foundation/components/button-groups",
+  // "foundation/components/buttons",
+  // "foundation/components/clearing",
+  // "foundation/components/dropdown",
+  // "foundation/components/dropdown-buttons",
+  // "foundation/components/forms",
+  // "foundation/components/inline-lists",
+  // "foundation/components/labels",
+  // "foundation/components/pagination",
+  // "foundation/components/range-slider",
+  // "foundation/components/reveal",
+  // "foundation/components/side-nav",
+  // "foundation/components/split-buttons",
+  // "foundation/components/sub-nav",
+  // "foundation/components/switch",
+  // "foundation/components/tables",
+  // "foundation/components/tabs",
+  // "foundation/components/tooltips",
+"foundation/components/type";
+// "foundation/components/breadcrumbs",
+// "foundation/components/alert-boxes",
+// "foundation/components/thumbs",
+// "foundation/components/panels",
+// "foundation/components/visibility";
+// "foundation/components/offcanvas",
+// "foundation/components/flex-video",
+// "foundation/components/accordion",
+// "foundation/components/joyride",
+// "foundation/components/keystrokes",
+// "foundation/components/magellan",
+// "foundation/components/orbit",
+// "foundation/components/pricing-tables",
+// "foundation/components/progress-bars",
+// "foundation/components/top-bar",
+
+@import "variables";
+@import "variable_generated";
+@import "utilities";
+@import "appstyles";
+@import "menu";
+@import "typography";
+@import "rangeslider";
+@import "slider";
+@import "angular";
+@import "multiselect";
+@import "googlemap";
+@import "socialshare";
+@import "font-awesome";
+@import "jquery-ui";
+@import "bootstrap-formhelpers";
+@import "carousel";
+@import "ngdialog";
+
+
+

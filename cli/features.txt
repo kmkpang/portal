@@ -1,0 +1,80 @@
+FetureID, Text
+89,New Building
+88,Old Building 
+72,Villa 
+64,Air Conditioning 
+65,Alarm System 
+56,Lift/Elevator 
+71,Near Public Transportation 
+66,Renovated 
+310,Wheelchair Accessible 
+136,Alarm System 
+137,High Traffic 
+138,Location 
+139,Near Highway 
+140,Near Public Transportation 
+141,Renovated 
+142,To Be Renovated 
+143,Balcony 
+121,Flat Roof 
+63,Garage 
+58,Garden 
+115,New Building 
+21,Parking 
+317,Playground 
+320,Restaurant Area 
+22,Swimming Pool 
+24,Terrace/Deck 
+156,Lift/Elevator 
+158,Needs Renovation 
+159,New Building 
+161,Pool -  Indoor 
+162,Pool - Outdoor 
+164,Renovated 
+165,Security -  System 
+168,Unfinished 
+183,Lift/Elevator 
+111,Ready to rent 
+23,Security System 
+186,Storage Room 
+187,Unfurnished 
+188,Washing Facilities (in apartment) 
+189,Washing Facilities(in building) 
+12,Beach 
+192,City Center 
+94,Good reachable traffic 
+18,Mountains 
+309,Near Golf Course 
+196,Near Airport 
+25,Near Beach 
+102,Near Bus 
+197,Near Children\u0027s Park 
+198,Near Church 
+200,Near Fitness centre 
+201,Near Highway 
+202,Near Hospital 
+93,Near Motorway 
+206,Near/On Beach 
+104,Near Park 
+203,Near Public Transportation 
+100,Near Railway station 
+204,Near Schools 
+205,Near Shops 
+101,Near Subway 
+96,Outskirts 
+218,Private 
+97,Remote (distant) 
+92,Sea View 
+8,East 
+6,North 
+7,South 
+9,West 
+272,ADSL 
+273,CATV/cable 
+274,Electricity 
+276,Gas 
+322,Gymnasium 
+327,Individual Water Meter 
+321,Jacuzzi 
+297,Satellite 
+302,Water

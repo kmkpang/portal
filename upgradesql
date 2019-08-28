@@ -1,0 +1,510 @@
+SET SQL_MODE='ALLOW_INVALID_DATES';
+INSERT INTO `jos_extensions` (`extension_id`, `name`, `type`, `element`, `folder`, `client_id`, `enabled`, `access`, `protected`, `manifest_cache`, `params`, `custom_data`, `system_data`, `checked_out`, `checked_out_time`, `ordering`, `state`) VALUES
+(458, 'plg_quickicon_phpversioncheck', 'plugin', 'phpversioncheck', 'quickicon', 0, 1, 1, 1, '', '', '', '', 0, '0000-00-00 00:00:00', 0, 0);
+
+INSERT INTO `jos_extensions` (`extension_id`, `name`, `type`, `element`, `folder`, `client_id`, `enabled`, `access`, `protected`, `manifest_cache`, `params`, `custom_data`, `system_data`, `checked_out`, `checked_out_time`, `ordering`, `state`) VALUES
+(459, 'plg_editors-xtd_menu', 'plugin', 'menu', 'editors-xtd', 0, 1, 1, 0, '', '', '', '', 0, '0000-00-00 00:00:00', 0, 0);
+
+CREATE TABLE IF NOT EXISTS `jos_fields` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `asset_id` int(10) unsigned NOT NULL DEFAULT 0,
+  `context` varchar(255) NOT NULL DEFAULT '',
+  `group_id` int(10) unsigned NOT NULL DEFAULT 0,
+  `title` varchar(255) NOT NULL DEFAULT '',
+  `name` varchar(255) NOT NULL DEFAULT '',
+  `label` varchar(255) NOT NULL DEFAULT '',
+  `default_value` text NOT NULL DEFAULT '',
+  `type` varchar(255) NOT NULL DEFAULT 'text',
+  `note` varchar(255) NOT NULL DEFAULT '',
+  `description` text NOT NULL,
+  `state` tinyint(1) NOT NULL DEFAULT '0',
+  `required` tinyint(1) NOT NULL DEFAULT '0',
+  `checked_out` int(11) NOT NULL DEFAULT '0',
+  `checked_out_time` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `ordering` int(11) NOT NULL DEFAULT '0',
+  `params` text NOT NULL,
+  `fieldparams` text NOT NULL,
+  `language` char(7) NOT NULL DEFAULT '',
+  `created_time` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `created_user_id` int(10) unsigned NOT NULL DEFAULT '0',
+  `modified_time` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `modified_by` int(10) unsigned NOT NULL DEFAULT '0',
+  `access` int(11) NOT NULL DEFAULT '1',
+  PRIMARY KEY (`id`),
+  KEY `idx_checkout` (`checked_out`),
+  KEY `idx_state` (`state`),
+  KEY `idx_created_user_id` (`created_user_id`),
+  KEY `idx_access` (`access`),
+  KEY `idx_context` (`context`(191)),
+  KEY `idx_language` (`language`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 DEFAULT COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS `jos_fields_categories` (
+  `field_id` int(11) NOT NULL DEFAULT 0,
+  `category_id` int(11) NOT NULL DEFAULT 0,
+  PRIMARY KEY (`field_id`,`category_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 DEFAULT COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS `jos_fields_groups` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `asset_id` int(10) unsigned NOT NULL DEFAULT 0,
+  `context` varchar(255) NOT NULL DEFAULT '',
+  `title` varchar(255) NOT NULL DEFAULT '',
+  `note` varchar(255) NOT NULL DEFAULT '',
+  `description` text NOT NULL,
+  `state` tinyint(1) NOT NULL DEFAULT '0',
+  `checked_out` int(11) NOT NULL DEFAULT '0',
+  `checked_out_time` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `ordering` int(11) NOT NULL DEFAULT '0',
+  `language` char(7) NOT NULL DEFAULT '',
+  `created` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `created_by` int(10) unsigned NOT NULL DEFAULT '0',
+  `modified` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `modified_by` int(10) unsigned NOT NULL DEFAULT '0',
+  `access` int(11) NOT NULL DEFAULT '1',
+  PRIMARY KEY (`id`),
+  KEY `idx_checkout` (`checked_out`),
+  KEY `idx_state` (`state`),
+  KEY `idx_created_by` (`created_by`),
+  KEY `idx_access` (`access`),
+  KEY `idx_context` (`context`(191)),
+  KEY `idx_language` (`language`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 DEFAULT COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS `jos_fields_values` (
+  `field_id` int(10) unsigned NOT NULL,
+  `item_id` varchar(255) NOT NULL COMMENT 'Allow references to items which have strings as ids, eg. none db systems.',
+  `value` text NOT NULL DEFAULT '',
+  KEY `idx_field_id` (`field_id`),
+  KEY `idx_item_id` (`item_id`(191))
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 DEFAULT COLLATE=utf8mb4_unicode_ci;
+
+INSERT INTO `jos_extensions` (`extension_id`, `name`, `type`, `element`, `folder`, `client_id`, `enabled`, `access`, `protected`, `manifest_cache`, `params`, `custom_data`, `system_data`, `checked_out`, `checked_out_time`, `ordering`, `state`) VALUES
+(33, 'com_fields', 'component', 'com_fields', '', 1, 1, 1, 0, '', '', '', '', 0, '0000-00-00 00:00:00', 0, 0);
+INSERT INTO `jos_extensions` (`extension_id`, `name`, `type`, `element`, `folder`, `client_id`, `enabled`, `access`, `protected`, `manifest_cache`, `params`, `custom_data`, `system_data`, `checked_out`, `checked_out_time`, `ordering`, `state`) VALUES
+(461, 'plg_system_fields', 'plugin', 'fields', 'system', 0, 1, 1, 0, '', '', '', '', 0, '0000-00-00 00:00:00', 0, 0),
+(462, 'plg_fields_calendar', 'plugin', 'calendar', 'fields', 0, 1, 1, 0, '', '', '', '', 0, '0000-00-00 00:00:00', 0, 0),
+(463, 'plg_fields_checkboxes', 'plugin', 'checkboxes', 'fields', 0, 1, 1, 0, '', '', '', '', 0, '0000-00-00 00:00:00', 0, 0),
+(464, 'plg_fields_color', 'plugin', 'color', 'fields', 0, 1, 1, 0, '', '', '', '', 0, '0000-00-00 00:00:00', 0, 0),
+(465, 'plg_fields_editor', 'plugin', 'editor', 'fields', 0, 1, 1, 0, '', '', '', '', 0, '0000-00-00 00:00:00', 0, 0),
+(466, 'plg_fields_imagelist', 'plugin', 'imagelist', 'fields', 0, 1, 1, 0, '', '', '', '', 0, '0000-00-00 00:00:00', 0, 0),
+(467, 'plg_fields_integer', 'plugin', 'integer', 'fields', 0, 1, 1, 0, '', '', '', '', 0, '0000-00-00 00:00:00', 0, 0),
+(468, 'plg_fields_list', 'plugin', 'list', 'fields', 0, 1, 1, 0, '', '', '', '', 0, '0000-00-00 00:00:00', 0, 0),
+(469, 'plg_fields_media', 'plugin', 'media', 'fields', 0, 1, 1, 0, '', '', '', '', 0, '0000-00-00 00:00:00', 0, 0),
+(470, 'plg_fields_radio', 'plugin', 'radio', 'fields', 0, 1, 1, 0, '', '', '', '', 0, '0000-00-00 00:00:00', 0, 0),
+(471, 'plg_fields_sql', 'plugin', 'sql', 'fields', 0, 1, 1, 0, '', '', '', '', 0, '0000-00-00 00:00:00', 0, 0),
+(472, 'plg_fields_text', 'plugin', 'text', 'fields', 0, 1, 1, 0, '', '', '', '', 0, '0000-00-00 00:00:00', 0, 0),
+(473, 'plg_fields_textarea', 'plugin', 'textarea', 'fields', 0, 1, 1, 0, '', '', '', '', 0, '0000-00-00 00:00:00', 0, 0),
+(474, 'plg_fields_url', 'plugin', 'url', 'fields', 0, 1, 1, 0, '', '', '', '', 0, '0000-00-00 00:00:00', 0, 0),
+(475, 'plg_fields_user', 'plugin', 'user', 'fields', 0, 1, 1, 0, '', '', '', '', 0, '0000-00-00 00:00:00', 0, 0),
+(476, 'plg_fields_usergrouplist', 'plugin', 'usergrouplist', 'fields', 0, 1, 1, 0, '', '', '', '', 0, '0000-00-00 00:00:00', 0, 0);
+
+INSERT INTO `jos_postinstall_messages` (`extension_id`, `title_key`, `description_key`, `action_key`, `language_extension`, `language_client_id`, `type`, `action_file`, `action`, `condition_file`, `condition_method`, `version_introduced`, `enabled`)
+VALUES
+(700, 'COM_CPANEL_MSG_JOOMLA40_PRE_CHECKS_TITLE', 'COM_CPANEL_MSG_JOOMLA40_PRE_CHECKS_BODY', '', 'com_cpanel', 1, 'message', '', '', 'admin://components/com_admin/postinstall/joomla40checks.php', 'admin_postinstall_joomla40checks_condition', '3.7.0', 1);
+
+ALTER TABLE `jos_session` MODIFY `client_id` tinyint(3) unsigned DEFAULT NULL;
+
+INSERT INTO `jos_extensions` (`extension_id`, `name`, `type`, `element`, `folder`, `client_id`, `enabled`, `access`, `protected`, `manifest_cache`, `params`, `custom_data`, `system_data`, `checked_out`, `checked_out_time`, `ordering`, `state`) VALUES
+(460, 'plg_editors-xtd_contact', 'plugin', 'contact', 'editors-xtd', 0, 1, 1, 0, '', '', '', '', 0, '0000-00-00 00:00:00', 0, 0);
+
+ALTER TABLE `jos_extensions` CHANGE `enabled` `enabled` TINYINT(3) NOT NULL DEFAULT '0';
+
+ALTER TABLE `jos_menu_types` ADD COLUMN `client_id` int(11) NOT NULL DEFAULT 0;
+
+UPDATE `jos_menu` SET `published` = 1 WHERE `menutype` = 'main' OR `menutype` = 'menu';
+
+-- Replace language image UNIQUE index for a normal INDEX.
+ALTER TABLE `jos_languages` DROP INDEX `idx_image`;
+
+-- Normalize modules content field with other db systems. Add default value.
+ALTER TABLE `jos_modules` MODIFY `content` text NOT NULL DEFAULT '';
+
+ALTER TABLE `jos_extensions` ADD COLUMN `package_id` int(11) NOT NULL DEFAULT 0 COMMENT 'Parent package ID for extensions installed as a package.' AFTER `extension_id`;
+
+UPDATE `jos_extensions` AS `e1`
+INNER JOIN (SELECT `extension_id` FROM `jos_extensions` WHERE `type` = 'package' AND `element` = 'pkg_en-GB') AS `e2`
+SET `e1`.`package_id` = `e2`.`extension_id`
+WHERE `e1`.`type`= 'language' AND `e1`.`element` = 'en-GB';
+
+-- Normalize ucm_content_table default values.
+ALTER TABLE `jos_ucm_content` MODIFY `core_title` varchar(400) NOT NULL DEFAULT '';
+ALTER TABLE `jos_ucm_content` MODIFY `core_alias` varchar(400) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin  NOT NULL DEFAULT '';
+ALTER TABLE `jos_ucm_content` MODIFY `core_body` mediumtext NOT NULL DEFAULT '';
+ALTER TABLE `jos_ucm_content` MODIFY `core_checked_out_time` varchar(255) NOT NULL DEFAULT '0000-00-00 00:00:00';
+ALTER TABLE `jos_ucm_content` MODIFY `core_params` text NOT NULL DEFAULT '';
+ALTER TABLE `jos_ucm_content` MODIFY `core_metadata` varchar(2048) NOT NULL DEFAULT '' COMMENT 'JSON encoded metadata properties.';
+ALTER TABLE `jos_ucm_content` MODIFY `core_language` char(7) NOT NULL DEFAULT '';
+ALTER TABLE `jos_ucm_content` MODIFY `core_publish_up` datetime NOT NULL DEFAULT '0000-00-00 00:00:00';
+ALTER TABLE `jos_ucm_content` MODIFY `core_publish_down` datetime NOT NULL DEFAULT '0000-00-00 00:00:00';
+ALTER TABLE `jos_ucm_content` MODIFY `core_content_item_id` int(10) unsigned NOT NULL DEFAULT 0 COMMENT 'ID from the individual type table';
+ALTER TABLE `jos_ucm_content` MODIFY `asset_id` int(10) unsigned NOT NULL DEFAULT 0 COMMENT 'FK to the jos_assets table.';
+ALTER TABLE `jos_ucm_content` MODIFY `core_images` text NOT NULL DEFAULT '';
+ALTER TABLE `jos_ucm_content` MODIFY `core_urls` text NOT NULL DEFAULT '';
+ALTER TABLE `jos_ucm_content` MODIFY `core_metakey` text NOT NULL DEFAULT '';
+ALTER TABLE `jos_ucm_content` MODIFY `core_metadesc` text NOT NULL DEFAULT '';
+ALTER TABLE `jos_ucm_content` MODIFY `core_xreference` varchar(50) NOT NULL DEFAULT '' COMMENT 'A reference to enable linkages to external data sets.';
+ALTER TABLE `jos_ucm_content` MODIFY `core_type_id` int(10) unsigned NOT NULL DEFAULT 0;
+
+-- Normalize categories table default values.
+ALTER TABLE `jos_categories` MODIFY `title` varchar(255) NOT NULL DEFAULT '';
+ALTER TABLE `jos_categories` MODIFY `description` mediumtext NOT NULL DEFAULT '';
+ALTER TABLE `jos_categories` MODIFY `params` text NOT NULL DEFAULT '';
+ALTER TABLE `jos_categories` MODIFY `metadesc` varchar(1024) NOT NULL DEFAULT '' COMMENT 'The meta description for the page.';
+ALTER TABLE `jos_categories` MODIFY `metakey` varchar(1024) NOT NULL DEFAULT '' COMMENT 'The meta keywords for the page.';
+ALTER TABLE `jos_categories` MODIFY `metadata` varchar(2048) NOT NULL DEFAULT '' COMMENT 'JSON encoded metadata properties.';
+ALTER TABLE `jos_categories` MODIFY `language` char(7) NOT NULL DEFAULT '';
+
+INSERT INTO `jos_extensions` (`extension_id`, `name`, `type`, `element`, `folder`, `client_id`, `enabled`, `access`, `protected`, `manifest_cache`, `params`, `custom_data`, `system_data`, `checked_out`, `checked_out_time`, `ordering`, `state`) VALUES
+(34, 'com_associations', 'component', 'com_associations', '', 1, 1, 1, 0, '', '', '', '', 0, '0000-00-00 00:00:00', 0, 0);
+
+INSERT INTO `jos_extensions` (`extension_id`, `name`, `type`, `element`, `folder`, `client_id`, `enabled`, `access`, `protected`, `manifest_cache`, `params`, `custom_data`, `system_data`, `checked_out`, `checked_out_time`, `ordering`, `state`) VALUES
+(477, 'plg_content_fields', 'plugin', 'fields', 'content', 0, 1, 1, 0, '', '', '', '', 0, '0000-00-00 00:00:00', 0, 0);
+
+-- Sync menutype for admin menu and set client_id correct
+
+-- Note: This file had to be modified with Joomla 3.7.3 because the
+-- original version made site menus disappear if there were menu types
+-- "main" or "menu" defined for the site.
+
+-- Step 1: If there is any user-defined menu and menu type "main" for the site
+-- (client_id = 0), then change the menu type for the menu, any module and the
+-- menu type to something very likely not being used yet and just within the
+-- max. length of 24 characters.
+UPDATE `jos_menu`
+   SET `menutype` = 'main_is_reserved_133C585'
+ WHERE `client_id` = 0
+   AND `menutype` = 'main'
+   AND (SELECT COUNT(`id`) FROM `jos_menu_types` WHERE `client_id` = 0 AND `menutype` = 'main') > 0;
+
+UPDATE `jos_modules`
+   SET `params` = REPLACE(`params`,'"menutype":"main"','"menutype":"main_is_reserved_133C585"')
+ WHERE `client_id` = 0
+   AND (SELECT COUNT(`id`) FROM `jos_menu_types` WHERE `client_id` = 0 AND `menutype` = 'main') > 0;
+
+UPDATE `jos_menu_types`
+   SET `menutype` = 'main_is_reserved_133C585'
+ WHERE `client_id` = 0
+   AND `menutype` = 'main';
+
+-- Step 2: What remains now are the main menu items, possibly with wrong
+-- client_id if there was nothing hit by step 1 because there was no record in
+-- the menu types table with client_id = 0.
+UPDATE `jos_menu`
+   SET `client_id` = 1
+ WHERE `menutype` = 'main';
+
+-- Step 3: If we have menu items for the admin using menutype = "menu" and
+-- having correct client_id = 1, we can be sure they belong to the admin menu
+-- and so rename the menutype.
+UPDATE `jos_menu`
+   SET `menutype` = 'main'
+ WHERE `client_id` = 1
+   AND `menutype` = 'menu';
+
+-- Step 4: If there is no user-defined menu type "menu" for the site, we can
+-- assume that any menu items for that menu type belong to the admin.
+-- Fix the client_id for those as it was done with the original version of this
+-- schema update script here.
+UPDATE `jos_menu`
+   SET `menutype` = 'main',
+       `client_id` = 1
+ WHERE `menutype` = 'menu'
+   AND (SELECT COUNT(`id`) FROM `jos_menu_types` WHERE `client_id` = 0 AND `menutype` = 'menu') = 0;
+
+-- Step 5: For the standard admin menu items of menutype "main" there is no record
+-- in the menutype table on a clean Joomla installation. If there is one, it is a
+-- mistake and it should be deleted. This is also the case with menu type "menu"
+-- for the admin, for which we changed the menutype of the menu items in step 3.
+DELETE FROM `jos_menu_types`
+ WHERE `client_id` = 1
+   AND `menutype` IN ('main', 'menu');
+
+INSERT INTO `jos_extensions` (`extension_id`, `name`, `type`, `element`, `folder`, `client_id`, `enabled`, `access`, `protected`, `manifest_cache`, `params`, `custom_data`, `system_data`, `checked_out`, `checked_out_time`, `ordering`, `state`) VALUES
+(478, 'plg_editors-xtd_fields', 'plugin', 'fields', 'editors-xtd', 0, 1, 1, 0, '', '', '', '', 0, '0000-00-00 00:00:00', 0, 0);
+
+-- Normalize redirect_links table default values.
+ALTER TABLE `jos_redirect_links` MODIFY `comment` varchar(255) NOT NULL DEFAULT '';
+
+-- Normalize contact_details table default values.
+ALTER TABLE `jos_contact_details` MODIFY `name` varchar(255) NOT NULL;
+ALTER TABLE `jos_contact_details` MODIFY `alias` varchar(400) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NOT NULL;
+ALTER TABLE `jos_contact_details` MODIFY `sortname1` varchar(255) NOT NULL DEFAULT '';
+ALTER TABLE `jos_contact_details` MODIFY `sortname2` varchar(255) NOT NULL DEFAULT '';
+ALTER TABLE `jos_contact_details` MODIFY `sortname3` varchar(255) NOT NULL DEFAULT '';
+ALTER TABLE `jos_contact_details` MODIFY `language` varchar(7) NOT NULL;
+ALTER TABLE `jos_contact_details` MODIFY `xreference` varchar(50) NOT NULL DEFAULT '' COMMENT 'A reference to enable linkages to external data sets.';
+
+ALTER TABLE `jos_languages` ADD `asset_id` INT NOT NULL;
+ALTER TABLE `jos_menu_types` ADD `asset_id` INT NOT NULL;
+ALTER TABLE `jos_languages` MODIFY `asset_id` int(10) unsigned NOT NULL DEFAULT 0;
+ALTER TABLE `jos_menu_types` MODIFY `asset_id` int(10) unsigned NOT NULL DEFAULT 0;
+
+ALTER TABLE  `jos_content` MODIFY `xreference` varchar(50) NOT NULL DEFAULT '';
+ALTER TABLE  `jos_newsfeeds` MODIFY `xreference` varchar(50) NOT NULL DEFAULT '';
+
+ALTER TABLE `jos_finder_links` MODIFY `description` text;
+
+INSERT INTO `jos_postinstall_messages` (`extension_id`, `title_key`, `description_key`, `action_key`, `language_extension`, `language_client_id`, `type`, `action_file`, `action`, `condition_file`, `condition_method`, `version_introduced`, `enabled`)
+VALUES
+(700, 'TPL_HATHOR_MESSAGE_POSTINSTALL_TITLE', 'TPL_HATHOR_MESSAGE_POSTINSTALL_BODY', 'TPL_HATHOR_MESSAGE_POSTINSTALL_ACTION', 'tpl_hathor', 1, 'action', 'admin://templates/hathor/postinstall/hathormessage.php', 'hathormessage_postinstall_action', 'admin://templates/hathor/postinstall/hathormessage.php', 'hathormessage_postinstall_condition', '3.7.0', 1);
+
+UPDATE `jos_categories` SET `published` = 1 WHERE `alias` = 'root';
+UPDATE `jos_categories` AS `c` INNER JOIN (
+	SELECT c2.id, CASE WHEN MIN(p.published) > 0 THEN MAX(p.published) ELSE MIN(p.published) END AS newPublished
+	FROM `jos_categories` AS `c2`
+	INNER JOIN `jos_categories` AS `p` ON p.lft <= c2.lft AND c2.rgt <= p.rgt
+	GROUP BY c2.id) c2
+ON c.id = c2.id
+SET published = c2.newPublished;
+
+UPDATE `jos_menu` SET `published` = 1 WHERE `alias` = 'root';
+UPDATE `jos_menu` AS `c` INNER JOIN (
+	SELECT c2.id, CASE WHEN MIN(p.published) > 0 THEN MAX(p.published) ELSE MIN(p.published) END AS newPublished
+	FROM `jos_menu` AS `c2`
+	INNER JOIN `jos_menu` AS `p` ON p.lft <= c2.lft AND c2.rgt <= p.rgt
+	GROUP BY c2.id) c2
+ON c.id = c2.id
+SET published = c2.newPublished;
+
+ALTER TABLE `jos_menu` MODIFY `checked_out_time` datetime NOT NULL DEFAULT '0000-00-00 00:00:00' COMMENT 'The time the menu item was checked out.';
+
+-- Set integer field default values.
+UPDATE `jos_extensions` SET `params` = '{"multiple":"0","first":"1","last":"100","step":"1"}' WHERE `name` = 'plg_fields_integer';
+
+
+ALTER TABLE `jos_fields_groups` ADD COLUMN `params` TEXT  NOT NULL  AFTER `ordering`;
+
+INSERT INTO `jos_extensions`
+(`extension_id`, `package_id`, `name`, `type`, `element`, `folder`, `client_id`, `enabled`, `access`, `protected`, `manifest_cache`, `params`, `custom_data`, `system_data`, `checked_out`, `checked_out_time`, `ordering`, `state`)
+VALUES
+  (318, 0, 'mod_sampledata', 'module', 'mod_sampledata', '', 1, 0, 1, 0, '', '{}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
+  (479, 0, 'plg_sampledata_blog', 'plugin', 'blog', 'sampledata', 0, 0, 1, 0, '', '', '', '', 0, '0000-00-00 00:00:00', 0, 0);
+
+DELETE FROM `jos_postinstall_messages` WHERE `title_key` = 'COM_CPANEL_MSG_PHPVERSION_TITLE';
+
+--
+-- Add index for alias check jos_content
+--
+
+ALTER TABLE `jos_content` ADD INDEX `idx_alias` (`alias`(191));
+
+ALTER TABLE `jos_user_keys` DROP INDEX `series_2`;
+ALTER TABLE `jos_user_keys` DROP INDEX `series_3`;
+
+INSERT INTO `jos_extensions` (`extension_id`, `package_id`, `name`, `type`, `element`, `folder`, `client_id`, `enabled`, `access`, `protected`, `manifest_cache`, `params`, `custom_data`, `system_data`, `checked_out`, `checked_out_time`, `ordering`, `state`) VALUES
+(480, 0, 'plg_system_sessiongc', 'plugin', 'sessiongc', 'system', 0, 1, 1, 0, '', '', '', '', 0, '0000-00-00 00:00:00', 0, 0);
+
+INSERT INTO `jos_postinstall_messages` (`extension_id`, `title_key`, `description_key`, `action_key`, `language_extension`, `language_client_id`, `type`, `action_file`, `action`, `condition_file`, `condition_method`, `version_introduced`, `enabled`)
+VALUES
+(700, 'PLG_PLG_RECAPTCHA_VERSION_1_POSTINSTALL_TITLE', 'PLG_PLG_RECAPTCHA_VERSION_1_POSTINSTALL_BODY', 'PLG_PLG_RECAPTCHA_VERSION_1_POSTINSTALL_ACTION', 'plg_captcha_recaptcha', 1, 'action', 'site://plugins/captcha/recaptcha/postinstall/actions.php', 'recaptcha_postinstall_action', 'site://plugins/captcha/recaptcha/postinstall/actions.php', 'recaptcha_postinstall_condition', '3.8.6', 1);
+
+INSERT INTO `jos_postinstall_messages` (`extension_id`, `title_key`, `description_key`, `action_key`, `language_extension`, `language_client_id`, `type`, `action_file`, `action`, `condition_file`, `condition_method`, `version_introduced`, `enabled`)
+VALUES
+(700, 'COM_CPANEL_MSG_UPDATEDEFAULTSETTINGS_TITLE', 'COM_CPANEL_MSG_UPDATEDEFAULTSETTINGS_BODY', '', 'com_cpanel', 1, 'message', '', '', 'admin://components/com_admin/postinstall/updatedefaultsettings.php', 'admin_postinstall_updatedefaultsettings_condition', '3.8.8', 1);
+
+-- Enable Sample Data Module.
+UPDATE `jos_extensions` SET `enabled` = '1' WHERE `name` = 'mod_sampledata';
+
+
+INSERT INTO `jos_extensions` (`extension_id`, `package_id`, `name`, `type`, `element`, `folder`, `client_id`, `enabled`, `access`, `protected`, `manifest_cache`, `params`, `custom_data`, `system_data`, `checked_out`, `checked_out_time`, `ordering`, `state`) VALUES
+(35, 0, 'com_privacy', 'component', 'com_privacy', '', 1, 1, 1, 1, '', '', '', '', 0, '0000-00-00 00:00:00', 0, 0);
+
+CREATE TABLE IF NOT EXISTS `jos_privacy_requests` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `email` varchar(100) NOT NULL DEFAULT '',
+  `requested_at` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `status` tinyint(4) NOT NULL DEFAULT '0',
+  `request_type` varchar(25) NOT NULL DEFAULT '',
+  `confirm_token` varchar(100) NOT NULL DEFAULT '',
+  `confirm_token_created_at` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `checked_out` int(11) NOT NULL DEFAULT '0',
+  `checked_out_time` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  PRIMARY KEY (`id`),
+  KEY `idx_checkout` (`checked_out`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 DEFAULT COLLATE=utf8mb4_unicode_ci;
+
+INSERT INTO `jos_extensions` (`extension_id`, `package_id`, `name`, `type`, `element`, `folder`, `client_id`, `enabled`, `access`, `protected`, `manifest_cache`, `params`, `custom_data`, `system_data`, `checked_out`, `checked_out_time`, `ordering`, `state`) VALUES
+(482, 0, 'plg_content_confirmconsent', 'plugin', 'confirmconsent', 'content', 0, 0, 1, 0, '', '{}', '', '', 0, '0000-00-00 00:00:00', 0, 0);
+
+INSERT INTO `jos_extensions` (`extension_id`, `package_id`, `name`, `type`, `element`, `folder`, `client_id`, `enabled`, `access`, `protected`, `manifest_cache`, `params`, `custom_data`, `system_data`, `checked_out`, `checked_out_time`, `ordering`, `state`) VALUES
+(36, 0, 'com_actionlogs', 'component', 'com_actionlogs', '', 1, 1, 1, 1, '', '{"ip_logging":0,"csv_delimiter":",","loggable_extensions":["com_banners","com_cache","com_categories","com_config","com_contact","com_content","com_installer","com_media","com_menus","com_messages","com_modules","com_newsfeeds","com_plugins","com_redirect","com_tags","com_templates","com_users"]}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
+(483, 0, 'plg_system_actionlogs', 'plugin', 'actionlogs', 'system', 0, 0, 1, 0, '', '{}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
+(484, 0, 'plg_actionlog_joomla', 'plugin', 'joomla', 'actionlog', 0, 1, 1, 0, '', '{}', '', '', 0, '0000-00-00 00:00:00', 0, 0);
+
+
+--
+-- Table structure for table `jos_action_logs`
+--
+
+CREATE TABLE IF NOT EXISTS `jos_action_logs` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `message_language_key` varchar(255) NOT NULL DEFAULT '',
+  `message` text NOT NULL,
+  `log_date` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `extension` varchar(50) NOT NULL DEFAULT '',
+  `user_id` int(11) NOT NULL DEFAULT 0,
+  `item_id` int(11) NOT NULL DEFAULT 0,
+  `ip_address` VARCHAR(40) NOT NULL DEFAULT '0.0.0.0',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 DEFAULT COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Table structure for table `jos_action_logs_extensions`
+--
+
+CREATE TABLE IF NOT EXISTS `jos_action_logs_extensions` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `extension` varchar(255) NOT NULL DEFAULT '',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 DEFAULT COLLATE=utf8mb4_unicode_ci;
+
+INSERT INTO `jos_action_logs_extensions` (`id`, `extension`) VALUES
+(1, 'com_banners'),
+(2, 'com_cache'),
+(3, 'com_categories'),
+(4, 'com_config'),
+(5, 'com_contact'),
+(6, 'com_content'),
+(7, 'com_installer'),
+(8, 'com_media'),
+(9, 'com_menus'),
+(10, 'com_messages'),
+(11, 'com_modules'),
+(12, 'com_newsfeeds'),
+(13, 'com_plugins'),
+(14, 'com_redirect'),
+(15, 'com_tags'),
+(16, 'com_templates'),
+(17, 'com_users');
+
+--
+-- Table structure for table `jos_action_log_config`
+--
+
+CREATE TABLE IF NOT EXISTS `jos_action_log_config` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `type_title` varchar(255) NOT NULL DEFAULT '',
+  `type_alias` varchar(255) NOT NULL DEFAULT '',
+  `id_holder` varchar(255),
+  `title_holder` varchar(255),
+  `table_name` varchar(255),
+  `text_prefix` varchar(255),
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 DEFAULT COLLATE=utf8mb4_unicode_ci;
+
+INSERT INTO `jos_action_log_config` (`id`, `type_title`, `type_alias`, `id_holder`, `title_holder`, `table_name`, `text_prefix`) VALUES
+(1, 'article', 'com_content.article', 'id' ,'title' , 'jos_content', 'PLG_ACTIONLOG_JOOMLA'),
+(2, 'article', 'com_content.form', 'id', 'title' , 'jos_content', 'PLG_ACTIONLOG_JOOMLA'),
+(3, 'banner', 'com_banners.banner', 'id' ,'name' , 'jos_banners', 'PLG_ACTIONLOG_JOOMLA'),
+(4, 'user_note', 'com_users.note', 'id', 'subject' ,'jos_user_notes', 'PLG_ACTIONLOG_JOOMLA'),
+(5, 'media', 'com_media.file', '' , 'name' , '',  'PLG_ACTIONLOG_JOOMLA'),
+(6, 'category', 'com_categories.category', 'id' , 'title' , 'jos_categories', 'PLG_ACTIONLOG_JOOMLA'),
+(7, 'menu', 'com_menus.menu', 'id' ,'title' , 'jos_menu_types', 'PLG_ACTIONLOG_JOOMLA'),
+(8, 'menu_item', 'com_menus.item', 'id' , 'title' , 'jos_menu', 'PLG_ACTIONLOG_JOOMLA'),
+(9, 'newsfeed', 'com_newsfeeds.newsfeed', 'id' ,'name' , 'jos_newsfeeds', 'PLG_ACTIONLOG_JOOMLA'),
+(10, 'link', 'com_redirect.link', 'id', 'old_url' , 'jos_redirect_links', 'PLG_ACTIONLOG_JOOMLA'),
+(11, 'tag', 'com_tags.tag', 'id', 'title' , 'jos_tags', 'PLG_ACTIONLOG_JOOMLA'),
+(12, 'style', 'com_templates.style', 'id' , 'title' , 'jos_template_styles', 'PLG_ACTIONLOG_JOOMLA'),
+(13, 'plugin', 'com_plugins.plugin', 'extension_id' , 'name' , 'jos_extensions', 'PLG_ACTIONLOG_JOOMLA'),
+(14, 'component_config', 'com_config.component', 'extension_id' , 'name', '', 'PLG_ACTIONLOG_JOOMLA'),
+(15, 'contact', 'com_contact.contact', 'id', 'name', 'jos_contact_details', 'PLG_ACTIONLOG_JOOMLA'),
+(16, 'module', 'com_modules.module', 'id' ,'title', 'jos_modules', 'PLG_ACTIONLOG_JOOMLA'),
+(17, 'access_level', 'com_users.level', 'id' , 'title', 'jos_viewlevels', 'PLG_ACTIONLOG_JOOMLA'),
+(18, 'banner_client', 'com_banners.client', 'id', 'name', 'jos_banner_clients', 'PLG_ACTIONLOG_JOOMLA');
+
+INSERT INTO `jos_extensions` (`extension_id`, `package_id`, `name`, `type`, `element`, `folder`, `client_id`, `enabled`, `access`, `protected`, `manifest_cache`, `params`, `custom_data`, `system_data`, `checked_out`, `checked_out_time`, `ordering`, `state`) VALUES
+(481, 0, 'plg_fields_repeatable', 'plugin', 'repeatable', 'fields', 0, 1, 1, 0, '', '', '', '', 0, '0000-00-00 00:00:00', 0, 0);
+
+INSERT INTO `jos_extensions` (`extension_id`, `package_id`, `name`, `type`, `element`, `folder`, `client_id`, `enabled`, `access`, `protected`, `manifest_cache`, `params`, `custom_data`, `system_data`, `checked_out`, `checked_out_time`, `ordering`, `state`) VALUES
+(319, 0, 'mod_latestactions', 'module', 'mod_latestactions', '', 1, 1, 1, 0, '', '{}', '', '', 0, '1970-01-01 00:00:00', 0, 0);
+
+INSERT INTO `jos_extensions` (`extension_id`, `package_id`, `name`, `type`, `element`, `folder`, `client_id`, `enabled`, `access`, `protected`, `manifest_cache`, `params`, `custom_data`, `system_data`, `checked_out`, `checked_out_time`, `ordering`, `state`) VALUES
+(485, 0, 'plg_system_privacyconsent', 'plugin', 'privacyconsent', 'system', 0, 0, 1, 0, '', '{}', '', '', 0, '0000-00-00 00:00:00', 0, 0);
+
+CREATE TABLE IF NOT EXISTS `jos_privacy_consents` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `user_id` int(10) unsigned NOT NULL DEFAULT '0',
+  `created` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `subject` varchar(255) NOT NULL DEFAULT '',
+  `body` text NOT NULL,
+  `remind` tinyint(4) NOT NULL DEFAULT '0',
+  `token` varchar(100) NOT NULL DEFAULT '',
+  PRIMARY KEY (`id`),
+  KEY `idx_user_id` (`user_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 DEFAULT COLLATE=utf8mb4_unicode_ci;
+
+INSERT INTO `jos_extensions` (`extension_id`, `package_id`, `name`, `type`, `element`, `folder`, `client_id`, `enabled`, `access`, `protected`, `manifest_cache`, `params`, `custom_data`, `system_data`, `checked_out`, `checked_out_time`, `ordering`, `state`) VALUES
+(486, 0, 'plg_system_logrotation', 'plugin', 'logrotation', 'system', 0, 1, 1, 0, '', '{}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
+(487, 0, 'plg_privacy_user', 'plugin', 'user', 'privacy', 0, 1, 1, 0, '', '{}', '', '', 0, '0000-00-00 00:00:00', 0, 0);
+
+INSERT INTO `jos_extensions` (`extension_id`, `package_id`, `name`, `type`, `element`, `folder`, `client_id`, `enabled`, `access`, `protected`, `manifest_cache`, `params`, `custom_data`, `system_data`, `checked_out`, `checked_out_time`, `ordering`, `state`) VALUES
+(320, 0, 'mod_privacy_dashboard', 'module', 'mod_privacy_dashboard', '', 1, 1, 1, 0, '', '{}', '', '', 0, '1970-01-01 00:00:00', 0, 0);
+
+ALTER TABLE `jos_content` ADD COLUMN `note` VARCHAR(255) NOT NULL DEFAULT '';
+
+UPDATE `jos_content_types` SET `field_mappings` =
+'{"common":{"core_content_item_id":"id","core_title":"title","core_state":"state","core_alias":"alias","core_created_time":"created","core_modified_time":"modified","core_body":"introtext", "core_hits":"hits","core_publish_up":"publish_up","core_publish_down":"publish_down","core_access":"access", "core_params":"attribs", "core_featured":"featured", "core_metadata":"metadata", "core_language":"language", "core_images":"images", "core_urls":"urls", "core_version":"version", "core_ordering":"ordering", "core_metakey":"metakey", "core_metadesc":"metadesc", "core_catid":"catid", "core_xreference":"xreference", "asset_id":"asset_id", "note":"note"}, "special":{"fulltext":"fulltext"}}' WHERE `type_title` = 'Article';
+
+INSERT INTO `jos_extensions` (`extension_id`, `package_id`, `name`, `type`, `element`, `folder`, `client_id`, `enabled`, `access`, `protected`, `manifest_cache`, `params`, `custom_data`, `system_data`, `checked_out`, `checked_out_time`, `ordering`, `state`) VALUES
+(488, 0, 'plg_quickicon_privacycheck', 'plugin', 'privacycheck', 'quickicon', 0, 1, 1, 0, '', '{}', '', '', 0, '0000-00-00 00:00:00', 0, 0);
+
+INSERT INTO `jos_postinstall_messages` (`extension_id`, `title_key`, `description_key`, `action_key`, `language_extension`, `language_client_id`, `type`, `action_file`, `action`, `condition_file`, `condition_method`, `version_introduced`, `enabled`) VALUES
+(700, 'COM_ACTIONLOGS_POSTINSTALL_TITLE', 'COM_ACTIONLOGS_POSTINSTALL_BODY', '', 'com_actionlogs', 1, 'message', '', '', '', '', '3.9.0', 1),
+(700, 'COM_PRIVACY_POSTINSTALL_TITLE', 'COM_PRIVACY_POSTINSTALL_BODY', '', 'com_privacy', 1, 'message', '', '', '', '', '3.9.0', 1);
+
+INSERT INTO `jos_extensions` (`extension_id`, `package_id`, `name`, `type`, `element`, `folder`, `client_id`, `enabled`, `access`, `protected`, `manifest_cache`, `params`, `custom_data`, `system_data`, `checked_out`, `checked_out_time`, `ordering`, `state`) VALUES
+(489, 0, 'plg_user_terms', 'plugin', 'terms', 'user', 0, 0, 1, 0, '', '{}', '', '', 0, '0000-00-00 00:00:00', 0, 0);
+
+INSERT INTO `jos_extensions` (`extension_id`, `package_id`, `name`, `type`, `element`, `folder`, `client_id`, `enabled`, `access`, `protected`, `manifest_cache`, `params`, `custom_data`, `system_data`, `checked_out`, `checked_out_time`, `ordering`, `state`) VALUES
+(490, 0, 'plg_privacy_contact', 'plugin', 'contact', 'privacy', 0, 1, 1, 0, '', '{}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
+(491, 0, 'plg_privacy_content', 'plugin', 'content', 'privacy', 0, 1, 1, 0, '', '{}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
+(492, 0, 'plg_privacy_message', 'plugin', 'message', 'privacy', 0, 1, 1, 0, '', '{}', '', '', 0, '0000-00-00 00:00:00', 0, 0);
+
+INSERT INTO `jos_action_log_config` (`id`, `type_title`, `type_alias`, `id_holder`, `title_holder`, `table_name`, `text_prefix`)
+	VALUES (19, 'application_config', 'com_config.application', '', 'name', '', 'PLG_ACTIONLOG_JOOMLA');
+
+INSERT INTO `jos_extensions` (`extension_id`, `package_id`, `name`, `type`, `element`, `folder`, `client_id`, `enabled`, `access`, `protected`, `manifest_cache`, `params`, `custom_data`, `system_data`, `checked_out`, `checked_out_time`, `ordering`, `state`) VALUES
+(493, 0, 'plg_privacy_actionlogs', 'plugin', 'actionlogs', 'privacy', 0, 1, 1, 0, '', '{}', '', '', 0, '0000-00-00 00:00:00', 0, 0);
+
+ALTER TABLE `jos_session` MODIFY `session_id` varbinary(192) NOT NULL;
+ALTER TABLE `jos_session` MODIFY `guest` tinyint(3) unsigned DEFAULT 1;
+ALTER TABLE `jos_session` MODIFY `time` int(11) NOT NULL DEFAULT 0;
+
+INSERT INTO `jos_extensions` (`extension_id`, `package_id`, `name`, `type`, `element`, `folder`, `client_id`, `enabled`, `access`, `protected`, `manifest_cache`, `params`, `custom_data`, `system_data`, `checked_out`, `checked_out_time`, `ordering`, `state`) VALUES
+(494, 0, 'plg_captcha_recaptcha_invisible', 'plugin', 'recaptcha_invisible', 'captcha', 0, 0, 1, 0, '', '{"public_key":"","private_key":"","theme":"clean"}', '', '', 0, '0000-00-00 00:00:00', 0, 0);
+
+ALTER TABLE `jos_privacy_consents` ADD COLUMN `state` INT(10) NOT NULL DEFAULT '1' AFTER `user_id`;
+
+CREATE TABLE IF NOT EXISTS `jos_action_logs_users` (
+  `user_id` int(11) UNSIGNED NOT NULL,
+  `notify` tinyint(1) UNSIGNED NOT NULL,
+  `extensions` text NOT NULL,
+  PRIMARY KEY (`user_id`),
+  KEY `idx_notify` (`notify`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 DEFAULT COLLATE=utf8mb4_unicode_ci;
+
+ALTER TABLE `jos_action_logs` ADD INDEX `idx_user_id` (`user_id`);
+ALTER TABLE `jos_action_logs` ADD INDEX `idx_user_id_logdate` (`user_id`, `log_date`);
+ALTER TABLE `jos_action_logs` ADD INDEX `idx_user_id_extension` (`user_id`, `extension`);
+ALTER TABLE `jos_action_logs` ADD INDEX `idx_extension_item_id` (`extension`, `item_id`);
+
+INSERT INTO `jos_extensions` (`extension_id`, `package_id`, `name`, `type`, `element`, `folder`, `client_id`, `enabled`, `access`, `protected`, `manifest_cache`, `params`, `custom_data`, `system_data`, `checked_out`, `checked_out_time`, `ordering`, `state`) VALUES
+(495, 0, 'plg_privacy_consents', 'plugin', 'consents', 'privacy', 0, 1, 1, 0, '', '{}', '', '', 0, '0000-00-00 00:00:00', 0, 0);
+
+ALTER TABLE `jos_privacy_requests` DROP INDEX `idx_checkout`;
+ALTER TABLE `jos_privacy_requests` DROP COLUMN `checked_out`;
+ALTER TABLE `jos_privacy_requests` DROP COLUMN `checked_out_time`;
+
+UPDATE `jos_extensions` 
+SET `params` = REPLACE(`params`, '"com_categories",', '"com_categories","com_checkin",')
+WHERE `name` = 'com_actionlogs';
+
+INSERT INTO `jos_action_logs_extensions` (`extension`) VALUES
+('com_checkin');
+
+INSERT INTO `jos_postinstall_messages` (`extension_id`, `title_key`, `description_key`, `action_key`, `language_extension`, `language_client_id`, `type`, `action_file`, `action`, `condition_file`, `condition_method`, `version_introduced`, `enabled`)
+VALUES
+(700, 'COM_CPANEL_MSG_ADDNOSNIFF_TITLE', 'COM_CPANEL_MSG_ADDNOSNIFF_BODY', '', 'com_cpanel', 1, 'message', '', '', 'admin://components/com_admin/postinstall/addnosniff.php', 'admin_postinstall_addnosniff_condition', '3.9.3', 1);
+
+UPDATE `jos_menu` SET `link` = 'index.php?option=com_webportal' WHERE `jos_menu`.`link` = 'index.php?option=com_softverkwebportal';

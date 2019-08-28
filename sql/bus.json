@@ -1,0 +1,282 @@
+[
+  {
+    "id": "211",
+    "latitude": "64.055659",
+    "longitude": "-21.979984",
+    "type": "BUSSTAND",
+    "name": "H\u00e1holt
+    \
+    /
+    Akurholt
+    ","
+    distance
+    ":"
+    1.0121646556939627
+    "},{"
+    id
+    ":"
+    212
+    ","
+    latitude
+    ":"
+    64.05701
+    ","
+    longitude
+    ":"
+    -21.982707
+    ",
+    "type": "BUSSTAND",
+    "name": "H\u00e1holt \/ B\u00e6jarholt",
+    "distance": "1.1580244980576946"
+  },
+  {
+    "id": "234",
+    "latitude": "64.050653",
+    "longitude": "-21.982217",
+    "type": "BUSSTAND",
+    "name": "Kirkjuvellir",
+    "distance": "0
+    .
+    4507770478733611
+    "},{"
+    id
+    ":"
+    235
+    ","
+    latitude
+    ":"
+    64.048205
+    ","
+    longitude
+    ":"
+    -21.980835
+    ","
+    type
+    ":"
+    BUSSTAND
+    ","
+    name
+    ": "Daggarvellir",
+    "distance": "0.18752266403587536"
+  },
+  {
+    "id": "236",
+    "latitude": "64.0456",
+    "longitude": "-21.979188",
+    "type": "BUSSTAND",
+    "name": "Hraunvallask\u00f3li",
+    "distance": "0.17700576197336054"
+  },
+  {
+    "id": "237",
+    "latitude": "64.053245",
+    "longitude": "-21.971125",
+    "type": "BUSSTAND",
+    "name": "Haukah\u00fas",
+    "distance": "0.909333345520926"
+  },
+  {
+    "id": "238",
+    "latitude": "64.054096",
+    "longitude": "-21.965867",
+    "type": "BUSSTAND",
+    "name": "\u00c1stj\u00f6rn",
+    "distance": "1.1455656396017286"
+  },
+  {
+    "id": "244",
+    "latitude": "64.053334",
+    "longitude": "-21.971691",
+    "type": "BUSSTAND",
+    "name": "Haukah\u00fas",
+    "distance": "0.9017612174723229"
+  },
+  {
+    "id": "245",
+    "latitude": "64.045546",
+    "longitude": "-21.979055",
+    "type": "BUSSTAND",
+    "name": "Hraunvallask\u00f3li",
+    "distance": "0.18581471752969103"
+  },
+  {
+    "id": "246",
+    "latitude": "64.048361",
+    "longitude": "-21.980808",
+    "type": "BUSSTAND",
+    "name": "Daggarvellir",
+    "distance": "0.2044753375933981"
+  },
+  {
+    "id": "247",
+    "latitude": "64.050623",
+    "longitude": "-21.981941",
+    "type": "BUSSTAND",
+    "name": "Kirkjuvellir",
+    "distance": "0.44735287375504024"
+  },
+  {
+    "id": "255",
+    "latitude": "64.056916",
+    "longitude": "-21.982859",
+    "type": "BUSSTAND",
+    "name": "H\u00e1holt \/ B\u00e6jarholt",
+    "distance": "1.1478164376970383"
+  },
+  {
+    "id": "256",
+    "latitude": "64.055568",
+    "longitude": "-21.979975",
+    "type": "BUSSTAND",
+    "name": "H\u00e1holt
+    \
+    /
+    Akurholt
+    ","
+    distance
+    ":"
+    1.002138242966606
+    "},{"
+    id
+    ":"
+    261
+    ","
+    latitude
+    ":"
+    64.043228
+    ","
+    longitude
+    ":"
+    -21.96752
+    ",
+    "type": "BUSSTAND",
+    "name": "Hno\u00f0ravellir",
+    "distance": "0.7990039618232218"
+  },
+  {
+    "id": "262",
+    "latitude": "64.042419",
+    "longitude": "-21.975854",
+    "type": "BUSSTAND",
+    "name": "Glitvellir",
+    "distance": "0.5532879827359537"
+  },
+  {
+    "id": "263",
+    "latitude": "64.043017",
+    "longitude": "-21.97781",
+    "type": "BUSSTAND",
+    "name": "Hvannavellir",
+    "distance": "0.4479620495660289"
+  },
+  {
+    "id": "270",
+    "latitude": "64.043003",
+    "longitude": "-21.977966",
+    "type": "BUSSTAND",
+    "name": "Hvannavellir",
+    "distance": "0.44593834955261785"
+  },
+  {
+    "id": "271",
+    "latitude": "64.04234",
+    "longitude": "-21.97579",
+    "type": "BUSSTAND",
+    "name": "Glitvellir",
+    "distance": "0.5623622173139927"
+  },
+  {
+    "id": "272",
+    "latitude": "64.043163",
+    "longitude": "-21.967206",
+    "type": "BUSSTAND",
+    "name": "Hno\u00f0ravellir",
+    "distance": "0.8158909574872815"
+  },
+  {
+    "id": "277",
+    "latitude": "64.043669",
+    "longitude": "-21.96265",
+    "type": "BUSSTAND",
+    "name": "Klukkuvellir",
+    "distance": "0.9973166561978732"
+  },
+  {
+    "id": "278",
+    "latitude": "64.049266",
+    "longitude": "-21
+    .
+    983866
+    ","
+    type
+    ":"
+    BUSSTAND
+    ","
+    name
+    ":"
+    Akurvellir
+    ","
+    distance
+    ":"
+    0.3097848311727598
+    "},{"
+    id
+    ":"
+    279
+    ","
+    latitude
+    ": "64.049251",
+    "longitude": "-21.983721",
+    "type": "BUSSTAND",
+    "name": "Akurvellir",
+    "distance": "0.3062047050883612"
+  },
+  {
+    "id": "877",
+    "latitude": "64.052772",
+    "longitude": "-21.975205",
+    "type": "BUSSTAND",
+    "name": "\u00c1svallalaug",
+    "distance": "0.7621664108551449"
+  },
+  {
+    "id": "878",
+    "latitude": "64.051566",
+    "longitude": "-21.980117",
+    "type": "BUSSTAND",
+    "name": "Kirkjutorg",
+    "distance": "0.5598880329941582"
+  },
+  {
+    "id": "879",
+    "latitude": "64.051593",
+    "longitude": "-21.979669",
+    "type": "BUSSTAND",
+    "name": "Kirkjutorg",
+    "distance": "0.5668398152937455"
+  },
+  {
+    "id": "880",
+    "latitude": "64.052674",
+    "longitude": "-21.975174",
+    "type": "BUSSTAND",
+    "name": "\u00c1svallalaug",
+    "distance": "0.7530351020675303"
+  },
+  {
+    "id": "921",
+    "latitude": "64.052053",
+    "longitude": "-21.9748",
+    "type": "BUSSTAND",
+    "name": "\u00c1svallalaug",
+    "distance": "0.7007205279729753"
+  },
+  {
+    "id": "923",
+    "latitude": "64.056576",
+    "longitude": "-21.977561",
+    "type": "BUSSTAND",
+    "name": "Su\u00f0urbraut \/ Hvaleyrarbraut",
+    "distance": "1.1302782693169473"
+  }
+]

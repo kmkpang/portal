@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+
+<extension version="2.5" type="template" client="site" method="upgrade">
+	
+	<name>Generic For Duplicate</name>
+	<version>3.6.4</version>
+	<creationDate>2016-26-01</creationDate>
+	<author>Paisit Luprasongk, Jonathan Ablanida</author>
+	<authorEmail>paisit@softverk.is</authorEmail>
+	<authorUrl>http://www.softverk.is</authorUrl>
+	<copyright>Copyright © 2016 Softverk Ltd, All rights reserved.</copyright>
+	<description>
+		<![CDATA[ 
+			<h1>Generic Web Portal Template <small>Ver.3.6.4</small></h1>
+			<p>Created by <a href="http://www.softverk.is" target="_blank">Paisit Luprasongk, Jonathan Ablanida | Softverk Ltd</a>.</p>
+			<hr />
+			<div style="padding-right:1em;width:48%;float:left;">
+			<img src="../templates/generic/template_preview.png" />
+			</div>
+			<div style="padding:0em;width:50%;float:left;">
+
+			</div>
+		]]>
+	</description>
+
+	<files>
+		<folder>css</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<folder>fonts</folder>
+		<folder>layout</folder>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+		<filename>index.php</filename>
+		<filename>offline.php</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>favicon.ico</filename>
+		<filename>templateDetails.xml</filename>
+	</files>
+
+	<positions>
+		<position>carousel</position>
+		<position>contact-header</position>
+		<position>contact-content</position>
+		<position>slider</position>
+		<position>top-1</position>
+		<position>top-2</position>
+		<position>top-menu</position>
+		<position>top-phone</position>
+		<position>map</position>
+		<position>address</position>
+		<position>contact</position>
+		<position>contact-form</position>
+		<position>debug</position>
+		<position>logo-banner</position>
+		<position>breadcrumb-row</position>
+		<position>social-footer</position>
+		<position>social-frame</position>
+		<position>bottom-1</position>
+		<position>footer</position>
+		<position>login</position>
+	</positions>
+
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.tpl_generic_override.ini</language>
+	</languages>
+
+	<config>
+		<fields name="params">
+			<fieldset name="general">
+				<field name="countryCode" class="" type="list"
+					   label="Country"
+					   default="is"
+					   description="Select for country" >
+					<option value="is">Iceland</option>
+					<option value="th">Thailand</option>
+					<option value="ph">Philippine</option>
+				</field>
+
+				<field name="sitetitle"  type="text" default=""
+					   label="Site name"
+					   description="JFIELD_ALT_PAGE_TITLE_LABEL"
+					   filter="string" />
+
+				<field name="sitealt"  type="text" default=""
+					   label="Alt"
+					   description="JFIELD_ALT_PAGE_TITLE_LABEL"
+					   filter="string" />
+
+				<field name="sitedescription"  type="textarea" default=""
+					   label="JGLOBAL_DESCRIPTION"
+					   description="JGLOBAL_SUBHEADING_DESC"
+					   filter="string" />
+
+				<field name="logoFile" class="" type="media" default="images/logo.png"
+					   label="Logo"
+					   description="Upload a custom logo for the site template." />
+
+				<field name="logoPrint" class="" type="media" default="images/print_logo.png"
+					   label="Print logo"
+					   description="Upload a custom print logo for the site template." />
+
+				<field name="office_id" type="sql" default="0" label="Select Office"
+					   query="SELECT id, office_name FROM #__portal_offices  where show_on_web = 1 order by id"
+					   key_field="id"
+					   value_field="office_name"
+					   required="false"/>
+
+				<field name="languageEnable" type="radio" default="true"
+					   label="Language enable"
+					   description="Enable change language on menu bar"
+					   class="btn-group btn-group-yesno" >
+					<option value="true">on</option>
+					<option value="false">off</option>
+				</field>
+
+				<field name="useOfficeEmailInsteadOfAgents" type="radio" default="false"
+					   label="Use office email"
+					   description="Replace agent email with default office email"
+					   class="btn-group btn-group-yesno" >
+					<option value="true">on</option>
+					<option value="false">off</option>
+				</field>
+
+				<field name="googleAnalytic"  type="text" default=""
+					   label="Google Analytic Code"
+					   description="UA-xxxxxxxx-xx"
+					   filter="string" />
+			</fieldset>
+			<fieldset name="template">
+
+				<field name="templateStyle" class="" type="list"
+					   label="Style"
+					   default="t1"
+					   description="Select for country" >
+					<option value="t1">Light</option>
+					<option value="t2">Dark</option>
+				</field>
+
+				<field name="footerStyle" type="radio" default="true"
+					   label="Footer Style"
+					   description="Light or Dark"
+					   class="btn-group btn-group-yesno" >
+					<option value="light">Light</option>
+					<option value="dark">Dark</option>
+				</field>
+
+				<field name="$template-path" class="" type="text" default="&#34;../../templates/generic/&#34;"
+					   label="Relative path to template"
+					   description="Relative path to template,used in scss compilation" />
+
+				<field name="$generic-primary-color-dark" class="" type="color" default="#293642"
+					   label="Primary color dark"
+					   description="Dark color to use for hover, heading and more." />
+
+				<field name="$generic-primary-color-medium" class="" type="color" default="#415569"
+					   label="Primary color medium"
+					   description="The main color of corporate" />
+
+				<field name="$generic-primary-color-light" class="" type="color" default="#81A7CF"
+					   label="Primary color light"
+					   description="Light color to use for decorate background" />
+
+				<field name="$generic-secondary-color-dark" class="" type="color" default=""
+					   label="Secondary color dark"
+					   description="Secondary color dark (Optional)" />
+
+				<field name="$generic-secondary-color-medium" class="" type="color" default=""
+					   label="Secondary color medium"
+					   description="Secondary color medium (Optional)" />
+
+				<field name="$generic-secondary-color-light" class="" type="color" default=""
+					   label="Secondary color light"
+					   description="Secondary color light (Optional)" />
+
+				<field name="$border-radius" class="" type="text" default="3px"
+					   label="General border radius"
+					   description="Border radius of elements" />
+
+				<field name="$border-radius-button" class="" type="text" default="3px"
+					   label="Button border radius"
+					   description="Border radius of button" />
+
+				<field name="$search-opacity" class="" type="number" default="0.9"
+					   label="Search block opacity"
+					   description="0-1" />
+
+			</fieldset>
+			<fieldset name="layout">
+
+				<field name="headerLogo" type="radio" default="left"
+					   label="Logo Position"
+					   description="Logo Position left or center"
+					   class="btn-group btn-group-yesno" >
+					<option value="left">Left</option>
+					<option value="center">Center</option>
+				</field>
+
+				<field name="logoMargin" class="" type="text" default="0"
+					   label="Logo Margin"
+					   description="Fixed logo margin to center" />
+
+				<field name="searchFrontPage" type="radio" default="half"
+					   label="Search front page"
+					   description="Width of search block in front page, half or full"
+					   class="btn-group btn-group-yesno" >
+					<option value="full">Full width</option>
+					<option value="half">Half width</option>
+					<option value="commercial">Commercial</option>
+				</field>
+
+				<field name="searchMargin" class="" type="text" default="14em"
+					   label="Search front page Margin"
+					   description="Fixed search margin" />
+
+
+				<field name="showAdvanceSearch" type="radio" default="true"
+					   label="Advance Search"
+					   description="Enable Advance Search"
+					   class="btn-group btn-group-yesno" >
+					<option value="true">on</option>
+					<option value="false">off</option>
+				</field>
+
+				<field name="showTransport" type="radio" default="true"
+					   label="Public Transportation"
+					   description="Enable Public Transportation"
+					   class="btn-group btn-group-yesno" >
+					<option value="true">on</option>
+					<option value="false">off</option>
+				</field>
+
+				<field name="mapFrontPage" type="radio" default="true"
+					   label="Map front page"
+					   description="Enable map ads feature"
+					   class="btn-group btn-group-yesno" >
+					<option value="true">on</option>
+					<option value="false">off</option>
+				</field>
+
+				<field name="agentBlock" type="radio" default="a1"
+					   label="Agent block style"
+					   description="Alignment of information in agent block"
+					   class="btn-group btn-group-yesno" >
+					<option value="a1">In-line</option>
+					<option value="a2">Center</option>
+				</field>
+
+				<field name="agentBlockWidth" class="" type="text" default="350px"
+					   label="Agent block width"
+					   description="Fixed width of agent block" />
+
+				<field name="agentBlockHeight" class="" type="text" default="155px"
+					   label="Agent block height"
+					   description="Fixed height of agent block" />
+
+				<field name="agentBlockColumns" class="" type="number" default="3"
+					   label="Agent block columns"
+					   description="Columns of agent block in office and agents page" />
+
+				<field name="contactStyle" type="list" default="c1"
+					   label="Contact style"
+					   description="Contact style">
+					<option value="c1">Single form</option>
+					<option value="c2">Form with detail</option>
+				</field>
+
+				<field name="showLogoFooter" type="radio" default="true"
+					   label="Logo Footer"
+					   description="Enable Logo Footer"
+					   class="btn-group btn-group-yesno" >
+					<option value="true">on</option>
+					<option value="false">off</option>
+				</field>
+
+				<field name="showLogoCustomer" type="radio" default="false"
+					   label="Logo Customer"
+					   description="Enable Logo Customer"
+					   class="btn-group btn-group-yesno" >
+					<option value="true">on</option>
+					<option value="false">off</option>
+				</field>
+
+				<field name="copyrightFooter" class="" type="text" default="Softverk ©"
+					   label="Copyright Text"
+					   description="Copyright Text" />
+
+			</fieldset>
+			<fieldset name="menu">
+
+				<field name="menuLayout" type="radio" default="m1"
+					   label="Menu Layout"
+					   description="Menu Layout Style"
+					   class="btn-group btn-group-yesno" >
+					<option value="m1">Inline-logo</option>
+					<option value="m2">below-logo</option>
+				</field>
+
+				<field name="menuPosition" type="radio" default="left"
+					   label="Menu Position"
+					   description="Menu Position left or right"
+					   class="btn-group btn-group-yesno" >
+					<option value="left">Left</option>
+					<option value="right">Right</option>
+				</field>
+
+			</fieldset>
+			<fieldset name="property">
+				<field name="isBatch" type="radio" default="false"
+					   label="Show batch tools"
+					   description="Enable batch tools"
+					   class="btn-group btn-group-yesno" >
+					<option value="true">on</option>
+					<option value="false">off</option>
+				</field>
+
+				<field name="propertyID" type="radio" default="false"
+					   label="Show property ID"
+					   description="Enable for property ID"
+					   class="btn-group btn-group-yesno" >
+					<option value="true">on</option>
+					<option value="false">off</option>
+				</field>
+
+				<field name="propertyTitle" type="radio" default="false"
+					   label="Show property title"
+					   description="Replace property title (Use only in Thailand)"
+					   class="btn-group btn-group-yesno" >
+					<option value="true">on</option>
+					<option value="false">off</option>
+				</field>
+
+				<field name="busFilter" type="radio" default="false"
+					   label="Show bus filter"
+					   description="Enable bus station (Use only in Iceland)"
+					   class="btn-group btn-group-yesno" >
+					<option value="true">on</option>
+					<option value="false">off</option>
+				</field>
+
+				<field name="isNew" type="radio" default="true"
+					   label="Show new"
+					   description="Enable new or recent ribbon tag"
+					   class="btn-group btn-group-yesno" >
+					<option value="true">on</option>
+					<option value="false">off</option>
+				</field>
+
+				<field name="isFeatured" type="radio" default="true"
+					   label="Show featured"
+					   description="Enable featured ribbon tag"
+					   class="btn-group btn-group-yesno" >
+					<option value="true">on</option>
+					<option value="false">off</option>
+				</field>
+
+				<field name="loan80" type="radio" default="1"
+					   label="Show loan 80%"
+					   description="Enable loan80"
+					   class="btn-group btn-group-yesno" >
+					<option value="1">on</option>
+					<option value="0">off</option>
+				</field>
+
+				<field name="garage" type="radio" default="1"
+					   label="Show garage"
+					   description="Enable Garage"
+					   class="btn-group btn-group-yesno" >
+					<option value="1">on</option>
+					<option value="0">off</option>
+				</field>
+
+				<field name="elevator" type="radio" default="1"
+					   label="Show Elevator"
+					   description="Enable elevator"
+					   class="btn-group btn-group-yesno" >
+					<option value="1">on</option>
+					<option value="0">off</option>
+				</field>
+
+				<field name="newToday" type="radio" default="1"
+					   label="Show New today"
+					   description="Enable New today"
+					   class="btn-group btn-group-yesno" >
+					<option value="1">on</option>
+					<option value="0">off</option>
+				</field>
+
+				<field name="newWeek" type="radio" default="1"
+					   label="Show New week"
+					   description="Enable New week"
+					   class="btn-group btn-group-yesno" >
+					<option value="1">on</option>
+					<option value="0">off</option>
+				</field>
+
+				<field name="currency" type="radio" default="true"
+					   label="Show Currency"
+					   description="Enable Currency"
+					   class="btn-group btn-group-yesno" >
+					<option value="true">on</option>
+					<option value="false">off</option>
+				</field>
+
+				<field name="infoBottom" type="radio" default="true"
+					   label="Show Info Bottom"
+					   description="Enable Property Info"
+					   class="btn-group btn-group-yesno" >
+					<option value="true">on</option>
+					<option value="false">off</option>
+				</field>
+
+				<field name="titleUrl" type="radio" default="true"
+					   label="Show on URL"
+					   description="Show description on URL"
+					   class="btn-group btn-group-yesno" >
+					<option value="true">on</option>
+					<option value="false">off</option>
+				</field>
+
+				<field name="titleUrl" class="" type="list"
+					   label="Show on URL"
+					   default="title"
+					   description="Select text on URL" >
+					<option value="title">Title</option>
+					<option value="address">Address</option>
+					<option value="both">Both</option>
+				</field>
+			</fieldset>
+
+			<fieldset name="advanced">
+
+				<field name="viewportLoad" type="radio" default="true"
+					   label="Enable Effect"
+					   description="Enable effect fade feature"
+					   class="btn-group btn-group-yesno" >
+					<option value="true">on</option>
+					<option value="false">off</option>
+				</field>
+
+				<field name="versionControl" type="radio" default="true"
+					   label="Enable Version"
+					   description="Enable effect fade feature"
+					   class="btn-group btn-group-yesno" >
+					<option value="true">on</option>
+					<option value="false">off</option>
+				</field>
+
+			</fieldset>
+		</fields>
+	</config>
+</extension>

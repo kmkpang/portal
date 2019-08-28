@@ -1,0 +1,4193 @@
+/*
+ THIS IS A TEMPORARY SOLUTION UNTIL I UNDERSTAND HOW SCSS WORKS HERE!
+*/
+
+@charset "utf-8";
+/* ***************************************************************************************************** */
+/* CONTENT CSS */
+html {
+    height: 0;
+}
+
+body {
+    background: #ebecf1;
+    outline: none; /*Convert px to em( 10px = 1em)*/
+    font: normal .9em Arial, Geneva, sans-serif;
+    color: #505050;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(112, 192, 223, 0.59)), to(rgb(255, 255, 255)));
+    background-image: -webkit-linear-gradient(rgba(112, 192, 223, 0.59) 0%, rgb(255, 255, 255) 100%);
+    background-image: -moz-linear-gradient(rgba(112, 192, 223, 0.59) 0%, rgb(255, 255, 255) 100%);
+    background-image: -o-linear-gradient(rgba(112, 192, 223, 0.59) 0%, rgb(255, 255, 255) 100%);
+    background-image: linear-gradient(rgba(112, 192, 223, 0.59) 0%, rgb(255, 255, 255) 100%);
+    padding: 0;
+    margin: 0;
+
+    /*CHRISTMAS PATCH*/
+    /*    background: #001a40;
+
+        background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, #001A40),
+        color-stop(1, #001535)
+        );
+        background-image: -o-linear-gradient(top, #001A40 0%, #001535 100%);
+        background-image: -moz-linear-gradient(top, #001A40 0%, #001535 100%);
+        background-image: -webkit-linear-gradient(top, #001A40 0%, #001535 100%);
+        background-image: -ms-linear-gradient(top, #001A40 0%, #001535 100%);
+        background-image: linear-gradient(to top, #001A40 0%, #001535 100%);
+        */
+    /*END CHRISTMAS PATCH*/
+
+}
+
+/*CHRISTMAS PATCH*/
+/*body:after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 726px;
+    z-index: -2;
+    background: url("../../softverk/image_v2/christmas/stars.png") no-repeat scroll center top;
+    content: '';
+    display: block;
+}*/
+/*END CHRISTMAS PATCH*/
+
+.font-7 {
+    font-size: 0.7em;
+}
+
+.font-8 {
+    font-size:;
+: 0.8 em;
+}
+
+.font-9 {
+    font-size: 0.9em;
+}
+
+.font-10 {
+    font-size: 1.0em;
+}
+
+.font-11 {
+    font-size: 1.1em;
+}
+
+.font-12 {
+    font-size: 1.2em;
+}
+
+.font-13 {
+    font-size: 1.3em;
+}
+
+.font-14 {
+    font-size: 1.4em;
+}
+
+.font-15 {
+    font-size: 1.5em;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+h3 {
+    /*color:#1e5ca6;*/
+    margin: 10px 0 10px 2px;
+    padding: 0;
+}
+
+a:link, a:active, a:visited {
+    text-decoration: none;
+    color: #505050;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #505050;
+    /*    font: normal .9em Arial, Helvetica, sans-serif; */
+}
+
+img {
+    border: none;
+}
+
+form {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0 0 20px;
+    /**list-style:inside url(../image/arrow_small.png);*/
+}
+
+ul li {
+    margin: 0;
+    padding: 0 0 0 13px;
+    *padding: 0 0 0 12px;
+}
+
+ul li a {
+    margin: 0;
+    padding: 0;
+    *padding: 0 0 0 10px;
+    *position: relative;
+    *top: -2px;
+}
+
+a.button, a:link.button, a:active.button, a:visited.button {
+    background: transparent url(../image/button.png);
+    display: block;
+    width: 105px;
+    height: 39px;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 42px;
+    margin-bottom: 20px;
+    padding: 0px;
+    color: #0053a0;
+}
+
+a:hover.button {
+    color: #405d8e;
+}
+
+a.button span.login {
+    background: url(../image/login.png) no-repeat 10px 6px;
+    text-indent: 47px;
+    text-align: center;
+    display: block;
+}
+
+a#clearForm.squareButton,
+a#save_search.squareButton {
+    display: inline-block;
+    height: 28px;
+    padding-top: 7px;
+    margin-top: 10px;
+    text-align: center;
+    float: left;
+}
+
+.squareButton {
+    background: url("../image/default_button.png") no-repeat scroll 0 0 transparent;
+    border: 0 none;
+    color: #505050;
+    cursor: pointer;
+    font: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 0.9em;
+    height: 28px;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+}
+
+/* ***************************************************************************************************** */
+
+/* TEMPLATE SPECIFIC CSS CODE */
+/*JAE*/
+.logo-glow {
+    position: relative;
+}
+
+.logo-glow:after {
+    background: url("../image_v2/remax_logo_glow.png") no-repeat scroll center center transparent;
+    position: absolute;
+    width: 666px;
+    height: 262px;
+    content: '';
+    top: -130px;
+    left: -204px;
+    display: block;
+    z-index: -2;
+    /*CHRISTMAS PATCH*/
+    /*background: none;*/
+    /*END CHRISTMAS PATCH*/
+}
+
+.landing-page-caption h1 {
+    text-align: center;
+
+    color: #0066b1;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+#webportal_search_type_new .nav-buttons {
+    /* stroke */
+    /* border radius */
+    /* prevents bg color from leaking outside the border */
+    /* gradient overlay */
+    /* gradient overlay */
+    /* gradient overlay */
+    /* gradient overlay */
+    /* gradient overlay */
+
+    color: #0066b1;
+    font-size: 18px;
+    display: block;
+    width: 135px;
+    height: 50px;
+    margin-bottom: 26px;
+    opacity: 1;
+    position: relative;
+    background: transparent url("../image_v2/nav_btn.png") no-repeat;
+    padding-left: 14px;
+    line-height: 45px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.headmenu {
+    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.8);
+    border-top: 8px solid #eb1c23;
+    position: relative;
+}
+
+.headmenu:after {
+    background: url("../image_v2/menu_shadow.png") no-repeat center bottom;
+    top: 42px;
+    position: absolute;
+    content: '';
+    height: 15px;
+    width: 1310px;
+    left: 50%;
+    margin-left: -655px;
+}
+
+#jflanguageselection.frontpage {
+    position: absolute;
+
+    float: none;
+    right: 30px;
+}
+
+/*END JAE*/
+
+#topmenu {
+    padding: 10px 0px 10px 0px;
+    margin: 0 auto;
+    width: 960px;
+}
+
+#topmenu .mainlevel-nav {
+    padding: 12px 40px 13px 39px;
+    border-left: 1px solid #EDEDED;
+    color: #26509D;
+    font-weight: bold;
+    font-size: 13px;
+    font-family: Geneva, sans-serif;
+    text-transform: uppercase;
+}
+
+#topmenu a.mainlevel-nav:hover {
+    background: #EDEDED;
+}
+
+.bgbottom {
+    background: url("../image_v2/bottom-element.png") no-repeat scroll center bottom;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 401px;
+    z-index: -2;
+
+    /*CHRISTMAS PATCH*/
+    /*    background: url("../image_v2/christmas/christmasbg.png") no-repeat scroll center bottom;
+        height: 954px;
+    */
+    /*END CHRISTMAS PATCH*/
+}
+
+.bgbottom-inside {
+    background: url(../image/bgbottom_blue_old.png) top no-repeat #F5F6FE;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#topheader {
+    margin: 0; /* min-height:120px; *//* height:120px; */
+}
+
+#blank-top-header {
+    margin: 0;
+    min-height: 60px;
+    height: 60px;
+}
+
+#topbox {
+    margin: 38px auto;
+    padding: 0;
+    width: 1024px;
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative;
+    height: 0;
+}
+
+#topbox div {
+    padding: 0;
+    display: block;
+}
+
+#topbox_left {
+    float: left;
+    width: 745px;
+    text-align: left;
+}
+
+#topbox_right {
+    width: auto;
+    float: right;
+    text-align: right;
+}
+
+#topbox_right_left {
+    text-align: left;
+    width: 49%;
+}
+
+#topbox_right_right {
+    overflow: visible;
+    text-align: right;
+}
+
+#top_menu_style {
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    overflow: hidden;
+}
+
+#top_menu_style ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: block;
+}
+
+#top_menu_style ul li {
+    float: left;
+    display: block;
+    margin: 10px 0;
+    padding: 0 15px 0 12px;
+    *padding: 2px 15px 0 5px;
+    background: url(../image/arrow_small.png) no-repeat left;
+}
+
+.skinny_table {
+    cellpadding: 0px;
+    cellspacing: 0px;
+    border: 0px;
+}
+
+#mainbody_container {
+    margin: 0;
+}
+
+#mainbody {
+    /* overflow: hidden; */
+    margin: 15px auto;
+    padding: 0;
+    margin-top: 27px;
+}
+
+#componentarea_1col {
+}
+
+#componentarea_2left {
+    float: left;
+    width: 73%;
+    position: relative;
+}
+
+#componentarea_2right {
+    float: right;
+    width: 73%;
+}
+
+#bottombox_left {
+    float: left;
+    width: 100%;
+}
+
+#bottombox_right {
+    float: right;
+    width: 100%;
+}
+
+#leftarea_2col {
+    float: left;
+    width: 25%;
+}
+
+#rightarea_2col {
+    float: right;
+    width: 25%;
+}
+
+#rightarea_3col {
+    float: right;
+    width: 76%;
+}
+
+#leftarea_3col {
+    float: left;
+    width: 23%;
+}
+
+#componentarea_3left {
+    float: left;
+    width: 68%;
+}
+
+#rightarea_3colright {
+    float: right;
+    width: 31%;
+}
+
+#leftarea_2col div, #rightarea_2col div, #leftarea_3col div, #rightarea_3colright div {
+    margin: 0 0 3px;
+}
+
+#componentarea_1col .moduletable, #componentarea_2left .moduletable,
+#componentarea_2right .moduletable, #componentarea_3left .moduletable {
+    /*    margin:0 0 10px; */
+}
+
+#footer {
+    background: none repeat scroll 0 0 #FFFFFF;
+    clear: both;
+    margin: 13px auto 0;
+    height: 100px;
+    overflow: hidden;
+    padding-top: 15px;
+    width: 1024px;
+    font-size: .8em;
+    float: center;
+
+}
+
+#footer a {
+    /*color:#39F;*/
+}
+
+.float_left {
+    float: left;
+}
+
+.float_right {
+    float: right;
+}
+
+/* ***************************************************************************************************** */
+
+/* ELEMENT DESIGN CSS */
+
+.webportal_search_button {
+    width: 127px;
+    height: 39px;
+    color: white;
+    font: bold 18px Arial, Geneva, sans-serif;
+    border: 0;
+    cursor: pointer;
+    background: transparent url("../image_v2/search_btn.png") no-repeat;
+    padding-right: 17px;
+    text-align: center;
+    outline: 0;
+    float: right;
+}
+
+.webportal_search_button_map {
+    background: none;
+    color: #e51937;
+    font: bold 47px Arial, Helvetica, sans-serif;
+    border: none;
+    cursor: pointer;
+    margin: 0px;
+    padding: 0px;
+    display: inline;
+    text-align: left;
+    height: 57px;
+    vertical-align: text-bottom;
+}
+
+.webportal_search_button_top {
+    width: 92px;
+    height: 36px;
+    background: #e21a35;
+    color: #fff;
+    Border: 1px solid #CCCCCC;
+    font: bold 18px Arial, Geneva, sans-serif;
+    border: 1px solid #CCCCCC;
+    cursor: pointer;
+    position: absolute;
+    margin-left: 335px;
+
+}
+
+.button-small {
+    width: 75px;
+    height: 25px;
+    font-size: .9em;
+}
+
+span.webportal_textbox {
+    border: 1px solid #ccc;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    padding: 0 0 0 5px;
+    margin: 0 0 10px;
+    *margin: 0 5px 10px 0;
+    vertical-align: middle;
+    width: 150px;
+    height: auto;
+    display: inline-block;
+    background: #fff;
+    cursor: text;
+}
+
+.txt_box {
+    background: none;
+    border: none;
+    font: bold .85em/20px arial, Arial, Helvetica, sans-serif;
+    color: #696969;
+    width: 100%;
+    height: 26px;
+    padding: 0;
+    margin: 0;
+    cursor: text;
+}
+
+/* ***************************************************************************************************** */
+
+/* MODULE CSS CODE */
+
+/*---Module : Webportal search */
+
+#webportal_search .one {
+    width: 170px;
+    padding-left: 32px;
+}
+
+#webportal_search .two {
+    width: 385px;
+}
+
+#webportal_search .three {
+    width: 322px;
+}
+
+#webportal_search .dropdown-row {
+    display: block;
+    margin-top: 29px;
+}
+
+.slider-ticks {
+    display: none !important;
+}
+
+#mod-webportal-search-holder {
+    min-height: 300px;
+    width: 960px;
+    margin: auto;
+    position: relative;
+    box-sizing: border-box;
+    padding: 33px 25px;
+    color: #fff;
+}
+
+#mod-webportal-search-holder:after {
+    position: absolute;
+    opacity: .7; /* layer alpha */
+    border: 1px solid #0059a8; /* stroke */
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px; /* border radius */
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box; /* prevents bg color from leaking outside the border */
+    background-color: #006dbf; /* layer fill content */
+    -moz-box-shadow: 0 1px 0 #0059a7, inset 0 1px 0 rgba(254, 254, 254, .4), inset 0 0 3px rgba(254, 254, 254, .55); /* drop shadow, inner shadow and inner glow */
+    -webkit-box-shadow: 0 1px 0 #0059a7, inset 0 1px 0 rgba(254, 254, 254, .4), inset 0 0 3px rgba(254, 254, 254, .55); /* drop shadow, inner shadow and inner glow */
+    box-shadow: 0 1px 0 #0059a7, inset 0 1px 0 rgba(254, 254, 254, .4), inset 0 0 3px rgba(254, 254, 254, .55); /* drop shadow, inner shadow and inner glow */
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0iaGF0MCIgZ3JhZGllbnRVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giIHgxPSI1MCUiIHkxPSIxMDAlIiB4Mj0iNTAlIiB5Mj0iLTEuNDIxMDg1NDcxNTIwMmUtMTQlIj4KPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwNzJjNCIgc3RvcC1vcGFjaXR5PSIxIi8+CjxzdG9wIG9mZnNldD0iNjklIiBzdG9wLWNvbG9yPSIjMDA3MmM0IiBzdG9wLW9wYWNpdHk9IjEiLz4KPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDBhNWZkIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgPC9saW5lYXJHcmFkaWVudD4KCjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiBmaWxsPSJ1cmwoI2hhdDApIiAvPgo8L3N2Zz4=); /* gradient overlay */
+    background-image: -moz-linear-gradient(bottom, #0072c4 0%, #0072c4 69.02%, #00a5fd 100%); /* gradient overlay */
+    background-image: -o-linear-gradient(bottom, #0072c4 0%, #0072c4 69.02%, #00a5fd 100%); /* gradient overlay */
+    background-image: -webkit-linear-gradient(bottom, #0072c4 0%, #0072c4 69.02%, #00a5fd 100%); /* gradient overlay */
+    background-image: linear-gradient(bottom, #0072c4 0%, #0072c4 69.02%, #00a5fd 100%); /* gradient overlay */
+
+    content: '';
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+}
+
+#webportal_search_type {
+    width: 100%;
+    font: bold 47px Arial, Helvetica, sans-serif;
+    color: #505050;
+    margin: 0 0 10px;
+}
+
+#webportal_search_type label {
+    cursor: pointer;
+}
+
+#webportal_search_type label#webportal_rent_label {
+    margin: 0 1% 0 0;
+    padding: 0 2% 0 0;
+    border-right: 1px solid #CCCCCC;
+}
+
+/**********************FOR TOP SEARCH REMAX*****************/
+#webportal_search_top {
+    margin: -2px 0 5px 0px;
+    padding: 0 0 10px;
+    height: auto;
+    overflow: hidden;
+    float: right;
+    width: 430px;
+}
+
+#webportal_search_type_top {
+    width: 100%;
+    font: bold 23px Arial, Helvetica, sans-serif;
+    color: #505050;
+    margin: 0 0 5px 5px;
+}
+
+#webportal_search_type_top label {
+    cursor: pointer;
+}
+
+#webportal_search_type_top label#webportal_rent_label {
+    margin: 0 5% 0 0;
+    padding: 0 5% 0 0;
+}
+
+#webportal_search_type_top #webportal_buy_label {
+    background: none !important;
+    padding: 0px !important;
+    margin-left: 0px !important;
+    border-radius: 0px !important;
+    line-height: 0px !important;
+}
+
+#webportal_search_type_top #webportal_rent_label {
+    background: none !important;
+    padding: 0px !important;
+    margin-left: 0px !important;
+    border-radius: 0px !important;
+    line-height: 0px !important;
+    color: #333 !important;
+}
+
+/*************************************************************/
+#webportal_search p {
+    font: bold 28px Arial, Geneva, sans-serif;
+    margin: 5px 0;
+}
+
+#webportal_search_country {
+    clear: left;
+    width: 400px;
+    margin: 5px 0;
+    height: auto;
+    overflow: hidden;
+}
+
+#webportal_postaladdress, #webportal_type_of_property {
+    width: 280px;
+    text-align: left;
+    height: 160px;
+    font-size: .85em;
+    line-height: 18px;
+    *line-height: 19px;
+}
+
+#webportal_type_of_property {
+    width: 230px;
+    margin: 0 0 0 0px;
+}
+
+.b-option-wrap label {
+    cursor: pointer;
+    color: #485155;
+    text-shadow: 0 1px #fff;
+}
+
+#webportal_postaladdress b {
+    cursor: default;
+    font-weight: normal;
+}
+
+#webportal_postaladdress strong label {
+    cursor: default;
+}
+
+#webportal_postaladdress .expandable label {
+    cursor: default;
+}
+
+.b-option-wrap .town-list-item {
+    padding-right: 5px;
+    display: block;
+    border-bottom: 1px solid #fff;
+    background: #f2f4f6;
+}
+
+.b-option-wrap .town-list-item + div > .town-list-item {
+    padding-left: 10px;
+}
+
+.b-option-wrap .town-list-item + div > .town-list-item + div > .town-list-item {
+    padding-left: 15px;
+}
+
+.b-option-wrap .town-list-item:hover {
+    background-color: #fff; /* layer fill content */
+    -moz-box-shadow: inset 0 3px 3px rgba(0, 0, 0, .12); /* inner shadow */
+    -webkit-box-shadow: inset 0 3px 3px rgba(0, 0, 0, .12); /* inner shadow */
+    box-shadow: inset 0 3px 3px rgba(0, 0, 0, .12); /* inner shadow */
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0iaGF0MCIgZ3JhZGllbnRVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giIHgxPSI1MCUiIHkxPSIxMDAlIiB4Mj0iNTAlIiB5Mj0iLTEuNDIxMDg1NDcxNTIwMmUtMTQlIj4KPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzU1NzE4OSIgc3RvcC1vcGFjaXR5PSIxIi8+CjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzRiNWY2ZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgIDwvbGluZWFyR3JhZGllbnQ+Cgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0idXJsKCNoYXQwKSIgLz4KPC9zdmc+); /* gradient overlay */
+    background-image: -moz-linear-gradient(bottom, #557189 0%, #4b5f6f 100%); /* gradient overlay */
+    background-image: -o-linear-gradient(bottom, #557189 0%, #4b5f6f 100%); /* gradient overlay */
+    background-image: -webkit-linear-gradient(bottom, #557189 0%, #4b5f6f 100%); /* gradient overlay */
+    background-image: linear-gradient(bottom, #557189 0%, #4b5f6f 100%); /* gradient overlay */
+}
+
+.b-option-wrap .town-list-item.town-list-item-header label {
+    font-weight: bold;
+}
+
+.b-option-wrap .town-list-item:hover label {
+    color: #fff;
+    text-shadow: 0 0 #fff;
+}
+
+.div_border {
+    height: auto;
+    overflow: hidden;
+    border: 0px solid #ccc;
+    padding-left: 3px;
+    background: #fff;
+    padding-bottom: 2px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.div_checkbox {
+    /*background-color:#fff; */
+    width: 99%;
+    height: 375px;
+    overflow: auto;
+    outline: 0;
+}
+
+#webportal_type_of_property .div_checkbox,
+#webportal_type_of_property .jspContainer {
+    width: auto !important;
+}
+
+.child_node {
+    display: block;
+    background: #f2f4f6;
+}
+
+#webportal-search-options .description {
+    display: block;
+    margin-top: 5px;
+}
+
+#webportal-search-options {
+
+}
+
+input[type=checkbox].remax2-checkbox {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+
+input[type=checkbox].remax2-checkbox + label.remax2-checkbox-label {
+    padding-left: 40px;
+    height: 24px;
+    display: inline-block;
+    line-height: 24px;
+    background-position: 0 0;
+    font-size: 18px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+input[type=checkbox].remax2-checkbox:checked + label.remax2-checkbox-label {
+    background-position: 0 -24px;
+}
+
+.remax2-checkbox-label {
+    background-image: url("../image_v2/remax2_checkbox.png");
+    background-repeat: no-repeat;
+}
+
+#webportal-search-options .row-two-checkboxes {
+    margin-top: 10px;
+
+}
+
+#webportal-search-options .row-two-checkboxes label {
+    font-size: 14px !important;
+}
+
+#webportal-search-options .row-two-checkboxes .checkbox-wrapper {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+#webportal-search-slider {
+    position: relative;
+
+    top: -16px;
+}
+
+#webportal-search-slider div {
+    clear: both;
+    /* height:auto; */
+}
+
+#webportal-search-slider .slider-row {
+    margin-bottom: 20px;
+
+}
+
+.webportal_listbox {
+    width: 100px;
+    display: block;
+    -font-weight: bold;
+}
+
+#webportal-search-slider .webportal_listbox {
+    margin: 0 0 0 20px;
+}
+
+#webportal_option_checkbox {
+    float: left;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+#webportal_option_checkbox input {
+}
+
+#webportal_option_checkbox label {
+    font-size: 8pt;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+#webportal_search_textbox {
+    position: relative;
+    display: inline-block;
+    width: 351px;
+}
+
+.webportal_search_textbox {
+    border: 1px solid #fff;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -moz-background-clip: padding;
+    /* -webkit-background-clip: padding-box; */
+    /* background-clip: padding-box; */
+    background-color: #f7f8f9;
+    -moz-box-shadow: inset 0 2px 3px rgba(0, 0, 0, .25);
+    -webkit-box-shadow: inset 0 2px 3px rgba(0, 0, 0, .25), 0 0 0 #fff;
+    box-shadow: inset 0 2px 3px rgba(0, 0, 0, .25), 0 0 0 #fff;
+    padding: 8px;
+    position: relative;
+    padding-right: 35px;
+    width: 305px;
+    outline: 0;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    background-repeat: no-repeat;
+    /* background-position: right center; */
+}
+
+.webportal_search_textbox:focus {
+    box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 0 10px #fff;
+    -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 0 10px #fff;
+}
+
+#webportal_search_textbox:after {
+    display: block;
+    content: '';
+    border: 1px solid rgba(200, 204, 207, .69); /* stroke */
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px; /* border radius */
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box; /* prevents bg color from leaking outside the border */
+    background-color: rgba(225, 225, 225, .74); /* color overlay */
+    z-index: 9999;
+    padding-top: 0px;
+    position: absolute;
+    left: 0;
+    height: 37px;
+    top: 1px;
+    z-index: -1;
+    right: 0;
+}
+
+#webportal_search.search_softverk_center_new .searchTextBoxWaterMarkStyle {
+    margin-top: -5px !important;
+    padding-top: 10 px\9;
+}
+
+/*****************FOR TOP REMAX******************/
+
+#webportal_search_textbox_top {
+    width: 426px;
+    height: 39px;
+    margin-top: 5px;
+    overflow: hidden;
+    position: relative;
+    /*border:1px solid #999;*/
+}
+
+.webportal_search_textbox_top {
+    width: 320px;
+    height: 22px;
+    *margin: 0 5px 0 0;
+    padding: 5px;
+    border: 1px solid #ccc;
+    color: #505050;
+    font-weight: bold;
+    position: absolute;
+    autocomplete: off;
+    top: 0;
+    left: 0;
+    border: 1px solid #DDD;
+    -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1) inset;
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1) inset;
+}
+
+#webportal_search_top #webportal_clear_search {
+    float: right;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-top: -4px;
+    margin-bottom: -4px;
+    text-align: right;
+}
+
+/************************************************/
+
+#webportal_search_tip {
+    clear: left;
+    width: 100%;
+    margin: 5px 0 0;
+    font: normal .75em arial, Geneva, sans-serif;
+    color: #909090;
+    overflow: hidden;
+    position: relative;
+}
+
+#webportal_search_tip span {
+    position: absolute;
+    top: 0px;
+    left: 35px;
+}
+
+/*--------------------------------------------------------*/
+
+/**************** FOR SIDEBAR REMAX **************/
+#webportal_search_textbox_sidebar {
+    width: 208px;
+    height: 35px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 11px;
+    /*border:1px solid #999;*/
+}
+
+.webportal_search_textbox_sidebar {
+    width: 205px;
+    height: 32px;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #ccc;
+    color: #505050;
+    font-weight: bold;
+    position: absolute;
+    autocomplete: off;
+    top: 0;
+    left: 0;
+}
+
+#webportal-search-slider select#select_location {
+    width: 207px;
+}
+
+#webportal-search-slider div.slider_label_values {
+}
+
+#webportal-search-slider label.slider_label {
+    width: 80px;
+    display: block;
+    vertical-align: bottom;
+    float: left;
+    line-height: 30px;
+}
+
+#webportal-search-slider .slider_values {
+    float: right;
+    vertical-align: bottom;
+    line-height: 30px;
+}
+
+sup, sub {
+    line-height: 0px;
+    font-size: 0.7em
+}
+
+/** toggle buttons in sidebar **/
+a.togglebutton, a:link.togglebutton, a:visited.togglebutton, a:active.togglebutton {
+    display: block;
+    text-align: center;
+    float: left;
+    margin: 2px;
+    padding: 3px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    border: 1px solid #A0A0A0;
+    min-width: 40px;
+    width: auto;
+}
+
+a.togglebutton,
+a:link.togglebutton,
+a:visited.togglebutton,
+a:active.togglebutton,
+a:hover.togglebutton {
+    text-decoration: none;
+    cursor: default;
+}
+
+a:hover.togglebutton {
+    background: #DDDDDD;
+}
+
+a.togglebuttondown,
+a:link.togglebuttondown,
+a:visited.togglebuttondown {
+    background: #174B8F;
+    color: #FFFFFF;
+    border-color: #09346E;
+}
+
+a:hover.togglebuttondown {
+    background: #1F61B8;
+}
+
+/* specific for toggle buttons in the sidebar search module */
+#webportal-search-slider a.togglebutton {
+    width: 40px;
+    font-size: 0.7em;
+    font-weight: bold;
+}
+
+/** for checkboxes **/
+#webportal-search-slider input[type=checkbox] {
+    vertical-align: middle;
+}
+
+#webportal-search-slider label.checkbox_label {
+    line-height: 1.7em; /* give it some space */
+    margin-left: 4px;
+    padding-right: 15px;
+    color: #104FA0;
+}
+
+.grey-btn {
+    display: inline-block;
+    position: relative;
+    border: 1px solid #dbe1e5; /* stroke */
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; /* border radius */
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box; /* prevents bg color from leaking outside the border */
+    background-color: #dbe1e5; /* layer fill content */
+    -moz-box-shadow: inset 0 0 7px rgba(255, 255, 255, .5); /* inner glow */
+    -webkit-box-shadow: inset 0 0 7px rgba(255, 255, 255, .5); /* inner glow */
+    box-shadow: inset 0 0 7px rgba(255, 255, 255, .5); /* inner glow */
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDE0MCA0MCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGxpbmVhckdyYWRpZW50IGlkPSJoYXQwIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjUwJSIgeTE9IjEwMCUiIHgyPSI1MCUiIHkyPSItMS40MjEwODU0NzE1MjAyZS0xNCUiPgo8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZWZlZmY1IiBzdG9wLW9wYWNpdHk9IjAiLz4KPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZWZlZmY1IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgPC9saW5lYXJHcmFkaWVudD4KCjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxNDAiIGhlaWdodD0iNDAiIGZpbGw9InVybCgjaGF0MCkiIC8+Cjwvc3ZnPg==); /* gradient overlay */
+    background-image: -moz-linear-gradient(bottom, rgba(240, 240, 245, 0) 0%, #efeff5 100%); /* gradient overlay */
+    background-image: -o-linear-gradient(bottom, rgba(240, 240, 245, 0) 0%, #efeff5 100%); /* gradient overlay */
+    background-image: -webkit-linear-gradient(bottom, rgba(240, 240, 245, 0) 0%, #efeff5 100%); /* gradient overlay */
+    background-image: linear-gradient(bottom, rgba(240, 240, 245, 0) 0%, #efeff5 100%); /* gradient overlay */
+    padding: 10px 22px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #8c96a0 !important;
+    font-weight: bold;
+    text-shadow: 0 1px #fff;
+}
+
+.grey-btn:after {
+    position: absolute;
+    z-index: 5;
+    content: '';
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; /* border radius */
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box; /* prevents bg color from leaking outside the border */
+
+    border-bottom: 1px solid #a0a2a5;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-left: 1px solid #e2e4e8;
+    border-right: 1px solid #e2e4e8;
+    border-top: 1px solid #f7f7fa;
+}
+
+#advanced-search {
+    line-height: 1.7em; /* give it some space */
+    margin-left: 4px;
+    padding-right: 15px;
+    color: #104FA0;
+}
+
+#webportal-search-slider #save_search {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#saved_search_link {
+    cursor: pointer;
+}
+
+/* ================ END FOR SIDEBAR ================== */
+
+/*---Module : Webportal footer */
+#webportal_footer {
+    clear: both;
+    margin: 10px auto 0;
+    padding: 0;
+    width: 0px;
+    height: 0px;
+    border-top: -1px solid #ccc;
+    background: #f0f3fe;
+}
+
+/*#webportal_outstanding_agent_link{
+font: bold 1.2em Verdana, Arial, Helvetica, sans-serif;
+color:#505050;
+height:auto;
+overflow:hidden;
+float:left;
+margin:-29px 0 0 27px;*/
+}
+#webportal_outstanding_agent_link span {
+    float: left;
+    height: auto;
+    overflow: hidden;
+    margin: 0 30px 0 0;
+    padding: 0 30px 0 0;
+    white-space: nowrap;
+}
+
+#webportal_outstanding_agent_link ul {
+    padding: 0;
+    margin: 0;
+    list-style: outside;
+    list-style-image: outside;
+}
+
+#webportal_outstanding_agent_link ul li {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    border: 0px solid #fff;
+}
+
+#webportal_outstanding_agent_link span a {
+    text-decoration: none;
+    color: #505050;
+}
+
+#webportal_outstanding_agent_link span#webportal_outstanding_agent_last {
+    border: 0;
+}
+
+#webportal_outstanding_agent_link span#webportal_outstanding_agent_last a {
+    text-decoration: underline;
+}
+
+#webportal_outstanding_agent_link span#webportal_outstanding_agent_last a:hover {
+    text-decoration: none;
+}
+
+/*#webportal_outstanding_agent{
+float:right;
+border:1px solid #ccc;
+margin:10px;
+width:500px;
+font: normal .9em Arial, Arial, Helvetica, sans-serif;*/
+}
+img.remax_logo_balloon {
+    float: left;
+    border: 0;
+    width: auto;
+    height: 0px;
+}
+
+/*#webportal_outstanding_agent div{padding:0;margin:13px 10px 0 0;float:right; vertical-align:top; border:1px solid #999;}*/
+#webportal_outstanding_agent h3 {
+    font-size: 0em;
+    float: left;
+    margin: 0;
+    padding: 0 10px 0 0;
+}
+
+#webportal_outstanding_agent img.webportal_logo_text {
+    float: left;
+    border: 0;
+    width: 0px;
+    height: auto;
+}
+
+#webportal_agents_softverk {
+    padding: 0;
+    margin: 10px 7px 0 0;
+    line-height: 40px;
+    text-align: right;
+}
+
+img.softverk_logo {
+    float: right;
+    border: 0;
+    width: 70px;
+    height: auto;
+}
+
+#webportal_agents_softverk span {
+    font: normal .8em/40px Arial, Geneva, sans-serif;
+}
+
+/*--------------------------------------------------------*/
+
+/*---Module : Request more detail */
+div.moduletable_webportal_request_detail {
+    display: none;
+}
+
+#webportal_request_detail {
+    /*    border:1px solid #ccc;*/
+    /* no border: putting it below 'print details' and 'save' */
+    margin: 0;
+    padding: 0;
+    *padding: 0 0 15px;
+    /*background:#f7f7f7;*/
+    position: relative;
+}
+
+#webportal_request_detail_head {
+    /*margin:0 0 10px 20px;*/
+    margin: 0 0 10px 0px; /* no left-margin: putting it below 'print details' and 'save' */
+    padding: 0;
+    /*color:#1e5ca6;*/
+    font: bold 1.2em Tahoma, Geneva, sans-serif;
+    display: block;
+}
+
+#webportal_request_detail_element {
+    /*margin:0 0 10px 20px;*/
+    margin: 0 0 10px 0px; /* no left-margin: putting it below 'print details' and 'save' */
+    padding: 0;
+    /*border:1px solid #999;*/
+    height: auto;
+    overflow: hidden;
+    font: bold .9em Tahoma, Geneva, sans-serif;
+    display: block;
+}
+
+#webportal_request_detail_element span.webportal_textbox {
+    width: 85%;
+}
+
+span.webportal_textarea {
+    border: 1px solid #ccc;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    padding: 0 0 0 5px;
+    margin: 0;
+    *margin: 0 5px 0 0;
+    vertical-align: middle;
+    width: 85%;
+    height: auto;
+    display: block;
+    background: #fff;
+    cursor: text;
+}
+
+.txt_area {
+    background: none;
+    border: none;
+    font: bold .85em/20px Geneva, Arial, Helvetica, sans-serif;
+    color: #696969;
+    width: 100%;
+    height: 132px;
+    padding: 0;
+    margin: 0;
+    cursor: text;
+}
+
+#webportal_request_detail_element #request_button {
+    position: relative;
+    /*    left: 45%;*/
+    float: right;
+    padding-right: 12%;
+}
+
+/*--------------------------------------------------------*/
+
+/*--- Module Webprotal myprofile */
+#webportal_myprofile {
+    border: 1px solid #ccc;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    height: 156px;
+}
+
+#webportal_myprofile_bigmargin_wrapper {
+    /*this is a wrapper aroung the webportal_myprofile in order to align it against the colum on left hand side*/
+    margin-top: 500px;
+}
+
+#webportal_myprofile_head {
+    margin: 10px 0 15px 20px;
+    padding: 0;
+    /*color:#1e5ca6;*/
+    font: bold 1.2em Tahoma, Geneva, sans-serif;
+    display: block;
+    color: #0f4fa0;
+}
+
+#webportal_myprofile_element {
+    margin: 0;
+    padding: 0;
+    /*border:1px solid #999;*/
+    height: auto;
+    overflow: hidden;
+    font: bold .9em Tahoma, Geneva, sans-serif;
+    display: block;
+}
+
+.not_login img {
+    margin: 15px 0 15px 20px;
+    padding: 0;
+    width: 30px;
+    height: auto;
+    -border: 1px solid #ccc;
+    float: left;
+}
+
+.not_login #webportal_myprofile_head {
+    margin: 10px 0 0 10px;
+    font: bold 1.2em arial, Geneva, sans-serif;
+    float: left;
+    width: 140px;
+    color: #0f4fa0;
+}
+
+.not_login p {
+    float: left;
+    margin: 0 0 0 10px;
+    display: block;
+    font: normal 0.9em Tahoma, Geneva, sans-serif;
+    *width: 180px;
+}
+
+.not_login ul {
+    float: left;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin: 0 0 10px 20px;
+    *margin: 0 0 0 12px;
+    *padding: 0 0 20px;
+}
+
+.not_login li {
+    padding: 0;
+    *padding: 0 0 0 10px;
+    height: 20px;
+    line-height: 20px;
+    -border: 1px solid #ccc;
+    font: normal 0.9em arial, Geneva, sans-serif;
+}
+
+#webportal_myprofile_logout_link {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    font: bold 0.7em Tahoma, Geneva, sans-serif;
+    text-decoration: underline;
+}
+
+#webportal_logout_link {
+    font: bold 0.7em Tahoma, Geneva, sans-serif;
+    text-decoration: underline;
+    margin-top: 0px;
+    float: right;
+
+}
+
+#webportal_myprofile_logout_link:hover {
+    text-decoration: none;
+}
+
+/*--------------------------------------------------------*/
+
+/*---Module : Webportal search vertical */
+#webportal_search_vertical {
+    border: 1px solid #ccc;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    overflow: hidden;
+    background: #fff;
+}
+
+#webportal_search_vertical div {
+    /*margin:0;
+    padding:0; */
+}
+
+#webportal_search_vartical_head {
+    margin: 10px 0 15px 20px;
+    padding: 0;
+    color: #1e5ca6;
+    font: bold 1.2em Tahoma, Geneva, sans-serif;
+    display: block;
+}
+
+#webportal_search_vertical #webportal_search_vertical_element {
+    height: auto;
+    overflow: hidden;
+    margin: 0;
+    padding-left: 20px;
+    -border: 1px solid #999;
+}
+
+#webportal_search_vertical_element #webportal_search_type {
+    font-size: 1.2em;
+    margin: 0 0 10px;
+}
+
+#webportal_search_vertical_element #webportal_postaladdress, #webportal_search_vertical_element #webportal_type_of_property {
+    width: 193px;
+    text-align: left;
+    height: auto;
+    overflow: hidden;
+    font-size: .85em;
+    line-height: 20px;
+    margin: 0 8px 5px;
+}
+
+#webportal_search_vertical_element .div_checkbox {
+    height: 100px;
+    width: 185px;
+    margin-left: 5px;
+}
+
+#webportal_search_vertical_element .div_checkbox .child_node {
+    display: block;
+    margin-left: 10px;
+}
+
+#webportal_search_vertical_element #webportal-search-slider {
+    clear: left;
+    width: 210px;
+    height: auto;
+    overflow: hidden;
+    margin: 5px 0 0;
+}
+
+#webportal_search_vertical_element #webportal-search-slider div {
+    margin: 0 0 5px 0;
+}
+
+#webportal_search_vertical_element #webportal-search-slider label {
+    width: auto;
+    /*    display:block;*/
+    font-size: 12px;
+}
+
+#webportal_search_vertical_element #webportal-search-slider .webportal_listbox {
+    width: 65px;
+    display: block;
+    -font-weight: bold;
+}
+
+#webportal_search_vertical_element #webportal-search-slider .webportal_listbox {
+    margin: 0 0 0 10px;
+}
+
+#webportal_search_vertical_element button {
+    margin: 20px 30px 0 0;
+}
+
+#webportal_search_vertical_element p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.saved_searches_table {
+
+    margin: auto;
+    width: 100%;
+}
+
+/*--------------------------------------------------------*/
+
+/* ***************************************************************************************************** */
+
+/* JAVASCRIPT CSS CODE */
+/*--- Modal popup specific */
+/* Overlay */
+#modal-overlay {
+    background-color: #000;
+    cursor: normal;
+}
+
+#overlay {
+    z-index: 1000;
+    position: absolute;
+    /*    top:45px;*/
+    top: -1px;
+    /*    bottom:0;*/
+    left: -1px;
+    /*    width:99.50%;*/
+    width: 100%;
+    background: #000 url(../image/big_loading.gif) no-repeat;
+    background-position: 50% 5%;
+    opacity: 0.2;
+    -moz-opacity: 0.2;
+    filter: alpha(opacity=1);
+    /*    box-shadow: 10px 0px 1em #000000;*/
+    height: 100%;
+}
+
+/* Container */
+#request-container {
+    width: 250px;
+    height: auto;
+    min-height: 100px;
+    margin: 0;
+    padding: 0;
+}
+
+#request-container a.modal-close {
+    background: url(../image/x-icon.png) no-repeat;
+    width: 30px;
+    height: 30px;
+    display: block;
+    z-index: 3200;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+}
+
+#request-container a.modal-close:hover {
+    background: url(../image/x-icon-red.png) no-repeat;
+}
+
+#round_tab_content_top {
+    border: 2px solid #fefefe;
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-topright: 10px;
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    height: 7px;
+    background-color: #fff;
+}
+
+#round_tab_content_bottom {
+    border: 2px solid #fefefe;
+    -moz-border-radius-bottomleft: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    height: 7px;
+    background-color: #fff;
+}
+
+.modal_popup_content {
+    display: none;
+    margin: 0;
+    padding: 0;
+    height: auto;
+}
+
+.modal_popup_content_contain {
+    padding: 0 0 20px 20px;
+    /*color:#405D8E; */
+    overflow: hidden;
+    height: auto;
+    background-color: #fff;
+}
+
+.modal_popup_content_contain .validate_detail {
+    display: none;
+    min-height: 10px;
+    height: auto;
+    overflow: hidden;
+    color: #405D8E;
+    font-size: 0.85em;
+    margin: 0 0 5px;
+}
+
+.modal_popup_contain_loading img {
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+}
+
+div.webportal_modal_head {
+    color: #1e5ca6;
+    padding: 10px 0 10px;
+    margin: 0;
+    font: bold 1.2em Tahoma, Geneva, sans-serif;
+    background-color: #fff;
+}
+
+/*-----------------------------------------------------*/
+
+/* Request more detail */
+#request_validate_contain #request_validate img {
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+}
+
+/*-----------------------------------------------------*/
+div#request_validate_contain .button_close {
+    width: 100px;
+    margin: 20px auto 0;
+}
+
+/* Sent 2 agent */
+#send2agent_name {
+    margin: 0 0 5px;
+    font-weight: bold;
+}
+
+/* ***************************************************************************************************** */
+
+/* COMPONENT CSS CODE */
+/*---Com_webportal All view */
+#webportal_component_layout {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    overflow: hidden;
+    font: normal .9em arial, Geneva, sans-serif;
+}
+
+#webportal_component_layout div.require {
+    margin: 11px 0 0;
+    padding: 0;
+    height: auto;
+    overflow: hidden;
+}
+
+#webportal_component_layout div.require ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    list-style-image: none;
+}
+
+#webportal_component_layout div.require ul li {
+    padding: 0;
+    margin: 0;
+}
+
+/*-----------------------------------------------------------------------------------------------------------*/
+
+/*---Com_webportal : property_list_head */
+#webportal_property_list_head, #webportal_property_list_tail {
+    margin: 0;
+    padding: 0;
+    min-height: 34px;
+    height: auto;
+    overflow: hidden;
+    line-height: 26px;
+}
+
+#webportal_property_list_head span, #webportal_property_list_tail span {
+    padding: 0;
+    margin: 0; /*vertical-align: top; /*float:left;*/
+    /*border:1px solid #999;*/
+}
+
+#webportal_property_list_head span a, #webportal_property_list_tail span a {
+    color: #505050;
+    font-weight: normal;
+}
+
+#webportal_property_list_head span#webportal_property_per_page, #webportal_property_list_tail span#webportal_property_per_page {
+    margin: 0;
+    padding: 0;
+}
+
+#webportal_property_list_head span#webportal_property_per_page label, #webportal_property_list_tail span#webportal_property_per_page label {
+    margin: 0;
+    padding: 0;
+    line-height: 26px;
+}
+
+#webportal_property_list_head span#webportal_property_per_page .inputbox, #webportal_property_list_tail span#webportal_property_per_page .inputbox {
+    width: 50px;
+}
+
+#webportal_property_list_head span#webportal_property_per_page #property_on_sight_result, #webportal_property_list_tail span#webportal_property_per_page #property_on_sight_result {
+    width: 220px;
+}
+
+#webportal_property_list_head span#webportal_num_page, #webportal_property_list_tail span#webportal_num_page {
+    padding: 0;
+    margin: 0 0 0 0;
+    float: right;
+}
+
+#webportal_property_list_head div#results_and_paging {
+    width: 630px;
+    float: left;
+}
+
+#webportal_property_list_tail div#results_and_paging {
+    width: 100%;
+    float: left;
+}
+
+#webportal_property_list_head div#results_and_paging #webportal_property_found, #webportal_property_list_tail div#results_and_paging #webportal_property_found {
+    float: left;
+    margin-right: 1em;
+}
+
+#webportal_property_list_head div#results_and_paging #webportal_property_per_page, #webportal_property_list_tail div#results_and_paging #webportal_property_per_page {
+    float: left;
+}
+
+#webportal_property_list_head div#results_and_paging #webportal_property_per_page label, #webportal_property_list_tail div#results_and_paging #webportal_property_per_page label {
+    *vertical-align: 3px;
+}
+
+#webportal_property_list_head div#results_and_paging #webportal_paging, #webportal_property_list_tail div#results_and_paging #webportal_paging {
+    float: right;
+}
+
+#webportal_property_list_head span.webportal_search_by, #webportal_property_list_tail span.webportal_search_by {
+    background: url(../image/search_by-tab.png) no-repeat 0 0;
+    width: 106px;
+    height: 34px;
+    float: right;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+#webportal_property_list_head span.webportal_search_by #webportal_search_by_point, #webportal_property_list_tail span.webportal_search_by #webportal_search_by_point {
+    position: absolute;
+    border: 1px solid #cc;
+    bottom: 0px;
+    left: 20px;
+}
+
+#webportal_property_list_head sub, #webportal_property_list_tail sub {
+    line-height: 0;
+    font-size: 1em;
+    vertical-align: text-bottom;
+    *position: relative;
+    *bottom: -7px;
+}
+
+#webportal_property_list_head label, #webportal_property_list_tail label {
+    margin: 0 5px 0 17px;
+}
+
+#webportal_property_list_head label a, #webportal_property_list_tail label a {
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+#webportal_property_list_head label.webportal_search_by_map_text, #webportal_property_list_tail label.webportal_search_by_map_text {
+    font-weight: bolder;
+    color: #ccc;
+}
+
+#property_sort_by {
+    -border: 1px solid #0af;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    overflow: hidden;
+    float: right;
+}
+
+#property_sort_by a {
+    display: inline-block;
+    margin: 0 5px;
+    -border: 1px solid #ccc;
+}
+
+#property_agent_name {
+    font: normal 1em Tahoma, Geneva, sans-serif;
+    -border: 1px solid #ccc;
+    float: left;
+}
+
+#property_agent_name b {
+    color: #1E5CA6;
+}
+
+/*-----------------------------------------------------------------------------------------------------------*/
+
+/*---Com_webportal : property_list */
+#webportal_property_list_div {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    min-height: 200px;
+    overflow: hidden;
+    position: relative;
+    /*width: 747px;*/
+    /* to align with any "detail" div (which has -2px width than this) that does above this */
+}
+
+#webportal_property_list_div div.webportal_property_list_row,
+#webportal_my_profile div.webportal_property_list_row {
+    margin: 0 0 10px;
+    padding: 5px 3px 11px 4px;
+    border: 1px solid #ccc;
+    background: #ffffff;
+    height: 140px;
+    overflow: hidden;
+}
+
+#webportal_property_list_div div.webportal_property_list_row a {
+    color: #999; /*text-decoration:underline;*/
+}
+
+#webportal_property_list_div div.webportal_property_list_row a:hover {
+    color: #999;
+    text-decoration: none;
+}
+
+.webportal_property_list_pic {
+    float: left;
+    /*border:1px solid #666; */
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 147px;
+}
+
+/**** for saved property remove button *****/
+a#saved_prop_remove_button {
+    background: url(../image/x-icon-small.png) no-repeat;
+    width: 20px;
+    height: 20px;
+    display: block;
+    position: absolute;
+    margin-top: -15px;
+    right: 0;
+}
+
+a#saved_prop_remove_button:hover {
+    background: url(../image/x-icon-small-red.png) no-repeat;
+}
+
+/*****/
+.webportal_property_list_pic .webportal_tag_openhouse {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #405D8E;
+    color: #fff;
+    z-index: 50;
+    height: 20px;
+    font: bold .85em/20px Tahoma, Geneva, sans-serif;
+    letter-spacing: -.1em;
+}
+
+.webportal_tag_openhouse_beside_image {
+    margin-top: -11px;
+    margin-left: -3px;
+}
+
+.webportal_tag_openhouse_beside_image_open_house_text {
+    color: #da1e2b;
+    font: bold 14px Arial, Geneva, sans-serif;
+    margin-left: 0px;
+
+}
+
+.webportal_tag_openhouse_beside_image_open_house_date {
+    position: absolute;
+    margin-top: -6.5px;
+    font-size: 12px;
+}
+
+.webportal_property_list_pic .webportal_tag_amount_picture {
+    display: block;
+    background: url(../image/paper_curl_icon.png) no-repeat 0 2px; /* the image has a two pixel blank line at the bottom */
+    position: absolute;
+    width: 23px;
+    height: 20px;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+}
+
+#webportal_property_list_div .webportal_property_list_pic .webportal_tag_amount_picture a {
+    /*color:#405D8E;*/
+    /*blue */
+    color: #e31836; /*red*/
+    font: bold .65em Tahoma, Geneva, sans-serif;
+    text-decoration: none;
+    display: block;
+    position: absolute;
+    bottom: 1px;
+    right: 0;
+    text-align: center;
+}
+
+/*IE*/
+/*html body* #webportal_property_list_div .webportal_property_list_pic .webportal_tag_amount_picture a{
+color: #405D8E;
+left:11px;
+}*/
+/*#webportal_property_list_div .webportal_property_list_pic .webportal_tag_amount_picture a, x:-moz-any-link, x:default {
+color: #e31836;
+left:11px;
+}*/
+
+/*#webportal_property_list_div .webportal_property_list_pic .webportal_tag_amount_picture a:hover{
+color:#405D8E;
+}*/
+.webportal_property_list_pic img {
+    margin: 0;
+    padding: 0;
+    width: 221px;
+    height: 147px;
+    border: 0;
+}
+
+.webportal_property_list_detail {
+    width: 68%;
+    float: right;
+    margin: 5px 0 0;
+    padding: 0;
+    /*border:1px solid #ccc;*/
+    position: relative;
+    min-height: 135px;
+    height: 155px;
+    overflow: hidden;
+}
+
+.webportal_property_list_detail_addr {
+}
+
+.webportal_property_list_detail_addr span {
+    font: bold 14px arial, Geneva, sans-serif;
+    margin: 0 3px 0 0;
+    padding: 0;
+    float: left;
+}
+
+.webportal_tag_new {
+    color: #405D8E;
+}
+
+div#webportal_property_list_div
+div.webportal_property_list_row
+div.webportal_property_list_detail
+div.webportal_property_list_detail_addr
+a {
+    color: #707070;
+    text-decoration: underline;
+}
+
+div#webportal_property_list_div
+div.webportal_property_list_row
+div.webportal_property_list_detail
+div.webportal_property_list_detail_addr
+a span.webportal_tag_street {
+    color: #E21A35;
+    text-decoration: none;
+}
+
+div#webportal_property_list_div
+div.webportal_property_list_row
+div.webportal_property_list_detail
+div.webportal_property_list_detail_addr
+a span.webportal_tag_postal {
+    color: #707070;
+    text-decoration: none;
+}
+
+.webportal_my_rating * {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.webportal_property_list_detail_rating {
+    float: right;
+}
+
+.webportal_property_list_detail_price {
+    clear: left;
+    margin-top: 26px;
+}
+
+.webportal_tag_price {
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0 15px 0 0;
+    text-transform: uppercase;
+    color: #0F4FA0;
+}
+
+#webportal_property_list_div .webportal_property_list_detail .webportal_property_list_detail_description {
+    margin-top: 10px;
+    height: 55px;
+    font-size: 12.3px;
+}
+
+.webportal_property_list_detail_other {
+    float: right;
+    margin-top: -23px;
+}
+
+.webportal_tag_arrange_viewing {
+    margin: 0 10px 0 5px;
+    background: url(../image/clock_icon.png) no-repeat left;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 0 0 25px;
+}
+
+.webportal_tag_size, .webportal_tag_bedroom, .webportal_tag_type {
+    font-weight: bold;
+    font-size: 12px;
+    padding: 0 4px;
+    border-right: 1px solid #505050;
+    color: #0F4FA0;
+}
+
+.webportal_tag_type {
+    border: none;
+}
+
+.webportal_property_list_button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.button_property_open_house {
+    width: 300px;
+    height: 28px;
+    color: #505050;
+    font: normal .9em Arial, Helvetica, sans-serif;
+    margin-top: 0px;
+    padding: -1 20px 0 0;
+    border: 0;
+    cursor: pointer;
+    float: left;
+}
+
+.button_property_list {
+    background: url(../image/default_button2.png) no-repeat;
+    width: 110px;
+    height: 27px;
+    color: #505050;
+    font: normal .9em Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: -1 20px 0 0;
+    border: 0;
+    cursor: pointer;
+    text-align: left;
+    margin-bottom: 11px;
+}
+
+#no_property_found {
+    border: 1px solid #ccc;
+    background: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 30px;
+    font: normal 1em arial, Geneva, sans-serif;
+}
+
+#webportal_paging {
+    padding: 0;
+    margin: 0;
+    /*float:left;*/
+    /*margin-top:-8px;*/
+    /*border:1px solid #ccc;*/
+    text-align: left;
+    height: 30px;
+    margin-left: 627px;
+    line-height: 20px;
+}
+
+span.pagenav {
+    color: #505050;
+    font: normal 0.9em Tahoma, Geneva, sans-serif;
+}
+
+a.pagenav {
+    color: #505050;
+    font: normal 0.9em Tahoma, Geneva, sans-serif;
+}
+
+/*-----------------------------------------------------------------------------------------------------------*/
+
+/*---Com_webportal : arrange_viewing */
+#request-container-big {
+    width: 280px;
+    height: auto;
+    min-height: 100px;
+    margin: 0;
+    padding: 0;
+}
+
+#request-container-big a.modal-close {
+    background: url(../image/x-icon.png) no-repeat;
+    width: 30px;
+    height: 30px;
+    display: block;
+    z-index: 3200;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+}
+
+#request-container-big a.modal-close:hover {
+    background: url(../image/x-icon-red.png) no-repeat;
+}
+
+div#webportal_property_save_popup, div#webportal_send2friend_popup, #webportal_arrange_viewing_popup {
+    display: none;
+    margin: 0;
+    padding: 0;
+    height: auto;
+}
+
+#property_save_contain, #send2friend_contain, #arrange_viewing_contain {
+    padding: 0 0 20px 20px;
+    font-size: .9em;
+    overflow: hidden;
+    height: auto;
+    background-color: #fff;
+    position: relative;
+}
+
+#arrange_viewing_contain {
+    overflow: visible;
+    position: static;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+
+}
+
+.button_clear {
+    width: 100px;
+    margin: 20px 0 0;
+}
+
+.button_close {
+    width: 100px;
+    margin: 20px auto 0;
+}
+
+.button_send {
+    width: 100px;
+    margin: 20px 0 0 100px;
+}
+
+#arrange_button_row {
+    height: auto;
+    margin: 10px 0 0;
+    padding: 0 30px 0 0;
+    overflow: hidden;
+}
+
+#arrange_viewing_contain .button_clear {
+    width: 100px;
+    float: left;
+    margin: 0;
+}
+
+#arrange_viewing_contain .button_send {
+    width: 100px;
+    float: right;
+    margin: 0;
+}
+
+span.webportal_textbox_popup {
+    border: 1px solid #ccc;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+    width: 60%;
+    height: auto;
+    display: block;
+    background: #fff;
+    cursor: text;
+}
+
+span.webportal_textarea_popup {
+    border: 1px solid #ccc;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+    width: 85%;
+    height: auto;
+    display: block;
+    background: #fff;
+    cursor: text;
+}
+
+div.validate_detail {
+    color: #405D8E;
+    display: none;
+    min-height: 40px;
+    height: auto;
+    overflow: hidden;
+}
+
+#arrange_date_row, #arrange_time_row {
+    line-height: 20px;
+}
+
+#arrange_date_row span.webportal_textbox_popup, #arrange_time_row span.webportal_textbox_popup {
+    width: 30%;
+    float: left;
+}
+
+/*-----------------------------------------------------------------------------------------------------------*/
+
+#webportal_property_detail_detail_right_side {
+    width: 225px;
+    height: auto;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background: #fff;
+    float: right;
+    padding: 8px;
+    clear: right;
+}
+
+/*---Com_webportal : property_detail_menu */
+#webportal_property_detail_menu {
+    width: 225px;
+    height: auto;
+    overflow: hidden;
+    border: none;
+    background: none;
+    float: right;
+    margin: 0px;
+    margin-top: 15px;
+
+    padding: 8px;
+}
+
+#webportal_property_detail_menu ul {
+}
+
+#webportal_property_detail_menu ul li {
+    text-align: left;
+    height: 10px;
+    min-height: 30px;
+    line-height: 30px;
+    -border: 1px solid #ccc;
+    display: block;
+    vertical-align: middle;
+    list-style: outside;
+    list-style-image: none;
+}
+
+#webportal_property_detail_menu ul li a {
+    font: normal 1em arial, Geneva, sans-serif;
+    padding: 0;
+    line-height: 30px;
+}
+
+.webportal_property_menu_pic {
+    width: 20px;
+    height: auto;
+    min-height: 15px;
+    max-height: 20px;
+    border: none;
+    padding: 0;
+    margin: 0 10px 0 0;
+}
+
+#webportal_property_detail_menu_anchor {
+    margin-bottom: 2px;
+}
+
+/*-----------------------------------------------------------------------------------------------------------*/
+
+/*---Com_webportal : property_detail */
+#back_to_search_result {
+    position: absolute;
+    -border: 1px solid #0af;
+    height: auto;
+    min-height: 15px;
+    width: 250px;
+    overflow: hidden;
+    right: -270px;
+    z-index: 100;
+}
+
+#back_to_search_result a {
+    font: Normal 0.9em arial, Geneva, sans-serif
+}
+
+#webportal_property_detail_head, #webportal_property_detail_slide_row, #webportal_property_detail_description_row {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    overflow: hidden;
+}
+
+#webportal_property_detail_head {
+    margin: 0 0 5px;
+    padding: 0;
+    height: 23px;
+    min-height: 15px;
+    overflow: hidden;
+    -border: 1px solid #ccc;
+}
+
+#webportal_property_detail_address {
+    float: left;
+    font: normal 20px Arial, Geneva, sans-serif;
+    width: 500px;
+    height: auto;
+    overflow: hidden;
+    -border: 1px solid #ccc;
+}
+
+#webportal_property_detail_address .webportal_tag_street {
+    font-weight: bold;
+}
+
+#webportal_property_detail_other_property, #webportal_property_detail_rating {
+    float: right;
+}
+
+#webportal_property_detail_other_property a {
+    font-weight: normal;
+    padding: 0 0 0 20px;
+}
+
+#webportal_property_detail_address_inside_details_pane {
+    float: left;
+    font: normal 20px Arial, Geneva, sans-serif;
+    width: 500px;
+    height: 35px;
+    overflow: hidden;
+    -border: 1px solid #ccc;
+}
+
+#webportal_property_detail_address_inside_details_pane .webportal_tag_street {
+    font-weight: bold;
+    color: #0f4fa0;
+}
+
+#webportal_property_detail_address_inside_details_pane .webportal_tag_postal {
+    font-weight: bold;
+}
+
+#webportal_property_detail_slide {
+    background: #fff;
+    border: 1px solid #ccc;
+    width: 455px;
+    float: left;
+    height: auto;
+    padding: 0;
+    position: relative;
+}
+
+#webportal_property_detail_slide_tag {
+    background: #000;
+    filter: Alpha(Opacity=50);
+    -moz-opacity: 0.5;
+    opacity: 0.5;
+    height: 30px;
+    color: #fff;
+    font: bold 1em/30px Tahoma, Geneva, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    left: 0;
+}
+
+#webportal_property_detail_slide_tag a {
+    color: #fff;
+    font: normal 1em/30px arial, Geneva, sans-serif;
+    text-decoration: underline;
+    filter: Alpha(Opacity=100);
+    -moz-opacity: 1.0;
+    opacity: 1.0;
+}
+
+#webportal_property_detail_slide_tag a:hover {
+    color: #fff;
+    font: bold 1em/30px Tahoma, Geneva, sans-serif;
+    text-decoration: none;
+    filter: Alpha(Opacity=100);
+    -moz-opacity: 1;
+    opacity: 1;
+}
+
+#slide_picture_hidden {
+    display: none;
+}
+
+#webportal_property_detail_slide_row .webportal_property_detail_gmap {
+    float: right;
+    border: 1px solid #ccc;
+    width: 245px;
+    height: 271px;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.webportal_property_detail_gmap {
+    overflow: hidden;
+}
+
+#webportal_property_detail_detail_row {
+    margin: 0;
+    padding: 15px;
+    border: 1px solid #ccc;
+    background: #f5f5f5;
+    height: auto;
+    overflow: hidden;
+}
+
+#webportal_property_detail_detail_row #webportal_property_detail_address .webportal_tag_street {
+    color: #1e5ca6;
+}
+
+#webportal_property_detail_detail {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin: 0;
+    padding: 10px 0 0;
+    display: block;
+    vertical-align: top;
+    text-align: left;
+    -border: 1px solid #ccc;
+}
+
+#webportal_property_detail_detail span {
+    float: left;
+    display: inline-block;
+    height: auto;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    text-align: left;
+    min-width: 180px;
+    -border: 1px solid #ccc;
+}
+
+#webportal_property_detail_detail span ul {
+    float: left;
+}
+
+#webportal_property_detail_detail span ul li {
+    text-align: left;
+}
+
+#webportal_property_detail_detail span ul li b {
+    display: inline-block;
+    width: 110px;
+    *width: 90px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    float: left;
+}
+
+#webportal_property_detail_detail span.second_column {
+    margin: 0 0 0 70px;
+}
+
+#webportal_property_detail_detail span.second_column ul li b {
+    width: 135px;
+    *width: 120px;
+}
+
+#webportal_property_detail_detail span.third_column {
+    float: right;
+    margin: 0;
+}
+
+#webportal_property_detail_detail span.third_column ul li b {
+    width: 110px;
+    *width: 90px;
+}
+
+#webportal_property_detail_description_row {
+    margin: 0 0 10px;
+}
+
+#webportal_property_detail_description_col {
+    width: 66.5%;
+    height: auto;
+    overflow: hidden;
+    float: left;
+    margin: 0;
+    padding: 0;
+    display: block;
+    clear: left;
+    margin-top: 18px;
+    font-size: 10pt !important;
+}
+
+#webportal_property_detail_description_col * {
+    font-size: 10pt !important;
+}
+
+span.white_space {
+    width: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+    height: 10px;
+    overflow: hidden;
+}
+
+#webportal_property_detail_description {
+    height: auto;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background: #fff;
+    margin: 0;
+    padding: 5px;
+    display: block;
+}
+
+#webportal_property_detail_description p {
+    margin: 10px 0 0;
+    font: normal .9em Tahoma, Geneva, sans-serif;
+}
+
+.webportal_property_detail_description_openhouse {
+    padding: 0;
+    font: normal 1.2em Tahoma, Geneva, sans-serif;
+}
+
+.webportal_property_detail_description_openhouse span {
+    color: #405D8E;
+    font-weight: bold;
+}
+
+/*-----------------------------------------------------------------------------------------------------------*/
+
+/*---Com_webportal : property_detail_agent */
+#webportal_property_detail_agent {
+    height: auto;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background: #fff;
+    float: left;
+    width: 99.5%;
+    margin: 0;
+    padding: 0;
+}
+
+#webportal_property_detail_agent_col {
+    float: left;
+    padding: 5px;
+    width: 58.5%;
+    height: auto;
+    overflow: hidden;
+    -border: 1px solid #0af;
+}
+
+#webportal_property_detail_agent_col img {
+    float: left;
+    border: none;
+    width: 107px;
+    height: 137px;
+    margin: 0 5px 0 0;
+}
+
+#webportal_property_detail_agent_detail {
+    width: 170px;
+    padding: 0;
+    margin: 0;
+    height: auto;
+    overflow: hidden;
+    -border: 1px solid #ccc;
+}
+
+#webportal_property_detail_agent_detail ul {
+}
+
+#webportal_property_detail_agent_detail ul li {
+    height: auto;
+    min-height: 0px;
+    line-height: 25px;
+    overflow: hidden;
+    list-style: outside;
+    list-style-image: none;
+    -border: 1px solid #ccc;
+}
+
+#webportal_property_detail_agent_detail ul li a {
+    margin: 0;
+    padding: 0;
+}
+
+.webportal_agent_detail_tag_name, .webportal_agent_detail_tag_office {
+    font: bold 16px Tahoma, Geneva, sans-serif;
+}
+
+.webportal_agent_detail_tag_office a {
+    color: #1e5ca6;
+}
+
+.webportal_agent_detail_tag_office span {
+    color: #405D8E;
+    letter-spacing: -1px;
+    margin: 0 0 0 0;
+}
+
+/* removed margin-right of 5 because we have colored office name */
+.webportal_agent_detail_tag_office span b {
+    color: #1e5ca6;
+}
+
+.webportal_agent_detail_tag_status {
+    font: bold .85em Tahoma, Geneva, sans-serif;
+}
+
+#webportal_property_detail_agent_detail .webportal_agent_detail_tag_logo img {
+    width: auto;
+    height: 0px;
+    display: block;
+    margin: 0 auto;
+    -border: 1px solid #ccc;
+}
+
+#webportal_property_detail_office_col {
+    float: right;
+    width: 36.5%;
+    height: auto;
+    overflow: hidden;
+    -border: 1px solid #f00;
+    background: #ffffff;
+    padding: 3px 0 0;
+}
+
+#webportal_property_detail_office_col .webportal_agent_detail_tag_office {
+    float: left;
+    font-size: 1.2em;
+    -border: 1px solid #ccc;
+    margin: 0;
+    padding: 0;
+    display: block;
+    min-width: 120px;
+}
+
+#webportal_property_detail_office_col img {
+    float: left;
+    -border: 1px solid #ccc;
+    width: 70px;
+    height: auto;
+    display: block;
+}
+
+#webportal_property_detail_office_detail {
+    clear: both;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    overflow: hidden;
+    -border: 1px solid #ccc;
+}
+
+#webportal_property_detail_office_detail ul {
+    text-align: left;
+}
+
+#webportal_property_detail_office_detail ul li {
+    width: 175px;
+    height: auto;
+    overflow: hidden;
+    min-height: 20px;
+    line-height: 20px;
+    text-align: left;
+    list-style: outside;
+    list-style-image: none;
+    -border: 1px solid #ccc;
+}
+
+#webportal_property_detail_office_detail ul li a {
+    margin: 0;
+    padding: 0;
+}
+
+/*-----------------------------------------------------------------------------------------------------------*/
+
+/*---Com_webportal : property_print */
+#webportal_property_print {
+    color: black;
+    width: 600px;
+    height: auto;
+    overflow: hidden;
+    -border: 1px solid #ccc;
+    margin: 0 auto;
+    position: relative;
+    background: white;
+}
+
+#webportal_property_print #webportal_property_detail_head {
+    margin: 10px 0 0;
+}
+
+#webportal_property_print #webportal_property_print_detail_address {
+    width: 100%;
+    color: #1e5ca6;
+    font-size: 1.3em;
+}
+
+#webportal_property_print #webportal_property_print_detail_detail_row {
+    width: 100%;
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+    clear: both;
+}
+
+#webportal_property_print #webportal_property_print_detail_detail_row ul li {
+    line-height: 22px;
+    max-height: 22px;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+}
+
+#webportal_property_print #webportal_property_print_detail_detail_row ul {
+    width: 100%;
+    padding: 0;
+}
+
+#webportal_property_print #webportal_property_print_detail_detail_row ul b {
+    font-weight: normal;
+    width: auto;
+    float: left;
+    display: block;
+    min-width: 39%;
+}
+
+#webportal_property_print #webportal_property_print_detail_detail {
+    width: 100%;
+}
+
+#webportal_property_print #webportal_property_print_detail_detail div {
+    width: 33.33%;
+    margin: 0;
+    padding: 0;
+    display: block;
+    float: left;
+}
+
+#webportal_property_print ul li {
+    list-style: none;
+    list-style-image: none;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #cccccc;
+}
+
+#webportal_property_print #webportal_property_print_detail_description_row {
+    float: left;
+    clear: both;
+    margin-top: 5px;
+}
+
+#webportal_property_print #webportal_property_print_detail_description_col {
+    float: left;
+    padding: 0;
+    margin: 0;
+    width: 62.5%;
+}
+
+#webportal_property_detail_agent_print {
+    width: 220px;
+    height: auto;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background: #fff;
+    float: right;
+    padding: 5px;
+    margin: 0;
+}
+
+#webportal_property_detail_agent_print #webportal_property_detail_office_col {
+    float: right;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    -border: 1px solid #f00;
+    background: #f7f7f7;
+    padding: 3px 0 0;
+}
+
+#webportal_property_detail_agent_print #webportal_property_detail_agent_col {
+    float: left;
+    padding: 5px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background: #fff;
+    -border: 1px solid #0af;
+}
+
+#webportal_property_detail_agent_print #webportal_property_detail_agent_col #webportal_property_detail_agent_detail {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: auto;
+    overflow: hidden;
+    -border: 1px solid #ccc;
+}
+
+#webportal_property_print #property_print_button {
+    position: absolute;
+    top: 25px;
+    right: 15px;
+}
+
+/*-----------------------------------------------------------------------------------------------------------*/
+
+/*---Com_webportal : agent_search + office_search */
+#webportal_agent_search, #webportal_office_search {
+    /*margin:0 0 10px;*/
+    height: 33px;
+    overflow: hidden;
+    -border: 1px solid #ccc;
+}
+
+#webportal_agent_search span, #webportal_office_search span {
+    margin: 3px 15px 10px 0;
+    *margin: 4px 15px 10px 0;
+}
+
+#webportal_agent_search select {
+    width: 155px;
+
+}
+
+#webportal_office_detail {
+    margin-top: 29px;
+}
+
+#office_listbox {
+    margin-top: 9px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 10px;
+}
+
+#agent_searchbox {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+/*-----------------------------------------------------------------------------------------------------------*/
+
+/*---Com_webportal : agent_list + office_list */
+#agent_list_require {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    overflow: hidden;
+}
+
+#office_detail_heading_officename,
+#office_detail_heading_zipcode,
+#office_detail_heading_address {
+    font-size: 1.2em;
+}
+
+#office_description_heading {
+    font-weight: bold;
+    color: #0f4fa0;
+}
+
+#office_detail_heading_officename {
+    font-weight: bold;
+}
+
+#office_detail_row {
+    margin: 0;
+    padding: 0;
+}
+
+#webportal_agent_list, #webportal_office_list {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    overflow: hidden;
+}
+
+.webportal_agent_detail_row, .webportal_office_detail_row {
+    border: 1px solid #ccc;
+    width: 48%;
+    height: auto;
+    overflow: hidden;
+    min-height: 153px;
+    margin: 0 0 10px;
+    padding: 5px;
+    background: #fff;
+}
+
+.webportal_agent_detail_row a, .webportal_office_detail_row a {
+    float: left;
+    display: block;
+    margin: 0 5px 0 0;
+    *margin: 0;
+    -border: 1px solid #999;
+}
+
+.webportal_agent_detail_row img {
+    width: 107px;
+    /*height:137px;*/
+    height: 153px; /* 1.5 : 1 ratio */
+}
+
+.webportal_office_detail_row img {
+    width: 185px;
+    height: 135px;
+}
+
+.webportal_agent_detail, .webportal_office_detail {
+    float: right;
+    width: 235px;
+    display: block;
+    -border: 1px solid #999;
+    height: auto;
+    overflow: hidden;
+}
+
+.webportal_office_detail {
+    width: 165px;
+}
+
+.webportal_agent_detail ul, .webportal_office_detail ul {
+    list-style: outside;
+    list-style-image: none;
+    display: block;
+    width: 230px;
+    height: auto;
+    overflow: hidden;
+    -border: 1px solid #390;
+}
+
+.webportal_office_detail ul {
+    width: 160px;
+}
+
+.webportal_office_detail ul li {
+    text-align: left;
+    width: 100%;
+    height: auto;
+    min-height: 22px;
+    line-height: 20px;
+    overflow: hidden;
+    display: block;
+    margin: 0;
+    padding: 0;
+    -border: 1px solid #ccc;
+}
+
+.webportal_office_detail ul li a {
+    text-align: left;
+    width: 100%;
+    height: auto;
+    min-height: 22px;
+    line-height: 20px;
+    overflow: hidden;
+    display: block;
+    margin: 0;
+    padding: 0;
+    -border: 1px solid #f00;
+}
+
+.webportal_agent_detail ul li {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    min-height: 22px;
+    line-height: 20px;
+    overflow: hidden;
+    display: block;
+    margin: 0;
+    padding: 0;
+    -border: 1px solid #ccc;
+}
+
+.webportal_agent_detail ul li a {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    min-height: 22px;
+    line-height: 20px;
+    overflow: hidden;
+    display: block;
+    margin: 0;
+    padding: 0;
+    -border: 1px solid #f00;
+}
+
+.webportal_agent_detail a#agent_name_anchor {
+    text-decoration: underline;
+}
+
+.webportal_agent_detail_tag_vcard img {
+    width: 20px;
+    height: 20px;
+    float: none;
+    margin: 0 5px 0 0;
+    vertical-align: middle;
+}
+
+ul.agent_detail_list {
+    padding-bottom: 0; /* override the default */
+}
+
+.webportal_agent_detail_tag_vcard a span {
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+.webportal_agent_detail_tag_vcard a:hover span {
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.webportal_agent_detail_tag_logo {
+}
+
+.webportal_agent_detail_tag_logo img {
+    width: auto;
+    height: 18px;
+    display: block;
+    margin: 0 auto;
+    -border: 1px solid #ccc;
+}
+
+.webportal_agent_detail_tag_tel {
+}
+
+/*-----------------------------------------------------------------------------------------------------------*/
+
+/*---Com_webportal : agent_detail */
+#webportal_agent_detail {
+    /*width:100%;*/
+    /*width: 745px;*/
+    /* to align with property_list_div which as 2 px more than this */
+    height: auto;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 0;
+    padding-left: 0;
+    margin-bottom: 10px;
+}
+
+#agent_detail_heading {
+    font: bold 1.2em arial, Geneva, sans-serif;
+    color: #1e5ca6;
+    text-decoration: none;
+    display: block;
+    margin: 0 0 10px;
+}
+
+#agent_detail_pic_column {
+    width: 220px;
+    height: auto;
+    overflow: hidden;
+    /*border:1px solid #999;*/
+}
+
+#agent_detail_pic_column img {
+    width: 220px;
+    height: 289px;
+    margin: 0 0 5px;
+}
+
+#agent_detail_pic_column li {
+    margin: 0;
+    padding: 0;
+    list-style: inside;
+}
+
+#agent_detail_detail_column {
+    width: 68%;
+    height: auto;
+    overflow: hidden;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    -border: 1px solid #999;
+}
+
+#agent_view_property {
+    background: #FEFDFF url(../image/spyglass_icon.png) no-repeat 5px 50%;
+    min-height: 30px;
+    line-height: 30px;
+    height: auto;
+    overflow: hidden;
+    float: right;
+    border: 0px solid #ccc;
+    color: #1e5ca6;
+    font-weight: normal;
+    padding: 0 5px 0 35px;
+    cursor: pointer;
+}
+
+#agent_detail_name {
+    color: #1e5ca6;
+    font: bold 1.1em Tahoma, Geneva, sans-serif;
+    margin: 0 0 15px;
+}
+
+#agent_detail_office {
+    margin: 0 0 10px;
+}
+
+#agent_detail_office a {
+    font: bold 17px Arial, Geneva, sans-serif;
+    text-transform: uppercase;
+}
+
+#agent_detail_office strong {
+    color: #405D8E;
+}
+
+#agent_detail_office span {
+    letter-spacing: -1px;
+}
+
+#agent_detail_office b {
+    color: #1e5ca6;
+}
+
+#office_detail_main #agent_detail_office img {
+    width: auto;
+    height: 0px;
+    border: none;
+}
+
+#agent_detail_contact {
+    height: auto;
+    overflow: hidden;
+    margin: 0 0 40px;
+}
+
+#agent_detail_contact b {
+    display: inline-block;
+    width: 200px;
+    margin: 0 5px 0 0;
+}
+
+#agent_detail_contact strong {
+    color: #1e5ca6;
+}
+
+#agent_detail_contact div a {
+    color: #1e5ca6;
+    font: normal 1em arial, Geneva, sans-serif;
+}
+
+#agent_detail_slogan {
+    height: auto;
+    overflow: hidden;
+    margin: 0 0 40px;
+}
+
+#agent_detail_slogan li {
+    margin: 0;
+    padding: 0;
+    list-style: inside;
+}
+
+#agent_detail_description {
+    height: auto;
+    overflow: hidden;
+    margin: 0 0 40px;
+}
+
+#agent_detail_language {
+    height: auto;
+    overflow: hidden;
+}
+
+#agent_detail_language div {
+    height: auto;
+    overflow: hidden;
+    border: 0px solid #ccc;
+    background: #f0f2fe;
+    min-width: 200px;
+    max-width: 250px;
+}
+
+#agent_detail_language li {
+    margin: 0;
+    padding: 0;
+    list-style: inside;
+    font: normal .9em arial, Geneva, sans-serif;
+}
+
+#agent_detail_vcard {
+    margin: 0;
+    padding: 0;
+}
+
+#agent_detail_vcard * {
+    vertical-align: middle;
+}
+
+/*-----------------------------------------------------------------------------------------------------------*/
+
+/*---Com_webportal : office_detail */
+div#office_detail_img {
+    width: 500px;
+    height: 320px;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #EAEAEA;
+    background-color: #F6F6F6;
+    float: left;
+}
+
+.webportal_office_detail_gmap {
+    width: 225px;
+    height: 320px;
+    float: left;
+    overflow: hidden;
+    margin-top: 0;
+    margin-left: 5px;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+div#office_detail_lower {
+    float: left;
+    margin: 5px 0 0 0;
+    padding: 0;
+}
+
+div#office_detail_info {
+    float: left;
+    width: 500px;
+    padding: 0;
+    border: 1px solid #EAEAEA;
+    background-color: #F6F6F6;
+    height: 155px;
+    margin: 0;
+}
+
+div#office_tabs {
+    float: left;
+    width: 225px;
+    margin-left: 5px;
+    margin-top: 0;
+    padding: 0;
+}
+
+ul.office_tabs {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    list-style-image: none;
+}
+
+ul.office_tabs li {
+    padding-left: 0;
+}
+
+ul.office_tabs li a,
+ul.office_tabs li a:link,
+ul.office_tabs li a:visited {
+    margin-bottom: 5px;
+    font-weight: bold;
+    display: block;
+    float: left;
+    width: 100%;
+    line-height: 47px;
+    text-indent: 1.5em; /* 1.5 em */
+    padding: 0;
+    vertical-align: middle;
+    width: 100%;
+    border: 1px solid #EAEAEA;
+    background-color: #F6F6F6;
+    color: #004B97;
+    cursor: default;
+}
+
+ul.office_tabs li a:hover {
+    /* not specified in screenshot */
+    font-weight: bold;
+    background-color: #EAEAEA;
+    cursor: default;
+}
+
+ul.office_tabs li a.office_tab_button_selected {
+    background-color: #EAEAEA;
+    border-color: #BFBFBF; /* not specified in screenshot */
+}
+
+#office_detail_info p {
+    padding: 2px;
+}
+
+#office_detail_info label {
+    font-weight: bold;
+    margin-right: 0.5em;
+}
+
+.office_panel {
+    margin: 0;
+    padding: 0;
+}
+
+/*-----------------------------------------------------------------------------------------------------------*/
+
+/* com_webportal : property_map ****************************************************************************/
+
+#webportal_property_map_wrapper {
+    margin: 0;
+    padding: 0;
+}
+
+#webportal_property_map_wrapper div#map {
+    margin: 0;
+    padding: 0;
+    width: 740px;
+    height: 555px;
+}
+
+/* com_webportal: property_map -- END **********************************************************************/
+
+/* ***************************************************************************************************** */
+
+/* JOOMLA SPECIFIC CSS CODE */
+/*p#form-login-username label,p#form-login-password label{display:none;}*/
+.josForm, #josForm {
+    border: 1px solid #ccc;
+    padding: 10px 5px 20px;
+    background: #fff;
+    width: 98%
+}
+
+.article_separator {
+    height: 2px;
+    display: block;
+    /*background-color:#fcc;*/
+    margin: 5px 10px;
+}
+
+.article_column {
+    padding: 0 0 0 5px;
+}
+
+.adminform {
+
+}
+
+.author {
+
+}
+
+.bannerfooter {
+
+}
+
+.bannergroup {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.bannergroup_text {
+
+}
+
+.bannerheader {
+
+}
+
+.banneritem {
+
+}
+
+.banneritem_text {
+
+}
+
+.blog {
+    /*border:1px solid #ccc;*/
+    background: #fff;
+    margin: 0 0 10px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.blog a {
+    text-decoration: none;
+    /*color:#39F;*/
+    font: normal .9em Arial, Helvetica, sans-serif;
+}
+
+.blog_more {
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    padding: 5px;
+    height: auto;
+    overflow: hidden;
+    /*color:#6e93a0;*/
+}
+
+.blog_more ul {
+    margin: 10px 40px 0 0;
+}
+
+.blog_more ul li {
+    margin: 0;
+    padding: 0;
+    /*border-bottom:1px dashed #fcc;*/
+    height: 20px;
+}
+
+.blogsection {
+
+}
+
+.breadcrumbs {
+
+}
+
+.button {
+    background: none;
+    width: 83px;
+    height: 28px;
+    color: #0F4FA0;
+    font: bold .9em Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.buttonheading {
+
+}
+
+.clr {
+    clear: both;
+    margin: 0;
+    padding: 0;
+}
+
+.column_separator {
+    /*border-left:1px solid #6C9;*/
+}
+
+.componentheading {
+    /*color:#1e5ca6;*/
+    font: bold 1.2em Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.contentheading {
+    /*color:#ff6c00;*/
+    font: bold 1.2em Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.content_email {
+
+}
+
+.content_rating {
+
+}
+
+.content_vote {
+
+}
+
+.contentdecription {
+
+}
+
+.contentpagetitle {
+
+}
+
+.contentpane {
+
+}
+
+.contentpaneopen {
+
+}
+
+.contenttoc {
+
+}
+
+.createdate, .small, .modifydate {
+    font: bold .7em Tahoma, Geneva, sans-serif;
+    /*color:#6e93a0;*/
+}
+
+.created-date {
+
+}
+
+.date {
+
+}
+
+.input {
+    margin: 0 0 10px;
+    padding: 0 0 0 20px;
+}
+
+.input p {
+    margin: 0;
+    padding: 0;
+}
+
+.inputbox {
+    width: 50%;
+}
+
+.input p#form-login-remember {
+    margin: 10px 0;
+}
+
+.input p#form-login-remember .inputbox {
+    width: 10%;
+}
+
+#form-login div {
+    padding: 0 0 0px 0px;
+}
+
+.intro {
+
+}
+
+.latestnews {
+
+}
+
+.loclink {
+
+}
+
+a.mainlevel:link, a.mainlevel:active, a.mainlevel:visited {
+
+}
+
+a.mainlevel:hover {
+
+}
+
+.message {
+
+}
+
+.metadata {
+
+}
+
+.modifydate {
+
+}
+
+.module {
+
+}
+
+.moduletable, .moduletable_menu, .moduletable_text, .moduletable_whoonline {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    height: auto;
+    overflow: hidden;
+}
+
+.moduletable_remax_search h3, .moduletable_webportal_request_detail h3, .moduletable_remax_refine_search h3,
+.moduletable_webportal_myprofile h3, .moduletable_webportal_search_vertical h3 {
+    display: none;
+}
+
+.moduletable_webportal_facebook {
+    display: none;
+}
+
+.mosimage {
+
+}
+
+.mosimage_caption {
+
+}
+
+.mostread {
+
+}
+
+.newsfeed {
+
+}
+
+.outline {
+
+}
+
+.pagenav {
+    color: #505050;
+    font: normal 0.9em Tahoma, Geneva, sans-serif;
+}
+
+a.pagenav {
+    color: #505050;
+    font: normal 0.9em Tahoma, Geneva, sans-serif;
+}
+
+.pagenav_next {
+
+}
+
+.pagenav_prev {
+
+}
+
+.pagenavbar {
+
+}
+
+.pagenavcounter {
+
+}
+
+.pathway {
+
+}
+
+#pathway {
+    border-bottom: 1px solid #ccc;
+    margin: 0 0 20px;
+    padding: 0;
+}
+
+.poll thead tr td {
+    margin: 0;
+    padding: 0 0 10px 15px;
+}
+
+.poll tbody tr td {
+    text-align: left;
+    padding: 0 0 0 5px;
+}
+
+.poll tbody tr td div input {
+    margin: 20px 0 10px;
+}
+
+.pollstableboarder {
+    text-align: left;
+}
+
+#poll {
+    border: 1px solid #ccc;
+    background: #fff;
+    height: auto;
+    overflow: hidden;
+    margin: 0 0 10px;
+    padding: 10px 0 20px 20px;
+}
+
+#poll .componentheading {
+    margin: 0 0 10px;
+}
+
+#poll .pollstableboarder {
+
+}
+
+#poll .sectiontableentry0 {
+    background: #fff;
+}
+
+#poll .sectiontableentry1 {
+    background: #eff3ff;
+}
+
+.readon {
+    font: bold .8em Tahoma, Geneva, sans-serif;
+}
+
+.search {
+
+}
+
+.searchintro {
+
+}
+
+.sections {
+
+}
+
+.sectiontable_footer {
+
+}
+
+.sectiontableentry {
+
+}
+
+.sectiontableentry1, .sectiontableentry2 {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+.sectiontablefooter {
+
+}
+
+.sectiontableheader {
+
+}
+
+.small {
+
+}
+
+.smalldark {
+
+}
+
+a.sublevel:link, a.sublevel:active, a.sublevel:visited {
+
+}
+
+a.sublevel:hover {
+
+}
+
+.title {
+
+}
+
+.wrapper {
+
+}
+
+.watermarked {
+    color: #aaa;
+}
+
+label.error {
+    float: none !important;
+    color: red;
+    vertical-align: middle;
+    padding-left: 0.5em;
+    font-size: 0.8em;
+}
+
+.webportal_agent_banner {
+    width: 100%;
+    background-color: white;
+}
+
+.webportal_agent_banner .name {
+    color: #0F4FA0;
+    font-weight: bold;
+    font-size: 13pt;
+}
+
+.webportal_agent_banner .title {
+    color: #000000;
+    font-size: 10pt;
+}
+
+.webportal_agent_banner .phone {
+    color: #E21A35;
+    font-size: 11pt;
+}
+
+.webportal_agent_banner .email {
+    color: #000000;
+    font-size: 10pt;
+}
+
+.webportal_agent_banner .office_wrapper {
+    width: 120px;
+}
+
+.webportal_agent_banner .office {
+    color: #0F4FA0;
+    font-size: 11pt;
+    text-align: right;
+    display: block;
+}
+
+.webportal_agent_banner img.remax_logo {
+    max-height: 33px;
+}
+
+.webportal_agent_banner td.agent_pic {
+    width: 107px;
+    vertical-align: bottom;
+}
+
+.webportal_agent_banner img.agent_pic {
+    height: 170px;
+    width: 130px;
+}
+
+.webportal_agent_banner .tagline {
+    color: #E21A35;
+    font-weight: bold;
+    font-size: 11pt;
+}
+
+.webportal_agent_banner .callnow {
+    color: #0F4FA0;
+    font-size: 11pt;
+}
+
+.ajaxresponse {
+    display: none;
+}
+
+/*Option*/
+/* style for block search on index page */
+.b-searchmain {
+    background: url("../image/bg-searchmain.png") 0 0 repeat-x;
+    height: 263px;
+    width: 983px;
+    margin-left: 8px;
+    position: relative;
+}
+
+.b-option {
+    width: 129px;
+    float: left;
+}
+
+.b-option * {
+    user-select: none;
+    -khtml-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
+}
+
+.b-option::selection {
+    background: transparent;
+    color: inherit;
+}
+
+.b-option::-moz-selection {
+    background: transparent;
+    color: inherit;
+}
+
+.b-option-wrap {
+    width: 168px;
+    float: left;
+    position: relative;
+    margin-right: 19px;
+}
+
+.b-option-tegund .b-option-wrap {
+    width: 140px;
+}
+
+.active {
+    background-position: 100% -102px;
+}
+
+.b-option-buttons {
+    font-size: 13px;
+    padding-left: 12px;
+    cursor: pointer;
+    height: 34px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #fff; /* stroke */
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px; /* border radius */
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box; /* prevents bg color from leaking outside the border */
+    background-color: #f7f8f9; /* layer fill content + color overlay */
+    -moz-box-shadow: inset 0 2px 3px rgba(0, 0, 0, .25); /* inner shadow */
+    -webkit-box-shadow: inset 0 2px 3px rgba(0, 0, 0, .25); /* inner shadow */
+    box-shadow: inset 0 2px 3px rgba(0, 0, 0, .25); /* inner shadow */
+    box-sizing: border-box;
+    line-height: 32px;
+}
+
+.active .b-option-buttons {
+
+}
+
+.b-option-title {
+    font-size: 14px;
+    color: #000;
+    font-weight: normal;
+    display: block;
+    margin-bottom: 4px;
+    height: 30px;
+    overflow: hidden;
+
+}
+
+.b-option-menu {
+    border-left: 1px solid #DDD;
+    border-right: 1px solid #DDD;
+    border-bottom: 1px solid #DDD;
+    background: url("../image/bg-option-menu.png") repeat-x scroll 0 0 #F1F1F1;
+    position: absolute;
+    top: 34px;
+    left: -7px;
+    z-index: 100;
+    padding: 3px;
+}
+
+.b-option-menu:after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: -10px;
+    z-index: -2;
+    border-bottom: 1px solid rgba(200, 204, 207, .69); /* stroke */
+    border-bottom-right-radius: 4px; /* border radius */
+    border-bottom-left-radius: 4px; /* prevents bg color from leaking outside the border */
+    background-color: rgba(225, 225, 225, .74); /* color overlay */
+    height: 7px;
+}
+
+.b-option-menu-corner {
+    position: absolute;
+    left: 4px;
+    background: white;
+    height: 10px;
+    z-index: 102;
+}
+
+/*new template center*/
+.main_search_new_center {
+    margin-left: 200px;
+
+}
+
+#webportal_search_type_new {
+}
+
+#webportalSearch_form {
+    position: relative;
+}
+
+#webportal-search-slider_new .slider_values {
+    float: right;
+    vertical-align: bottom;
+    color: #aaaaaa;
+}
+
+#webportal-search-slider_new {
+    width: 435px;
+    height: auto;
+    margin: 0px 0 0px 0px;
+    overflow: hidden;
+    /*border:1px solid #ccc;*/
+}
+
+#webportal_postaladdress, #webportal_type_of_property {
+    width: 192px;
+    height: 375px;
+    text-align: left;
+    font-size: 11px;
+    line-height: 18px;
+    z-index: 1;
+    left: 0;
+    margin-top: -3px;
+    padding: 2px 0 2px 0;
+    border: 0;
+    background: #fff;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: 1px solid rgba(200, 204, 207, .69);
+    border-top: 0;
+    box-sizing: border-box;
+}
+
+#webportal_type_of_property {
+    /*overflow: hidden;    */
+}
+
+.b-option-wrap.postal-address, #webportal_postaladdress {
+    width: 187px;
+}
+
+.b-option-wrap.property-type, #webportal_type_of_property {
+    width: 145px;
+}
+
+#main_search_new_center .slider_label {
+    color: #333;
+}
+
+/* Let's get this party started */
+/* ::-webkit-scrollbar {
+    width: 12px;
+} */
+
+/* Track */
+/* ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+} */
+
+/* Handle */
+/* ::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #CCC;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+} */
+/* ::-webkit-scrollbar-thumb:window-inactive {
+    background: #CCC;
+} */
+
+.headtext {
+    font-size: 20px;
+    font-family: arial;
+}
+
+.searchTextBoxWaterMarkStyle {
+    margin-top: 7px !important;
+}
+
+

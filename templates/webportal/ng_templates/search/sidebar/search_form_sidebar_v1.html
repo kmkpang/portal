@@ -1,0 +1,105 @@
+<!-- THIS IS USED IN LIST AND MAP PAGE -->
+<form ng-submit="filterSidebarModule()">
+
+    <div ng-show="searchfilter.office_id">
+        <span class="search-filters__slider-label"><?php echo JText::_('Office') ?>
+            {{ searchfilter.office_name }}</span>
+    </div>
+    <div ng-show="searchfilter.sale_id">
+        <span class="search-filters__slider-label"><?php echo JText::_('Agent') ?> {{ searchfilter.sale_name }}</span>
+    </div>
+
+    <!-- Top Search Block -->
+    <div class="row">
+        <div class="search-filters--sidebar--row column large-8">
+            <div class="input-textbox--wrapper">
+                <input type="text" ng-model="searchfilter.text" placeholder="<?php echo JText::_('SEARCH HOMES')?>"/>
+            </div>
+        </div>
+
+        <div class="search-filters--sidebar--row column large-8">
+            <prop-categories-select-sidebar></prop-categories-select-sidebar>
+        </div>
+
+        <div class="search-filters--sidebar--row collapse column large-8">
+            <div class="column large-12 no-pad-left no-pad-right">
+                <div class="search-filters__buy-rent--button left" ng-class="searchfilter.type_id == 2 ? 'active' : ''"
+                     ng-click="searchfilter.type_id = 2"><?php echo JText::_('Sale') ?></div>
+            </div>
+            <div class="column large-12 no-pad-left no-pad-right">
+                <div class="search-filters__buy-rent--button right" ng-class="searchfilter.type_id == 3 ? 'active' : ''"
+                     ng-click="searchfilter.type_id = 3"><?php echo JText::_('Rent')?></div>
+            </div>
+        </div>
+
+        <div class="search-filters--sidebar--row column large-24">
+            <postal-code-select-sidebar></postal-code-select-sidebar>
+        </div>
+
+        <?php if (defined('__COUNTRY') && __COUNTRY == 'IS') { ?>
+        <?php } else { ?>
+        <transport-select></transport-select>
+        <?php } ?>
+
+        <div class="search-filters--sidebar--row column large-8 small-24">
+            <filter-currency></filter-currency>
+        </div>
+
+        <div class="search-filters--sidebar--row column large-8 small-24">
+            <filter-slider-price></filter-slider-price>
+        </div>
+
+        <div class="search-filters--sidebar--row column large-8 small-24">
+            <filter-slider-rooms></filter-slider-rooms>
+        </div>
+
+        <div class="search-filters--sidebar--row column large-4 small-24">
+            <div class="search-list-filters__button" ng-class="searchfilter.loan80 ? 'active' : ''"
+                 ng-click="searchfilter.loan80 = !searchfilter.loan80"><?php echo JText::_('LOAN80')?>
+            </div>
+        </div>
+
+        <div class="search-filters--sidebar--row column large-4 small-24">
+            <div class="search-list-filters__button" ng-class="searchfilter.garage ? 'active' : ''"
+                 ng-click="searchfilter.garage = !searchfilter.garage"><?php echo JText::_('GARAGE')?>
+            </div>
+        </div>
+
+        <div class="search-filters--sidebar--row column large-4 small-24">
+            <div class="search-list-filters__button" ng-class="searchfilter.elevator ? 'active' : ''"
+                 ng-click="searchfilter.elevator = !searchfilter.elevator"><?php echo JText::_('ELEVATOR')?>
+            </div>
+        </div>
+
+        <div class="search-filters--sidebar--row column large-6 small-24">
+            <div class="search-list-filters__button" ng-class="searchfilter.new_today ? 'active' : ''"
+                 ng-click="searchfilter.new_today = !searchfilter.new_today"><?php echo JText::_('NEW_TODAY')?>
+            </div>
+        </div>
+
+        <div class="search-filters--sidebar--row column large-6 small-24">
+            <div class="search-list-filters__button" ng-class="searchfilter.new_this_week ? 'active' : ''"
+                 ng-click="searchfilter.new_this_week = !searchfilter.new_this_week"><?php echo JText::_('NEW_THIS_WEEK')?>
+            </div>
+        </div>
+
+        <div class="column large-24">
+            <hr />
+        </div>
+    </div>
+
+    <div class="search-filters--sidebar--row row">
+        <div class="large-8 large-centered column">
+            <div class="row">
+                <div class="column large-16">
+                    <input type="submit" value="<?php echo JText::_('SEARCH')?>" class="input-submit darkgreen"/>
+                </div>
+
+                <div class="column large-8">
+                    <input type="button" value="<?php echo JText::_('CLEAR')?>" ng-click="resetfilters()" class="input-submit mediumgray"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</form>

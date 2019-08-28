@@ -1,0 +1,1937 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Stofnanir</name>
+	<Style id="1">
+		<IconStyle>
+			<scale>0</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/ltblu-blank.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+		</LabelStyle>
+		<BalloonStyle>
+			<text><![CDATA[<style type="text/css">table.data {
+border-width:1px;
+border-spacing:1px;
+width:100%;
+border-style:solid;
+border-color:000000;
+border-collapse:separate;
+background-color:ffffff;
+font-size:medium;
+font-style: normal;
+font-weight:normal;
+font-family: "Microsoft Sans Serif"
+}
+tr.o td {
+border-width:1px;
+width:50%;padding:1px;
+border-style:solid;
+border-color:#000000;
+background-color:#ffffff;
+color:#000000;
+}
+tr.e td {
+border-width:1px;
+width:50%;padding:1px;
+border-style:solid;
+border-color:#000000;
+background-color:#ffffff;
+color:#000000;
+}
+</style>
+
+                  <table >
+                  <tr><td align='center' colspan="2"><img alt="m" src="http://shape2earth.com/Documents/shp2e3.gif" /></td></tr>
+                  <tr><td align="center" colspan="2"><font size='4' face='Arial' color='#808080'><a href="http://shape2earth.com"><b>Shape2Earth</a></font></td></tr>
+                  <tr><td valign='top'><h2><font color="#aa0000">$[name]</font></h2>$[description]</td>
+                 </tr></table>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ccef918f</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>cc82e080</color>
+		</PolyStyle>
+	</Style>
+	<Style id="7">
+		<IconStyle>
+			<scale>0</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-blank.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+		</LabelStyle>
+		<BalloonStyle>
+			<text><![CDATA[<style type="text/css">table.data {
+border-width:1px;
+border-spacing:1px;
+width:100%;
+border-style:solid;
+border-color:000000;
+border-collapse:separate;
+background-color:ffffff;
+font-size:medium;
+font-style: normal;
+font-weight:normal;
+font-family: "Microsoft Sans Serif"
+}
+tr.o td {
+border-width:1px;
+width:50%;padding:1px;
+border-style:solid;
+border-color:#000000;
+background-color:#ffffff;
+color:#000000;
+}
+tr.e td {
+border-width:1px;
+width:50%;padding:1px;
+border-style:solid;
+border-color:#000000;
+background-color:#ffffff;
+color:#000000;
+}
+</style>
+
+                  <table >
+                  <tr><td align='center' colspan="2"><img alt="m" src="http://shape2earth.com/Documents/shp2e3.gif" /></td></tr>
+                  <tr><td align="center" colspan="2"><font size='4' face='Arial' color='#808080'><a href="http://shape2earth.com"><b>Shape2Earth</a></font></td></tr>
+                  <tr><td valign='top'><h2><font color="#aa0000">$[name]</font></h2>$[description]</td>
+                 </tr></table>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ccf6e1f1</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ccd2e7f1</color>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="0">
+		<IconStyle>
+			<scale>0</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/blu-blank.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+		</LabelStyle>
+		<BalloonStyle>
+			<text><![CDATA[<style type="text/css">table.data {
+border-width:1px;
+border-spacing:1px;
+width:100%;
+border-style:solid;
+border-color:000000;
+border-collapse:separate;
+background-color:ffffff;
+font-size:medium;
+font-style: normal;
+font-weight:normal;
+font-family: "Microsoft Sans Serif"
+}
+tr.o td {
+border-width:1px;
+width:50%;padding:1px;
+border-style:solid;
+border-color:#000000;
+background-color:#ffffff;
+color:#000000;
+}
+tr.e td {
+border-width:1px;
+width:50%;padding:1px;
+border-style:solid;
+border-color:#000000;
+background-color:#ffffff;
+color:#000000;
+}
+</style>
+
+                  <table >
+                  <tr><td align='center' colspan="2"><img alt="m" src="http://shape2earth.com/Documents/shp2e3.gif" /></td></tr>
+                  <tr><td align="center" colspan="2"><font size='4' face='Arial' color='#808080'><a href="http://shape2earth.com"><b>Shape2Earth</a></font></td></tr>
+                  <tr><td valign='top'><h2><font color="#aa0000">$[name]</font></h2>$[description]</td>
+                 </tr></table>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ccc7aaf4</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>cc9bb8e5</color>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="8">
+		<IconStyle>
+			<scale>0</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+		</LabelStyle>
+		<BalloonStyle>
+			<text><![CDATA[<style type="text/css">table.data {
+border-width:1px;
+border-spacing:1px;
+width:100%;
+border-style:solid;
+border-color:000000;
+border-collapse:separate;
+background-color:ffffff;
+font-size:medium;
+font-style: normal;
+font-weight:normal;
+font-family: "Microsoft Sans Serif"
+}
+tr.o td {
+border-width:1px;
+width:50%;padding:1px;
+border-style:solid;
+border-color:#000000;
+background-color:#ffffff;
+color:#000000;
+}
+tr.e td {
+border-width:1px;
+width:50%;padding:1px;
+border-style:solid;
+border-color:#000000;
+background-color:#ffffff;
+color:#000000;
+}
+</style>
+
+                  <table >
+                  <tr><td align='center' colspan="2"><img alt="m" src="http://shape2earth.com/Documents/shp2e3.gif" /></td></tr>
+                  <tr><td align="center" colspan="2"><font size='4' face='Arial' color='#808080'><a href="http://shape2earth.com"><b>Shape2Earth</a></font></td></tr>
+                  <tr><td valign='top'><h2><font color="#aa0000">$[name]</font></h2>$[description]</td>
+                 </tr></table>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>cc9ae6f5</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ccd78bf5</color>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="9">
+		<IconStyle>
+			<scale>0</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/wht-square.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+		</LabelStyle>
+		<BalloonStyle>
+			<text><![CDATA[<style type="text/css">table.data {
+border-width:1px;
+border-spacing:1px;
+width:100%;
+border-style:solid;
+border-color:000000;
+border-collapse:separate;
+background-color:ffffff;
+font-size:medium;
+font-style: normal;
+font-weight:normal;
+font-family: "Microsoft Sans Serif"
+}
+tr.o td {
+border-width:1px;
+width:50%;padding:1px;
+border-style:solid;
+border-color:#000000;
+background-color:#ffffff;
+color:#000000;
+}
+tr.e td {
+border-width:1px;
+width:50%;padding:1px;
+border-style:solid;
+border-color:#000000;
+background-color:#ffffff;
+color:#000000;
+}
+</style>
+
+                  <table >
+                  <tr><td align='center' colspan="2"><img alt="m" src="http://shape2earth.com/Documents/shp2e3.gif" /></td></tr>
+                  <tr><td align="center" colspan="2"><font size='4' face='Arial' color='#808080'><a href="http://shape2earth.com"><b>Shape2Earth</a></font></td></tr>
+                  <tr><td valign='top'><h2><font color="#aa0000">$[name]</font></h2>$[description]</td>
+                 </tr></table>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ccfc9af5</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>cc8bfcf5</color>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="2">
+		<IconStyle>
+			<scale>0</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/pink-blank.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+		</LabelStyle>
+		<BalloonStyle>
+			<text><![CDATA[<style type="text/css">table.data {
+border-width:1px;
+border-spacing:1px;
+width:100%;
+border-style:solid;
+border-color:000000;
+border-collapse:separate;
+background-color:ffffff;
+font-size:medium;
+font-style: normal;
+font-weight:normal;
+font-family: "Microsoft Sans Serif"
+}
+tr.o td {
+border-width:1px;
+width:50%;padding:1px;
+border-style:solid;
+border-color:#000000;
+background-color:#ffffff;
+color:#000000;
+}
+tr.e td {
+border-width:1px;
+width:50%;padding:1px;
+border-style:solid;
+border-color:#000000;
+background-color:#ffffff;
+color:#000000;
+}
+</style>
+
+                  <table >
+                  <tr><td align='center' colspan="2"><img alt="m" src="http://shape2earth.com/Documents/shp2e3.gif" /></td></tr>
+                  <tr><td align="center" colspan="2"><font size='4' face='Arial' color='#808080'><a href="http://shape2earth.com"><b>Shape2Earth</a></font></td></tr>
+                  <tr><td valign='top'><h2><font color="#aa0000">$[name]</font></h2>$[description]</td>
+                 </tr></table>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>cccfbe8e</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ccafc07f</color>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Folder>
+		<name>--All Other Values--</name>
+		<open>1</open>
+	</Folder>
+	<Folder>
+		<name>0</name>
+		<Placemark>
+			<name>Ármúlaskóli</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>0</td></tr><tr class='e'><td>HEITI:</td><td>Ármúlaskóli</td></tr><tr class='o'><td>d_TEGUND:</td><td></td></tr></table>]]></description>
+			<styleUrl>#0</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.8830019249121,64.13783590506451,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Barðavogur - við gæsluvöll</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>0</td></tr><tr class='e'><td>HEITI:</td><td>Barðavogur - við gæsluvöll</td></tr><tr class='o'><td>d_TEGUND:</td><td></td></tr></table>]]></description>
+			<styleUrl>#0</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>0,0,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Borgarbókasafn</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>0</td></tr><tr class='e'><td>HEITI:</td><td>Borgarbókasafn</td></tr><tr class='o'><td>d_TEGUND:</td><td></td></tr></table>]]></description>
+			<styleUrl>#0</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.8589503798137,64.13407289829929,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Dalbraut 21-27</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>0</td></tr><tr class='e'><td>HEITI:</td><td>Dalbraut 21-27</td></tr><tr class='o'><td>d_TEGUND:</td><td></td></tr></table>]]></description>
+			<styleUrl>#0</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.8731429127323,64.147092271365,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Laugardalshöll</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>0</td></tr><tr class='e'><td>HEITI:</td><td>Laugardalshöll</td></tr><tr class='o'><td>d_TEGUND:</td><td></td></tr></table>]]></description>
+			<styleUrl>#0</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.877532435584,64.1403315248367,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Laugardalslaug</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>0</td></tr><tr class='e'><td>HEITI:</td><td>Laugardalslaug</td></tr><tr class='o'><td>d_TEGUND:</td><td></td></tr></table>]]></description>
+			<styleUrl>#0</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.8795124399591,64.146085115166,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Norðurbrún 1</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>0</td></tr><tr class='e'><td>HEITI:</td><td>Norðurbrún 1</td></tr><tr class='o'><td>d_TEGUND:</td><td></td></tr></table>]]></description>
+			<styleUrl>#0</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.8656128590863,64.14663914069971,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Skautasvell</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>0</td></tr><tr class='e'><td>HEITI:</td><td>Skautasvell</td></tr><tr class='o'><td>d_TEGUND:</td><td></td></tr></table>]]></description>
+			<styleUrl>#0</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.8687020945242,64.14011299458571,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Tónabær</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>0</td></tr><tr class='e'><td>HEITI:</td><td>Tónabær</td></tr><tr class='o'><td>d_TEGUND:</td><td></td></tr></table>]]></description>
+			<styleUrl>#0</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.8897174872202,64.13255767691621,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>1</name>
+		<Placemark>
+			<name>Alþjóðaskólinn</name>
+			<Snippet maxLines="1">Skóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>1</td></tr><tr class='e'><td>HEITI:</td><td>Alþjóðaskólinn</td></tr><tr class='o'><td>d_TEGUND:</td><td>Skóli</td></tr></table>]]></description>
+			<styleUrl>#1</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.8134803348952,64.13772701796751,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Austurbæjarskóli</name>
+			<Snippet maxLines="1">Skóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>1</td></tr><tr class='e'><td>HEITI:</td><td>Austurbæjarskóli</td></tr><tr class='o'><td>d_TEGUND:</td><td>Skóli</td></tr></table>]]></description>
+			<styleUrl>#1</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.9238090859087,64.1422005137764,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Árbæjarskóli</name>
+			<Snippet maxLines="1">Skóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>1</td></tr><tr class='e'><td>HEITI:</td><td>Árbæjarskóli</td></tr><tr class='o'><td>d_TEGUND:</td><td>Skóli</td></tr></table>]]></description>
+			<styleUrl>#1</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.7978275764095,64.11557183927801,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Ártúnsskóli</name>
+			<Snippet maxLines="1">Skóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>1</td></tr><tr class='e'><td>HEITI:</td><td>Ártúnsskóli</td></tr><tr class='o'><td>d_TEGUND:</td><td>Skóli</td></tr></table>]]></description>
+			<styleUrl>#1</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.8216559660077,64.1200721640335,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Barnaskóli Hjallastefnunnar</name>
+			<Snippet maxLines="1">Skóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>1</td></tr><tr class='e'><td>HEITI:</td><td>Barnaskóli Hjallastefnunnar</td></tr><tr class='o'><td>d_TEGUND:</td><td>Skóli</td></tr></table>]]></description>
+			<styleUrl>#1</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.9280703366159,64.1288521194044,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Breiðagerðisskóli</name>
+			<Snippet maxLines="1">Skóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>1</td></tr><tr class='e'><td>HEITI:</td><td>Breiðagerðisskóli</td></tr><tr class='o'><td>d_TEGUND:</td><td>Skóli</td></tr></table>]]></description>
+			<styleUrl>#1</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.8714015154412,64.1254371296242,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Breiðholtsskóli</name>
+			<Snippet maxLines="1">Skóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>1</td></tr><tr class='e'><td>HEITI:</td><td>Breiðholtsskóli</td></tr><tr class='o'><td>d_TEGUND:</td><td>Skóli</td></tr></table>]]></description>
+			<styleUrl>#1</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.8348905087355,64.10752866197561,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Brúarskóli</name>
+			<Snippet maxLines="1">Skóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>1</td></tr><tr class='e'><td>HEITI:</td><td>Brúarskóli</td></tr><tr class='o'><td>d_TEGUND:</td><td>Skóli</td></tr></table>]]></description>
+			<styleUrl>#1</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.9127432834302,64.1258496953087,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Dalskóli</name>
+			<Snippet maxLines="1">Skóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>1</td></tr><tr class='e'><td>HEITI:</td><td>Dalskóli</td></tr><tr class='o'><td>d_TEGUND:</td><td>Skóli</td></tr></table>]]></description>
+			<styleUrl>#1</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.743281206955,64.1326845935962,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Fellaskóli</name>
+			<Snippet maxLines="1">Skóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>1</td></tr><tr class='e'><td>HEITI:</td><td>Fellaskóli</td></tr><tr class='o'><td>d_TEGUND:</td><td>Skóli</td></tr></table>]]></description>
+			<styleUrl>#1</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.8219480501656,64.10261370843121,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Foldaskóli</name>
+			<Snippet maxLines="1">Skóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>1</td></tr><tr class='e'><td>HEITI:</td><td>Foldaskóli</td></tr><tr class='o'><td>d_TEGUND:</td><td>Skóli</td></tr></table>]]></description>
+			<styleUrl>#1</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.7938792153912,64.134102204127,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Fossvogsskóli</name>
+			<Snippet maxLines="1">Skóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>1</td></tr><tr class='e'><td>HEITI:</td><td>Fossvogsskóli</td></tr><tr class='o'><td>d_TEGUND:</td><td>Skóli</td></tr></table>]]></description>
+			<styleUrl>#1</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.8670421118293,64.1176048973945,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Grandaskóli</name>
+			<Snippet maxLines="1">Skóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>1</td></tr><tr class='e'><td>HEITI:</td><td>Grandaskóli</td></tr><tr class='o'><td>d_TEGUND:</td><td>Skóli</td></tr></table>]]></description>
+			<styleUrl>#1</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.9727724476215,64.1482862847477,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Hagaskóli</name>
+			<Snippet maxLines="1">Skóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>1</td></tr><tr class='e'><td>HEITI:</td><td>Hagaskóli</td></tr><tr class='o'><td>d_TEGUND:</td><td>Skóli</td></tr></table>]]></description>
+			<styleUrl>#1</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.9570519632716,64.140810883212,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Hamraskóli</name>
+			<Snippet maxLines="1">Skóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>1</td></tr><tr class='e'><td>HEITI:</td><td>Hamraskóli</td></tr><tr class='o'><td>d_TEGUND:</td><td>Skóli</td></tr></table>]]></description>
+			<styleUrl>#1</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.8128454068108,64.13798430673199,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Háaleitisskóli / Álftamýri</name>
+			<Snippet maxLines="1">Skóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>1</td></tr><tr class='e'><td>HEITI:</td><td>Háaleitisskóli / Álftamýri</td></tr><tr class='o'><td>d_TEGUND:</td><td>Skóli</td></tr></table>]]></description>
+			<styleUrl>#1</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.8923398343881,64.1346652031869,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Háaleitisskóli / Hvassaleiti</name>
+			<Snippet maxLines="1">Skóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>1</td></tr><tr class='e'><td>HEITI:</td><td>Háaleitisskóli / Hvassaleiti</td></tr><tr class='o'><td>d_TEGUND:</td><td>Skóli</td></tr></table>]]></description>
+			<styleUrl>#1</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.8826238807968,64.1278810809647,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Háteigsskóli</name>
+			<Snippet maxLines="1">Skóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>1</td></tr><tr class='e'><td>HEITI:</td><td>Háteigsskóli</td></tr><tr class='o'><td>d_TEGUND:</td><td>Skóli</td></tr></table>]]></description>
+			<styleUrl>#1</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.8984482899946,64.13697780302719,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Hlíðaskóli</name>
+			<Snippet maxLines="1">Skóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>1</td></tr><tr class='e'><td>HEITI:</td><td>Hlíðaskóli</td></tr><tr class='o'><td>d_TEGUND:</td><td>Skóli</td></tr></table>]]></description>
+			<styleUrl>#1</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.9107524240122,64.1308703022541,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Hólabrekkuskóli</name>
+			<Snippet maxLines="1">Skóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>1</td></tr><tr class='e'><td>HEITI:</td><td>Hólabrekkuskóli</td></tr><tr class='o'><td>d_TEGUND:</td><td>Skóli</td></tr></table>]]></description>
+			<styleUrl>#1</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.8183494953284,64.10752577871391,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Húsaskóli</name>
+			<Snippet maxLines="1">Skóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>1</td></tr><tr class='e'><td>HEITI:</td><td>Húsaskóli</td></tr><tr class='o'><td>d_TEGUND:</td><td>Skóli</td></tr></table>]]></description>
+			<styleUrl>#1</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.7839960796876,64.1380942353787,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Ingunnarskóli</name>
+			<Snippet maxLines="1">Skóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>1</td></tr><tr class='e'><td>HEITI:</td><td>Ingunnarskóli</td></tr><tr class='o'><td>d_TEGUND:</td><td>Skóli</td></tr></table>]]></description>
+			<styleUrl>#1</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.7584141905359,64.1261013336737,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Kelduskóli / Korpa</name>
+			<Snippet maxLines="1">Skóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>1</td></tr><tr class='e'><td>HEITI:</td><td>Kelduskóli / Korpa</td></tr><tr class='o'><td>d_TEGUND:</td><td>Skóli</td></tr></table>]]></description>
+			<styleUrl>#1</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.7548760580607,64.1566722656635,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Kelduskóli / Vík</name>
+			<Snippet maxLines="1">Skóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>1</td></tr><tr class='e'><td>HEITI:</td><td>Kelduskóli / Vík</td></tr><tr class='o'><td>d_TEGUND:</td><td>Skóli</td></tr></table>]]></description>
+			<styleUrl>#1</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.77780144288,64.1534537440192,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Klettaskóli</name>
+			<Snippet maxLines="1">Skóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>1</td></tr><tr class='e'><td>HEITI:</td><td>Klettaskóli</td></tr><tr class='o'><td>d_TEGUND:</td><td>Skóli</td></tr></table>]]></description>
+			<styleUrl>#1</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.9053639184712,64.12552780687891,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Klébergsskóli</name>
+			<Snippet maxLines="1">Skóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>1</td></tr><tr class='e'><td>HEITI:</td><td>Klébergsskóli</td></tr><tr class='o'><td>d_TEGUND:</td><td>Skóli</td></tr></table>]]></description>
+			<styleUrl>#1</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.8255127773079,64.2375439884176,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Landakotsskóli</name>
+			<Snippet maxLines="1">Skóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>1</td></tr><tr class='e'><td>HEITI:</td><td>Landakotsskóli</td></tr><tr class='o'><td>d_TEGUND:</td><td>Skóli</td></tr></table>]]></description>
+			<styleUrl>#1</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.9496198577767,64.1477940515303,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Langholtsskóli</name>
+			<Snippet maxLines="1">Skóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>1</td></tr><tr class='e'><td>HEITI:</td><td>Langholtsskóli</td></tr><tr class='o'><td>d_TEGUND:</td><td>Skóli</td></tr></table>]]></description>
+			<styleUrl>#1</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.8607743372095,64.13812629294181,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Laugalækjarskóli</name>
+			<Snippet maxLines="1">Skóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>1</td></tr><tr class='e'><td>HEITI:</td><td>Laugalækjarskóli</td></tr><tr class='o'><td>d_TEGUND:</td><td>Skóli</td></tr></table>]]></description>
+			<styleUrl>#1</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.878186460271,64.14714953688819,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Laugarnesskóli</name>
+			<Snippet maxLines="1">Skóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>1</td></tr><tr class='e'><td>HEITI:</td><td>Laugarnesskóli</td></tr><tr class='o'><td>d_TEGUND:</td><td>Skóli</td></tr></table>]]></description>
+			<styleUrl>#1</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.8847282544792,64.1446231194426,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Melaskóli</name>
+			<Snippet maxLines="1">Skóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>1</td></tr><tr class='e'><td>HEITI:</td><td>Melaskóli</td></tr><tr class='o'><td>d_TEGUND:</td><td>Skóli</td></tr></table>]]></description>
+			<styleUrl>#1</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.9571358690791,64.1426575520529,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Norðlingaskóli</name>
+			<Snippet maxLines="1">Skóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>1</td></tr><tr class='e'><td>HEITI:</td><td>Norðlingaskóli</td></tr><tr class='o'><td>d_TEGUND:</td><td>Skóli</td></tr></table>]]></description>
+			<styleUrl>#1</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.7735556877334,64.1013109350237,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Réttarholtsskóli</name>
+			<Snippet maxLines="1">Skóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>1</td></tr><tr class='e'><td>HEITI:</td><td>Réttarholtsskóli</td></tr><tr class='o'><td>d_TEGUND:</td><td>Skóli</td></tr></table>]]></description>
+			<styleUrl>#1</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.8658141859501,64.1235835252057,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Rimaskóli</name>
+			<Snippet maxLines="1">Skóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>1</td></tr><tr class='e'><td>HEITI:</td><td>Rimaskóli</td></tr><tr class='o'><td>d_TEGUND:</td><td>Skóli</td></tr></table>]]></description>
+			<styleUrl>#1</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.7951579314659,64.14547639883951,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Selásskóli</name>
+			<Snippet maxLines="1">Skóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>1</td></tr><tr class='e'><td>HEITI:</td><td>Selásskóli</td></tr><tr class='o'><td>d_TEGUND:</td><td>Skóli</td></tr></table>]]></description>
+			<styleUrl>#1</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.7845664649617,64.10570738132969,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Seljaskóli</name>
+			<Snippet maxLines="1">Skóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>1</td></tr><tr class='e'><td>HEITI:</td><td>Seljaskóli</td></tr><tr class='o'><td>d_TEGUND:</td><td>Skóli</td></tr></table>]]></description>
+			<styleUrl>#1</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.8380161092802,64.0954538808444,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Skóli Ísaks Jónssonar</name>
+			<Snippet maxLines="1">Skóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>1</td></tr><tr class='e'><td>HEITI:</td><td>Skóli Ísaks Jónssonar</td></tr><tr class='o'><td>d_TEGUND:</td><td>Skóli</td></tr></table>]]></description>
+			<styleUrl>#1</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.9048127465397,64.1354928052079,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Suðurhlíðarskóli</name>
+			<Snippet maxLines="1">Skóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>1</td></tr><tr class='e'><td>HEITI:</td><td>Suðurhlíðarskóli</td></tr><tr class='o'><td>d_TEGUND:</td><td>Skóli</td></tr></table>]]></description>
+			<styleUrl>#1</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.9015293484371,64.12163189107849,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Sæmundarskóli</name>
+			<Snippet maxLines="1">Skóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>1</td></tr><tr class='e'><td>HEITI:</td><td>Sæmundarskóli</td></tr><tr class='o'><td>d_TEGUND:</td><td>Skóli</td></tr></table>]]></description>
+			<styleUrl>#1</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.7387100218426,64.12469919027249,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Tjarnarskóli</name>
+			<Snippet maxLines="1">Skóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>1</td></tr><tr class='e'><td>HEITI:</td><td>Tjarnarskóli</td></tr><tr class='o'><td>d_TEGUND:</td><td>Skóli</td></tr></table>]]></description>
+			<styleUrl>#1</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.9393471949073,64.14561854946621,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Vesturbæjarskóli</name>
+			<Snippet maxLines="1">Skóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>1</td></tr><tr class='e'><td>HEITI:</td><td>Vesturbæjarskóli</td></tr><tr class='o'><td>d_TEGUND:</td><td>Skóli</td></tr></table>]]></description>
+			<styleUrl>#1</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.9578660680688,64.1497041377407,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>2</name>
+		<Placemark>
+			<name>Askja</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Askja</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.9287528363804,64.12844339242579,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Austurborg</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Austurborg</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.8888997622568,64.1287906505664,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Álftaborg</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Álftaborg</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.8885454589472,64.13305379872379,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Árborg</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Árborg</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.8036813876328,64.11537539087379,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Ártúnsskóli</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Ártúnsskóli</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.8214211953201,64.12062456964701,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Bakkaberg</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Bakkaberg</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.8290447799182,64.23790420140411,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Bakkaberg</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Bakkaberg</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.7555787102322,64.1579140942136,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Bakkaborg</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Bakkaborg</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.8359200719751,64.108681574931,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Bjartahlíð</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Bjartahlíð</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.9072805162706,64.1321732143436,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Bjartahlíð</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Bjartahlíð</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.9024214878061,64.131629884874,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Blásalir</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Blásalir</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.7870985179555,64.1034663983112,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Borg</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Borg</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.836211269398,64.106340686024,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Borg</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Borg</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.82606227227,64.1106731223046,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Brákarborg</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Brákarborg</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.8539794857026,64.13808897708471,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Brekkuborg</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Brekkuborg</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.7771907706166,64.13845192919349,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Dalskóli</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Dalskóli</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.7432463589851,64.1327248047471,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Drafnarsteinn</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Drafnarsteinn</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.9524152258107,64.1504131401651,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Drafnarsteinn</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Drafnarsteinn</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.9550127025537,64.1514669374305,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Engjaborg</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Engjaborg</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.776721288639,64.1481388129921,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Fífuborg</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Fífuborg</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.7907312543341,64.1418046473954,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Fossakot</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Fossakot</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.773136676454,64.1438494049808,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Fururskógur</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Fururskógur</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.8757517431501,64.1216321062509,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Furuskógur</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Furuskógur</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.8882118427155,64.12366901758,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Garðaborg</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Garðaborg</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.8743780639878,64.12276605198851,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Geislabaugur</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Geislabaugur</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.7504417812073,64.12645872928449,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Grandaborg</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Grandaborg</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.9670365342073,64.149167728458,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Grænaborg</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Grænaborg</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.928328336678,64.1414394878115,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Gullborg</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Gullborg</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.9748731534208,64.14872457776811,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Hagaborg</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Hagaborg</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.9585569735816,64.141256040621,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Hamrar</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Hamrar</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.7792317787458,64.153034345355,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Hálsaskógur</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Hálsaskógur</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.8384299335739,64.09775878845041,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Hálsaskógur</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Hálsaskógur</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.8392872077179,64.0983451046028,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Heiðarborg</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Heiðarborg</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.7886959522752,64.1100741109499,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Hlíð</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Hlíð</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.9174398814439,64.1350575245018,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Hlíð</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Hlíð</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.9166764632099,64.1341874924622,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Hof</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Hof</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.8853234871022,64.14401360029311,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Holt</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Holt</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.8243768236023,64.09999504382191,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Hólaborg</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Hólaborg</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.8162460141472,64.1081201454344,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Hraunborg</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Hraunborg</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.8113174309405,64.1049569071248,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Hulduheimar</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Hulduheimar</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.789451167996,64.1528297974877,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Jöklaborg</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Jöklaborg</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.8314652542076,64.09584253898601,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Jörfi</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Jörfi</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.8722510907363,64.12423050049119,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Klambrar</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Klambrar</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.904978324628,64.13891892831241,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Klettaborg</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Klettaborg</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.8120600370062,64.13786123953911,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Korpukot</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Korpukot</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.7712632424634,64.1431882080981,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Kvistaborg</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Kvistaborg</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.8676776644008,64.11897018797821,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Langholt</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Langholt</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.8571358777735,64.13467878258611,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Langholt</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Langholt</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.8563955201674,64.13401276732171,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Laufásborg</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Laufásborg</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.9352914846853,64.14094257883509,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Laufskálar</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Laufskálar</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.7880697612376,64.1471901900419,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Laugasól</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Laugasól</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.8776940015507,64.148260548225,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Laugasól</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Laugasól</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.8776947556045,64.1489965330109,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Leikgarður</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Leikgarður</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.9516665938022,64.13562065957819,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Lundur</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Lundur</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.8497371185477,64.1439382678704,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Lyngheimar</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Lyngheimar</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.7904842201488,64.1444986616831,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Maríuborg</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Maríuborg</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.759716754871,64.12542589107621,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Mánagarður</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Mánagarður</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.9495973134556,64.1347553571684,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Miðborg</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Miðborg</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.9271938322953,64.14663118040851,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Miðborg</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Miðborg</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.9199754596459,64.1423775581232,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Miðborg</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Miðborg</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.9283878765713,64.1443878926447,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Múlaborg</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Múlaborg</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.8860144419888,64.1374145864673,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Mýri</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Mýri</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.9494174131213,64.1343535530653,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Nóaborg</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Nóaborg</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.9074921592219,64.14044311144249,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Ós</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Ós</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.92377081294,64.1426156718492,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Rauðaborg</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Rauðaborg</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.7843284476897,64.106735637811,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Rauðhóll</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Rauðhóll</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.7789257787986,64.09835001375269,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Rauðhóll Norðlingaskóla</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Rauðhóll Norðlingaskóla</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.7735760740298,64.10099023597959,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Regnboginn</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Regnboginn</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.8216505456146,64.1220121071915,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Reynisholt</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Reynisholt</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.7402243001946,64.1263440157751,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Rofaborg</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Rofaborg</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.7963692326304,64.11442143729251,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Seljaborg</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Seljaborg</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.8514523083764,64.1002524990233,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Seljakot</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Seljakot</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.8472978113774,64.0987352332303,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Sjónarhóll</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Sjónarhóll</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.7706733092548,64.13646061401479,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Skerjagarður</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Skerjagarður</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.9521242086933,64.12915846949581,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Sólborg</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Sólborg</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.9101229449941,64.1261016833041,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Sólgarður</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Sólgarður</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.9538138155366,64.13523997434049,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Sólstafir</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Sólstafir</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.9357616977975,64.14344824488011,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Sólstafir á Höfn</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Sólstafir á Höfn</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.9511204680262,64.14900541523031,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Stakkaborg</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Stakkaborg</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.8995343958652,64.13465394264939,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Steinahlíð</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Steinahlíð</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.8513529288231,64.12799757873989,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Suðurborg</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Suðurborg</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.816166436764,64.1085809847407,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Sunnuás</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Sunnuás</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.8621940862304,64.1414009362754,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Sunnufold</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Sunnufold</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.8109099152473,64.1347792962965,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Sunnufold</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Sunnufold</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.7991805809168,64.13616328337611,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Sunnufold</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Sunnufold</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.7986192412127,64.1335014863285,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Sæborg</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Sæborg</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.9596192423099,64.13532942559171,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Sælukot</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Sælukot</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.9545911330892,64.1336405836866,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Tjörn</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Tjörn</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.9455231154833,64.1438020599023,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Tjörn</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Tjörn</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.9482225947326,64.14878306234191,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Ungbarnaskólinn Ársól</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Ungbarnaskólinn Ársól</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.8595101684464,64.1329915636731,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Vesturborg</name>
+			<Snippet maxLines="1">Leikskóli</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>2</td></tr><tr class='e'><td>HEITI:</td><td>Vesturborg</td></tr><tr class='o'><td>d_TEGUND:</td><td>Leikskóli</td></tr></table>]]></description>
+			<styleUrl>#2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.9624407874174,64.1454433607143,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>7</name>
+		<Placemark>
+			<name>Egilshöll</name>
+			<Snippet maxLines="1">Íþróttasvæði</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>7</td></tr><tr class='e'><td>HEITI:</td><td>Egilshöll</td></tr><tr class='o'><td>d_TEGUND:</td><td>Íþróttasvæði</td></tr></table>]]></description>
+			<styleUrl>#7</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.7694913134525,64.1456352810208,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Fákssvæði</name>
+			<Snippet maxLines="1">Íþróttasvæði</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>7</td></tr><tr class='e'><td>HEITI:</td><td>Fákssvæði</td></tr><tr class='o'><td>d_TEGUND:</td><td>Íþróttasvæði</td></tr></table>]]></description>
+			<styleUrl>#7</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.7955123813054,64.10471633938489,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Fjölnissvæðið</name>
+			<Snippet maxLines="1">Íþróttasvæði</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>7</td></tr><tr class='e'><td>HEITI:</td><td>Fjölnissvæðið</td></tr><tr class='o'><td>d_TEGUND:</td><td>Íþróttasvæði</td></tr></table>]]></description>
+			<styleUrl>#7</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.7872832501721,64.1375143650217,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Fram svæði</name>
+			<Snippet maxLines="1">Íþróttasvæði</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>7</td></tr><tr class='e'><td>HEITI:</td><td>Fram svæði</td></tr><tr class='o'><td>d_TEGUND:</td><td>Íþróttasvæði</td></tr></table>]]></description>
+			<styleUrl>#7</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.8925321307706,64.13344962167039,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Fylkis svæði</name>
+			<Snippet maxLines="1">Íþróttasvæði</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>7</td></tr><tr class='e'><td>HEITI:</td><td>Fylkis svæði</td></tr><tr class='o'><td>d_TEGUND:</td><td>Íþróttasvæði</td></tr></table>]]></description>
+			<styleUrl>#7</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.7937542019788,64.11361999977299,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>ÍR svæðið</name>
+			<Snippet maxLines="1">Íþróttasvæði</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>7</td></tr><tr class='e'><td>HEITI:</td><td>ÍR svæðið</td></tr><tr class='o'><td>d_TEGUND:</td><td>Íþróttasvæði</td></tr></table>]]></description>
+			<styleUrl>#7</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.8498390501285,64.1041369630843,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>KR svæði</name>
+			<Snippet maxLines="1">Íþróttasvæði</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>7</td></tr><tr class='e'><td>HEITI:</td><td>KR svæði</td></tr><tr class='o'><td>d_TEGUND:</td><td>Íþróttasvæði</td></tr></table>]]></description>
+			<styleUrl>#7</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.9600210468953,64.13412360372961,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>KR svæði</name>
+			<Snippet maxLines="1">Íþróttasvæði</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>7</td></tr><tr class='e'><td>HEITI:</td><td>KR svæði</td></tr><tr class='o'><td>d_TEGUND:</td><td>Íþróttasvæði</td></tr></table>]]></description>
+			<styleUrl>#7</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.9673961931123,64.1470935705871,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>KR svæði</name>
+			<Snippet maxLines="1">Íþróttasvæði</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>7</td></tr><tr class='e'><td>HEITI:</td><td>KR svæði</td></tr><tr class='o'><td>d_TEGUND:</td><td>Íþróttasvæði</td></tr></table>]]></description>
+			<styleUrl>#7</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.9617099216206,64.1348903794204,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Leiknis svæðið</name>
+			<Snippet maxLines="1">Íþróttasvæði</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>7</td></tr><tr class='e'><td>HEITI:</td><td>Leiknis svæðið</td></tr><tr class='o'><td>d_TEGUND:</td><td>Íþróttasvæði</td></tr></table>]]></description>
+			<styleUrl>#7</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.8193771495026,64.1034315765324,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>8</name>
+		<Placemark>
+			<name>Gerðuberg</name>
+			<Snippet maxLines="1">Hjólabrettagarður</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>8</td></tr><tr class='e'><td>HEITI:</td><td>Gerðuberg</td></tr><tr class='o'><td>d_TEGUND:</td><td>Hjólabrettagarður</td></tr></table>]]></description>
+			<styleUrl>#8</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.8180200080199,64.1041024090646,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Rimaskóli</name>
+			<Snippet maxLines="1">Hjólabrettagarður</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>8</td></tr><tr class='e'><td>HEITI:</td><td>Rimaskóli</td></tr><tr class='o'><td>d_TEGUND:</td><td>Hjólabrettagarður</td></tr></table>]]></description>
+			<styleUrl>#8</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.7972428764499,64.1458068488747,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Tónabær</name>
+			<Snippet maxLines="1">Hjólabrettagarður</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>8</td></tr><tr class='e'><td>HEITI:</td><td>Tónabær</td></tr><tr class='o'><td>d_TEGUND:</td><td>Hjólabrettagarður</td></tr></table>]]></description>
+			<styleUrl>#8</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.8894246803097,64.1330411863282,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>9</name>
+		<Placemark>
+			<name>Ártúnsbrekka</name>
+			<Snippet maxLines="1">Skíðalyfta</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>9</td></tr><tr class='e'><td>HEITI:</td><td>Ártúnsbrekka</td></tr><tr class='o'><td>d_TEGUND:</td><td>Skíðalyfta</td></tr></table>]]></description>
+			<styleUrl>#9</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.833617180212,64.12070372232451,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Dalhús</name>
+			<Snippet maxLines="1">Skíðalyfta</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>9</td></tr><tr class='e'><td>HEITI:</td><td>Dalhús</td></tr><tr class='o'><td>d_TEGUND:</td><td>Skíðalyfta</td></tr></table>]]></description>
+			<styleUrl>#9</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.78369309106,64.134921357705,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Jakasel</name>
+			<Snippet maxLines="1">Skíðalyfta</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>9</td></tr><tr class='e'><td>HEITI:</td><td>Jakasel</td></tr><tr class='o'><td>d_TEGUND:</td><td>Skíðalyfta</td></tr></table>]]></description>
+			<styleUrl>#9</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.8221254836816,64.09677850597311,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Jakasel</name>
+			<Snippet maxLines="1">Skíðalyfta</Snippet>
+			<description><![CDATA[<br><br><table class='data' ><tr class='o'><td>TEGUND:</td><td>9</td></tr><tr class='e'><td>HEITI:</td><td>Jakasel</td></tr><tr class='o'><td>d_TEGUND:</td><td>Skíðalyfta</td></tr></table>]]></description>
+			<styleUrl>#9</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>-21.8224148195193,64.0965436023528,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

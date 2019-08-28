@@ -1,0 +1,224 @@
+@charset "utf-8";
+
+table {
+ margin: 0 auto;
+}
+
+main.column,
+main.columns {
+ background: #fff !important;
+}
+
+#webportal_property_print {
+ color: #000;
+ width: 600px;
+ height: auto;
+ overflow: hidden;
+ margin: 0 auto;
+ position: relative;
+ background: white;
+
+ #webportal_property_print_detail_detail_row {
+  width: 100%;
+  float: left;
+  clear: both;
+ }
+
+ #webportal_property_print_detail_detail div {
+  width: 33.33%;
+  display: block;
+  float: left;
+ }
+
+ #webportal_property_print_detail_description_row {
+  float: left;
+  clear: both;
+  margin-top: 5px;
+  width: 100%;
+ }
+
+ #webportal_property_print_detail_description_col {
+  float: left;
+  width: 62.5%;
+ }
+
+ ul {
+  margin: 0;
+  padding: 0;
+    li {
+     list-style: none;
+     margin: 0;
+     padding: 0;
+     border-bottom: 1px solid #cccccc;
+   }
+ }
+}
+
+#webportal_property_detail_head,
+#webportal_property_detail_slide_row,
+#webportal_property_detail_description_row {
+
+ height: auto;
+ overflow: hidden;
+}
+
+#webportal_property_detail_slide {
+ background: #fff;
+ border: 1px solid #ccc;
+ //width: 455px;
+ float: left;
+ //height: auto;
+ width: 350px;
+ height: 235px;
+ overflow: hidden;
+ position: relative;
+
+ img {
+  max-height: 235px;
+  margin: 0 auto;
+ }
+
+}
+
+#webportal_property_detail_other_property,
+#webportal_property_detail_rating {
+ float: right;
+}
+
+#webportal_property_detail_agent_print {
+ width: 220px;
+ height: auto;
+ overflow: hidden;
+ border: 1px solid #ccc;
+ background: #fff;
+ float: right;
+ padding: 5px;
+
+
+  #webportal_property_detail_agent_col {
+   float: left;
+   padding: 5px;
+   width: 100%;
+   height: auto;
+   overflow: hidden;
+   background: #fff;
+
+   img {
+    margin-bottom: 1em;
+   }
+
+   #webportal_property_detail_agent_detail {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+   }
+  }
+}
+
+.webportal_agent_detail_tag_name,
+.webportal_agent_detail_tag_office {
+ font: bold 16px Tahoma, Geneva, sans-serif;
+}
+
+.webportal_agent_detail_tag_status {
+ font: bold .85em Tahoma, Geneva, sans-serif;
+}
+
+#webportal_property_detail_description {
+ height: auto;
+ overflow: hidden;
+ border: 1px solid #ccc;
+ background: #fff;
+ padding: 5px;
+ display: block;
+
+ p {
+  margin: 10px 0 0;
+  font: normal .9em Tahoma, Geneva, sans-serif;
+ }
+}
+
+.webportal_agent_detail_tag_logo {
+ display: none;
+}
+
+div#webportal_property_print_photos {
+ width: 100%;
+ display: block;
+}
+
+#webportal_property_print_photos {
+
+ img {
+  border: 1px solid #cccccc;
+  margin-bottom: 5px;
+  height: 200px;
+  width: 300px;
+
+  &.odd,
+  &.even {
+   margin-right: 5px;
+  }
+ }
+}
+
+/* map fix */
+#webportal_gmap_area.webportal_property_detail_gmap {
+ position: relative !important;
+ height: 235px;
+}
+
+/* Print */
+@page {
+ size: 210mm 297mm portrait;
+ margin: 1.5cm;
+}
+
+@media print {
+ .gmnoprint {
+
+  display: block;
+ }
+
+ .print_footer {
+  visibility: visible;
+ }
+
+ .no_print {
+  display: none;
+ }
+
+ body {
+  background: transparent;
+  min-width: 0;
+  width: 100%;
+ }
+
+ main.column,
+ main.columns {
+  background: transparent;
+ }
+
+ .bgbottom {
+  background: none !important;
+ }
+
+ .top-menu {
+  display: none;
+ }
+}
+
+.bgbottom {
+ position: static !important;
+ background: none !important;
+}
+
+html body div .header,
+html body div .nav--top__faux,
+html body div .nav--top,
+html body div .top-logo,
+html body div .breadcrumbs,
+html body div .nav--mobile__toggle,
+html body div.wrapper--footer {
+ display: none;
+}

@@ -1,0 +1,64 @@
+{
+  "Id": 10065034,
+  "Type": "Project",
+  "Order": "Update",
+  "Name": {
+    "en": "Grand Avenue Condominium & Hotel",
+    "th": "Grand Avenue Condominium & Hotel"
+  },
+  "MainRegId": "GACH",
+  "Types": [
+    4100,
+    4046
+  ],
+  "Developer": {
+    "en": "The Nova Group Development Co., Ltd.",
+    "th": "The Nova Group Development Co., Ltd."
+  },
+  "Latitude": 1,
+  "Longitude": 2,
+  "ProvinceCode": 20,
+  "DistrictCode": 2004,
+  "AreaCode": 200402,
+  "Address": {
+    "en": "Pattaya Sai 2 Road, Soi Bua Khao 15, Nong Prue, Bang Lamung, Chon Buri 20150 Thailand",
+    "th": "เธ–เธเธ เธเธฑเธ—เธขเธฒเธชเธฒเธข 2 เธเธญเธข เธเธฑเธงเธเธฒเธง 15 เธ•เธณเธเธฅ เธซเธเธญเธเธเธฃเธทเธญ เธญเธณเน€เธ เธญ เธเธฒเธเธฅเธฐเธกเธธเธ เธเธฅเธเธธเธฃเธต 20150"
+  },
+  "YearBuilt": 2016,
+  "YearComplete": 2019,
+  "Status": 297,
+  "LandSize": 48000.0,
+  "Features": [
+    28,
+    2,
+    6,
+    7,
+    8,
+    9,
+    10,
+    13,
+    14,
+    15,
+    18,
+    1,
+    35,
+    53,
+    162,
+    161,
+    38,
+    155,
+    160,
+    49,
+    47,
+    41,
+    40,
+    39
+  ],
+  "Galleries": [],
+  "TotalUnit": 0,
+  "Remark": {
+    "en": "Grand Avenue Condominium & Hotel is situated on just under 11 rai of prime city-centre land behind Avenue Shopping Mall on Soi 15, the project is just minutes away from Pattayaโ€s numerous bars, restaurants, shopping centres and beaches.nnThe project will consist of a luxury 4 Star Hotel and six additional condominium buildings with luxury swimming pools, ponds, waterfalls, fitness centres and spas.nnCondominium: 788 Rooms (6 Buildings)nHotel: 200 RoomsnLocation: Central Pattaya",
+    "th": "เนเธเธฃเธเธเธฒเธฃ Grand Avenue Condominium & Hotel เธ•เธฑเนเธเธญเธขเธนเนเธเธเน€เธเธทเนเธญเธ—เธตเน 11 เนเธฃเนเธเธฃเธดเน€เธงเธ“เนเธเธเธฅเธฒเธเน€เธกเธทเธญเธเธ”เนเธฒเธเธซเธฅเธฑเธเธซเนเธฒเธเธชเธฃเธฃเธเธชเธดเธเธเนเธฒ Avenue เธเธเธ–เธเธเธเธฑเธ—เธขเธฒเธชเธฒเธข 2 เธเธญเธข 15 (เธเธฑเธงเธเธฒเธง) เนเธเธฃเธเธเธฒเธฃเธญเธขเธนเนเธซเนเธฒเธเน€เธเธตเธขเธเนเธกเนเธเธตเนเธฃเนเธญเธขเน€เธกเธ•เธฃเธเธฒเธเธเธฒเธขเธซเธฒเธ”เธเธญเธเธเธฑเธ—เธขเธฒเนเธฅเธฐเธญเธขเธนเนเนเธเธเธฃเธดเน€เธงเธ“เนเธซเธฅเนเธเธ—เนเธญเธเน€เธ—เธตเนเธขเธงเธเธญเธเน€เธกเธทเธญเธเธเธฑเธ—เธขเธฒnnเธ เธฒเธขเนเธเธฃเธเธเธฒเธฃเธเธฐเธเธฃเธฐเธเธญเธเธ”เนเธงเธขเนเธฃเธเนเธฃเธกเธฃเธฐเธ”เธฑเธ 4 เธ”เธฒเธงเธ—เธตเนเธซเธฃเธนเธซเธฃเธฒเนเธฅเธฐเธญเธฒเธเธฒเธฃเธเธญเธเนเธ”เธกเธดเน€เธเธตเธขเธกเธญเธตเธเธซเธเนเธซเนเธเธ—เธตเนเธกเธตเธชเธฃเธฐเธงเนเธฒเธขเธเนเธณเธซเธฃเธนเธซเธฃเธฒเธชเธฃเธฐเธเนเธณเธ•เธเธจเธนเธเธขเนเธญเธญเธเธเธณเธฅเธฑเธเธเธฒเธขเนเธฅเธฐเธชเธเธฒnnเธเธญเธเนเธ”เธกเธดเน€เธเธตเธขเธก: 788 เธซเนเธญเธ (6 เธญเธฒเธเธฒเธฃ)nเนเธฃเธเนเธฃเธก: 200 เธซเนเธญเธnเธชเธ–เธฒเธเธ—เธตเน: เธเธฑเธ—เธขเธฒเนเธ•เน"
+  },
+  "ProjectUnits": []
+}

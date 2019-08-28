@@ -1,0 +1,38 @@
+@import "normalize";
+@import "../../generic/scss/settings";
+@import "../../generic/scss/mixins";
+@import "../../generic/scss/animations";
+
+// Make sure the charset is set appropriately
+@charset "UTF-8";
+
+///var/www/softverk-webportal-remaxth/assets/bower_components/font-awesome/css/font-awesome.css
+
+// Behold, here are all the Foundation components.
+@import "font-awesome";
+@import
+"foundation/components/grid",
+"foundation/components/block-grid",
+"foundation/components/type";
+
+
+@import "variables";
+@import "variable_generated";
+@import "../../generic/scss/utilities";
+@import "../../generic/scss/appstyles";
+@import "../../generic/scss/menu";
+@import "../../generic/scss/typography";
+@import "../../generic/scss/socialshare";
+@import "../../generic/scss/carousel";
+
+@import "../../generic/scss/multiselect";
+@import "../../generic/scss/multiselect";
+
+@import "../../generic/scss/slider";
+@import "../../generic/scss/rangeslider";
+@import "../../generic/scss/angular";
+@import "../../generic/scss/googlemap";
+@import "../../generic/scss/jquery-ui";
+@import "../../generic/scss/bootstrap-formhelpers";
+@import "../../generic/scss/ngdialog";
+@import "override";

@@ -1,0 +1,42 @@
+<div class="sort-control row">
+    <div class="row">
+        <div class="small-24 large-16 column">
+
+            <button class="sort-button"
+                    ng-show="searchfilter.latitude && searchfilter.longitude"
+                    ng-click="orderChanged('ORDER_BY_NEAREST_FIRST');filter();"
+                    ng-class="searchfilter.order.indexOf('ORDER_BY_NEAREST_FIRST') != -1 ? 'active' : ''"
+                    ><?php echo JText::_("NEAREST")?>
+            </button>
+
+            <button class="sort-button"
+                    ng-click="orderFlipped('size');filter();"
+                    ng-class="(searchfilter.order.indexOf('ORDER_BY_SMALLEST_FIRST') != -1 || searchfilter.order.indexOf('ORDER_BY_LARGEST_FIRST') != -1)? 'active' : ''"
+                    ><?php echo JText::_("SIZE")?>
+            </button>
+
+
+            <button class="sort-button"
+                    ng-click="orderFlipped('price');filter();"
+                    ng-class="(searchfilter.order.indexOf('ORDER_BY_LEAST_EXPENSIVE_FIRST') != -1 || searchfilter.order.indexOf('ORDER_BY_MOST_EXPENSIVE_FIRST') != -1 ) ? 'active' : ''"
+                    ><?php echo JText::_("PRICE")?>
+            </button>
+
+
+            <button class="sort-button"
+                    ng-click="orderFlipped('newest');filter();"
+                    ng-class="(searchfilter.order.indexOf('ORDER_BY_NEWEST_FIRST') != -1 || searchfilter.order.indexOf('ORDER_BY_OLDEST_FIRST') != -1 ) ? 'active' : ''"
+                    ><?php echo JText::_("NEWEST")?>
+            </button>
+
+
+        </div>
+
+        <div class="large-3 column show-large-only">
+            <button class="view-button" ng-click="viewFlipped('list');" ng-class="selection.indexOf('list') != -1 ? 'active' : ''"><i class="fa fa-list-ul" aria-hidden="true"></i></button>
+            <button class="view-button" ng-click="viewFlipped('grid');" ng-class="selection.indexOf('grid') != -1 ? 'active' : ''"><i class="fa fa-th" aria-hidden="true"></i></button>
+        </div>
+    </div>
+
+</div>
+

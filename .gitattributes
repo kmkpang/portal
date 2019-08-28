@@ -1,0 +1,7 @@
+*.min.css binary merge=ours
+webportal.configuration.* merge=ours
+log4phpConfiguration.xml merge=ours
+images/carousel_bg/ merge=ours
+favicon.ico merge=ours
+Grunt-settings.json merge=ours
+images/logo.png merge=ours

@@ -1,0 +1,638 @@
+{
+
+  "sukhumvit": {
+    "name": "BTS Sukhumvit",
+    "name_en": "BTS Sukhumvit",
+    "name_th": "BTS สุขุมวิท",
+    "stations": [
+      {
+        "id": "sukhumvit_mo_chit",
+        "name": "Mo Chit",
+        "name_en": "Mo Chit",
+        "name_th": "หมอชิต",
+        "lat": 13.8026126,
+        "lng": 100.5532238
+      },
+      {
+        "id": "sukhumvit_saphan_khwai",
+        "name": "Saphan Khwai",
+        "name_en": "Saphan Khwai",
+        "name_th": "สะพานควาย",
+        "lat": 13.7931936,
+        "lng": 100.5494043
+      },
+      {
+        "id": "sukhumvit_ari",
+        "name": "Ari",
+        "name_en": "Ari",
+        "name_th": "อารีย์",
+        "lat": 13.7793145,
+        "lng": 100.5443832
+      },
+      {
+        "id": "sukhumvit_sanam_pao",
+        "name": "Sanam Pao",
+        "name_en": "Sanam Pao",
+        "name_th": "สนามเป้า",
+        "lat": 13.7720203,
+        "lng": 100.5414221
+      },
+      {
+        "id": "sukhumvit_victory_monument",
+        "name": "Victory Monument",
+        "name_en": "Victory Monument",
+        "name_th": "อนุสาวรีย์ชัยสมรภูมิ",
+        "lat": 13.7620999,
+        "lng": 100.5366155
+      },
+      {
+        "id": "sukhumvit_phaya_thai",
+        "name": "Phaya Thai",
+        "name_en": "Phaya Thai",
+        "name_th": "พญาไท",
+        "lat": 13.7565143,
+        "lng": 100.5333969
+      },
+      {
+        "id": "sukhumvit_ratchathewi",
+        "name": "Ratchathewi",
+        "name_en": "Ratchathewi",
+        "name_th": "ราชเทวี",
+        "lat": 13.7513453,
+        "lng": 100.5309507
+      },
+      {
+        "id": "sukhumvit_siam",
+        "name": "Siam",
+        "name_en": "Siam",
+        "name_th": "สยาม",
+        "lat": 13.7454622,
+        "lng": 100.5344656
+      },
+      {
+        "id": "sukhumvit_chit_lom",
+        "name": "Chit Lom",
+        "name_en": "Chit Lom",
+        "name_th": "ชิดลม",
+        "lat": 13.7438002,
+        "lng": 100.5430099
+      },
+      {
+        "id": "sukhumvit_phloen_chit",
+        "name": "Phloen Chit",
+        "name_en": "Phloen Chit",
+        "name_th": "เพลินจิต",
+        "lat": 13.742346,
+        "lng": 100.548301
+      },
+      {
+        "id": "sukhumvit_nana",
+        "name": "Nana",
+        "name_en": "Nana",
+        "name_th": "นานา",
+        "lat": 13.7398448,
+        "lng": 100.5550817
+      },
+      {
+        "id": "sukhumvit_asoke",
+        "name": "Asoke",
+        "name_en": "Asoke",
+        "name_th": "อโศก",
+        "lat": 13.73701,
+        "lng": 100.5596307
+      },
+      {
+        "id": "sukhumvit_sukhumvit_phrom_phong",
+        "name": "Phrom Phong",
+        "name_en": "Phrom Phong",
+        "name_th": "พร้อมพงษ์",
+        "lat": 13.7302982,
+        "lng": 100.5692437
+      },
+      {
+        "id": "sukhumvit_thong_lo",
+        "name": "Thong Lo",
+        "name_en": "Thong Lo",
+        "name_th": "ทองหล่อ",
+        "lat": 13.7236695,
+        "lng": 100.5777839
+      },
+      {
+        "id": "sukhumvit_ekkamai",
+        "name": "Ekkamai",
+        "name_en": "Ekkamai",
+        "name_th": "เอกมัย",
+        "lat": 13.7187802,
+        "lng": 100.5847345
+      },
+      {
+        "id": "sukhumvit_phra_khanong",
+        "name": "Phra Khanong",
+        "name_en": "Phra Khanong",
+        "name_th": "พระโขนง",
+        "lat": 13.7144443,
+        "lng": 100.5909143
+      },
+      {
+        "id": "sukhumvit_on_nut",
+        "name": "On Nut",
+        "name_en": "On Nut",
+        "name_th": "อ่อนนุช",
+        "lat": 13.7054387,
+        "lng": 100.6003986
+      },
+      {
+        "id": "sukhumvit_bang_chak",
+        "name": "Bang Chak",
+        "name_en": "Bang Chak",
+        "name_th": "บางจาก",
+        "lat": 13.6960797,
+        "lng": 100.6048815
+      },
+      {
+        "id": "sukhumvit_punnawithi",
+        "name": "Punnawithi",
+        "name_en": "Punnawithi",
+        "name_th": "ปุณณวิถี",
+        "lat": 13.6890748,
+        "lng": 100.6084864
+      },
+      {
+        "id": "sukhumvit_udom_suk",
+        "name": "Udom Suk",
+        "name_en": "Udom Suk",
+        "name_th": "อุดมสุข",
+        "lat": 13.6793177,
+        "lng": 100.609216
+      },
+      {
+        "id": "sukhumvit_bang_na",
+        "name": "Bang Na",
+        "name_en": "Bang Na",
+        "name_th": "บางนา",
+        "lat": 13.6674375,
+        "lng": 100.6046498
+      },
+      {
+        "id": "sukhumvit_bearing",
+        "name": "Bearing",
+        "name_en": "Bearing",
+        "name_th": "แบริ่ง",
+        "lat": 13.6610756,
+        "lng": 100.6016415
+      }
+    ]
+  },
+  "silom": {
+    "name": "BTS Silom",
+    "name_en": "BTS Silom",
+    "name_th": "BTS สีลม",
+    "stations": [
+      {
+        "id": "silom_national_stadium",
+        "name": "National Stadium",
+        "name_en": "National Stadium",
+        "name_th": "สนามกีฬาแห่งชาติ",
+        "lat": 13.745535,
+        "lng": 100.5285814
+      },
+      {
+        "id": "silom_siam",
+        "name": "Siam",
+        "name_en": "Siam",
+        "name_th": "สยาม",
+        "lat": 13.7454622,
+        "lng": 100.5344656
+      },
+      {
+        "id": "silom_ratchadamri",
+        "name": "Ratchadamri",
+        "name_en": "Ratchadamri",
+        "name_th": "ราชดำริ",
+        "lat": 13.7390873,
+        "lng": 100.5391691
+      },
+      {
+        "id": "silom_sala_daeng",
+        "name": "Sala Daeng",
+        "name_en": "Sala Daeng",
+        "name_th": "ศาลาแดง",
+        "lat": 13.7280311,
+        "lng": 100.5339475
+      },
+      {
+        "id": "silom_chong_nonsi",
+        "name": "Chong Nonsi",
+        "name_en": "Chong Nonsi",
+        "name_th": "ช่องนนทรี",
+        "lat": 13.7233618,
+        "lng": 100.5291839
+      },
+      {
+        "id": "silom_surasak",
+        "name": "Surasak",
+        "name_en": "Surasak",
+        "name_th": "สุรศักดิ์",
+        "lat": 13.7188859,
+        "lng": 100.5212751
+      },
+      {
+        "id": "silom_saphan_taksin",
+        "name": "Saphan Taksin",
+        "name_en": "Saphan Taksin",
+        "name_th": "สะพานตากสิน",
+        "lat": 13.7188859,
+        "lng": 100.5212751
+      },
+      {
+        "id": "silom_krung_thon_buri",
+        "name": "Krung Thon Buri",
+        "name_en": "Krung Thon Buri",
+        "name_th": "กรุงธนบุรี",
+        "lat": 13.7204828,
+        "lng": 100.5027151
+      },
+      {
+        "id": "silom_wongwian_yai",
+        "name": "Wongwian Yai",
+        "name_en": "Wongwian Yai",
+        "name_th": "วงเวียนใหญ่",
+        "lat": 13.7205603,
+        "lng": 100.4950137
+      },
+      {
+        "id": "silom_pho_nimit",
+        "name": "Pho Nimit",
+        "name_en": "Pho Nimit",
+        "name_th": "โพธิ์นิมิต",
+        "lat": 13.7188594,
+        "lng": 100.4857144
+      },
+      {
+        "id": "silom_talat_phlu",
+        "name": "Talat Phlu",
+        "name_en": "Talat Phlu",
+        "name_th": "ตลาดพลู",
+        "lat": 13.7139215,
+        "lng": 100.4765273
+      }
+    ]
+  },
+  "mrt": {
+    "name": "MRT",
+    "name_en": "MRT",
+    "name_th": "MRT",
+    "stations": [
+      {
+        "id": "mrt_bang_sue",
+        "name": "Bang Sue",
+        "name_en": "Bang Sue",
+        "name_th": "บางซื่อ",
+        "lat": 13.8026832,
+        "lng": 100.5390288
+      },
+      {
+        "id": "mrt_kamphaeng_phet",
+        "name": "Kamphaeng Phet",
+        "name_en": "Kamphaeng Phet",
+        "name_th": "กำแพงเพชร",
+        "lat": 13.7972298,
+        "lng": 100.5473235
+      },
+      {
+        "id": "mrt_chatuchak_park",
+        "name": "Chatuchak Park",
+        "name_en": "Chatuchak Park",
+        "name_th": "สวนจตุจักร",
+        "lat": 13.803002,
+        "lng": 100.553675
+      },
+      {
+        "id": "mrt_phahon_yothin",
+        "name": "Phahon Yothin",
+        "name_en": "Phahon Yothin",
+        "name_th": "พหลโยธิน",
+        "lat": 13.8134982,
+        "lng": 100.5597383
+      },
+      {
+        "id": "mrt_lat_phrao",
+        "name": "Lat Phrao",
+        "name_en": "Lat Phrao",
+        "name_th": "ลาดพร้าว",
+        "lat": 13.8053517,
+        "lng": 100.5731241
+      },
+      {
+        "id": "mrt_ratchadaphisek",
+        "name": "Ratchadaphisek",
+        "name_en": "Ratchadaphisek",
+        "name_th": "รัชดาภิเษก",
+        "lat": 13.7988324,
+        "lng": 100.574122
+      },
+      {
+        "id": "mrt_sutthisan",
+        "name": "Sutthisan",
+        "name_en": "Sutthisan",
+        "name_th": "สุทธิสาร",
+        "lat": 13.7889551,
+        "lng": 100.5743416
+      },
+      {
+        "id": "mrt_huai_khwang",
+        "name": "Huai Khwang",
+        "name_en": "Huai Khwang",
+        "name_th": "ห้วยขวาง",
+        "lat": 13.7783055,
+        "lng": 100.5735267
+      },
+      {
+        "id": "mrt_thailand_cultural_centre",
+        "name": "Thailand Cultural Centre",
+        "name_en": "Thailand Cultural Centre",
+        "name_th": "ศูนย์วัฒนธรรมแห่งประเทศไทย",
+        "lat": 13.7665633,
+        "lng": 100.5708779
+      },
+      {
+        "id": "mrt_phra_ram_9",
+        "name": "Phra Ram 9",
+        "name_en": "Phra Ram 9",
+        "name_th": "พระราม 9",
+        "lat": 13.7570178,
+        "lng": 100.5648268
+      },
+      {
+        "id": "mrt_phetchaburi",
+        "name": "Phetchaburi",
+        "name_en": "Phetchaburi",
+        "name_th": "เพชรบุรี",
+        "lat": 13.7480347,
+        "lng": 100.5626381
+      },
+      {
+        "id": "mrt_sukhumvit",
+        "name": "Sukhumvit",
+        "name_en": "Sukhumvit",
+        "name_th": "สุขุมวิท",
+        "lat": 13.7378855,
+        "lng": 100.5610898
+      },
+      {
+        "id": "mrt_queen_sirikit_national_convention_centre",
+        "name": "Queen Sirikit National Convention Centre",
+        "name_en": "Queen Sirikit National Convention Centre",
+        "name_th": "ศูนย์ประชุมแห่งชาติสิริกิติ์",
+        "lat": 13.7231052,
+        "lng": 100.5596341
+      },
+      {
+        "id": "mrt_khlong_toei",
+        "name": "Khlong Toei",
+        "name_en": "Khlong Toei",
+        "name_th": "คลองเตย",
+        "lat": 13.7218128,
+        "lng": 100.5534542
+      },
+      {
+        "id": "mrt_lumphini",
+        "name": "Lumphini",
+        "name_en": "Lumphini",
+        "name_th": "ลุมพินี",
+        "lat": 13.7259475,
+        "lng": 100.5446714
+      },
+      {
+        "id": "mrt_silom",
+        "name": "Silom",
+        "name_en": "Silom",
+        "name_th": "สีลม",
+        "lat": 13.7286365,
+        "lng": 100.5361527
+      },
+      {
+        "id": "mrt_sam_yan",
+        "name": "Sam Yan",
+        "name_en": "Sam Yan",
+        "name_th": "สามย่าน",
+        "lat": 13.7323259,
+        "lng": 100.5292434
+      },
+      {
+        "id": "mrt_hua_lamphong",
+        "name": "Hua Lamphong",
+        "name_en": "Hua Lamphong",
+        "name_th": "หัวลำโพง",
+        "lat": 13.7374309,
+        "lng": 100.5165165
+      }
+    ]
+  },
+  "mrtp": {
+    "name": "MRT Purple line",
+    "name_en": "MRT Purple line",
+    "name_th": "MRT สายสีม่วง",
+    "stations": [
+      {
+        "id": "mrt_khlong_phai",
+        "name": "Khlong Bang Phai",
+        "name_en": "Khlong Bang Phai",
+        "name_th": "คลองบางไผ่",
+        "lat": 13.8922722,
+        "lng": 100.4060302
+      },
+      {
+        "id": "mrt_talad_yai",
+        "name": "Talad Bang Yai",
+        "name_en": "Talad Bang Yai",
+        "name_th": "ตลาดบางใหญ่",
+        "lat": 13.8812886,
+        "lng": 100.4071269
+      },
+      {
+        "id": "mrt_bang_yai",
+        "name": "Sam Yaek Bang Yai",
+        "name_en": "Sam Yaek Bang Yai",
+        "name_th": "สามแยกบางใหญ่",
+        "lat": 13.8780316,
+        "lng": 100.4056399
+      },
+      {
+        "id": "mrt_bang_phlu",
+        "name": "BangPhlu",
+        "name_en": "BangPhlu",
+        "name_th": "บางพลู",
+        "lat": 13.8767339,
+        "lng": 100.4273883
+      },
+      {
+        "id": "mrt_rak_yai",
+        "name": "Bang Rak Yai",
+        "name_en": "Bang Rak Yai",
+        "name_th": "บางรักใหญ่",
+        "lat": 13.8766877,
+        "lng": 100.4427576
+      },
+      {
+        "id": "mrt_tha_it",
+        "name": "Tha It",
+        "name_en": "Tha It",
+        "name_th": "ท่าอิฐ",
+        "lat": 13.8726891,
+        "lng": 100.4519951
+      },
+      {
+        "id": "mrt_sai_ma",
+        "name": "Sai Ma",
+        "name_en": "Sai Ma",
+        "name_th": "ไทรม้า",
+        "lat": 13.8667429,
+        "lng": 100.4616248
+      },
+      {
+        "id": "mrt_nang_klao",
+        "name": "Phra Nang Klao Bridge",
+        "name_en": "Phra Nang Klao Bridge",
+        "name_th": "สะพานพระนั่งเกล้า",
+        "lat": 13.8658804,
+        "lng": 100.4777434
+      },
+      {
+        "id": "mrt_nonthaburi_1",
+        "name": "Yaek Nonthaburi 1",
+        "name_en": "Yaek Nonthaburi 1",
+        "name_th": "แยกนนทบุรี 1",
+        "lat": 13.8658342,
+        "lng": 100.4931127
+      },
+      {
+        "id": "mrt_bang_kasor",
+        "name": "Bang Kasor",
+        "name_en": "Bang Kasor",
+        "name_th": "บางกระสอ",
+        "lat": 13.8617258,
+        "lng": 100.5026357
+      },
+      {
+        "id": "mrt_civic_center",
+        "name": "Nonthaburi Civic Center",
+        "name_en": "Nonthaburi Civic Center",
+        "name_th": "ศูนย์ราชการนนทบุรี",
+        "lat": 13.8601642,
+        "lng": 100.5108892
+      },
+      {
+        "id": "mrt_public_health",
+        "name": "Ministry of Public Health",
+        "name_en": "Ministry of Public Health",
+        "name_th": "กระทรวงสาธารณสุข",
+        "lat": 13.8411422,
+        "lng": 100.5036374
+      },
+      {
+        "id": "mrt_yaek_tiwanon",
+        "name": "Yaek Tiwanon",
+        "name_en": "Yaek Tiwanon",
+        "name_th": "แยกติวานนท์",
+        "lat": 13.8411163,
+        "lng": 100.5102303
+      },
+      {
+        "id": "mrt_wong_sawang",
+        "name": "Wong Sawang",
+        "name_en": "Wong Sawang",
+        "name_th": "วงศ์สว่าง",
+        "lat": 13.8297929,
+        "lng": 100.5245233
+      },
+      {
+        "id": "mrt_bang_son",
+        "name": "Bang Son",
+        "name_en": "Bang Son",
+        "name_th": "บางซ่อน",
+        "lat": 13.8045311,
+        "lng": 100.5173815
+      },
+      {
+        "id": "mrt_tao_poon",
+        "name": "Tao Poon",
+        "name_en": "Tao Poon",
+        "name_th": "เตาปูน",
+        "lat": 13.8044796,
+        "lng": 100.5305675
+      }
+    ]
+  },
+  "ap_link": {
+    "name": "Airport Link",
+    "name_en": "Airport Link",
+    "name_th": "Airport Link",
+    "stations": [
+      {
+        "id": "ap_link_phaya_thai",
+        "name": "Phaya Thai",
+        "name_en": "Phaya Thai",
+        "name_th": "พญาไท",
+        "lat": 13.7563475,
+        "lng": 100.5344698
+      },
+      {
+        "id": "ap_link_ratchprarop",
+        "name": "Ratchprarop",
+        "name_en": "Ratchprarop",
+        "name_th": "ราชปรารภ ",
+        "lat": 13.7539347,
+        "lng": 100.5410879
+      },
+      {
+        "id": "ap_link_makkasan",
+        "name": "Makkasan",
+        "name_en": "Makkasan",
+        "name_th": "มักกะสัน",
+        "lat": 13.7493076,
+        "lng": 100.5594986
+      },
+      {
+        "id": "ap_link_ramkhamhaeng",
+        "name": "Ramkhamhaeng",
+        "name_en": "Ramkhamhaeng",
+        "name_th": "รามคำแหง",
+        "lat": 13.7415535,
+        "lng": 100.5993344
+      },
+      {
+        "id": "ap_link_hua_mark",
+        "name": "Hua Mark",
+        "name_en": "Hua Mark",
+        "name_th": "หัวหมาก",
+        "lat": 13.7368192,
+        "lng": 100.6445448
+      },
+      {
+        "id": "ap_link_ban_thap_chang",
+        "name": "Ban Thap Chang",
+        "name_en": "Ban Thap Chang",
+        "name_th": "บ้านทับช้าง",
+        "lat": 13.732827,
+        "lng": 100.691469
+      },
+      {
+        "id": "ap_link_lat_krabang",
+        "name": "Lat Krabang",
+        "name_en": "Lat Krabang",
+        "name_th": "เขตลาดกระบัง",
+        "lat": 13.7264494,
+        "lng": 100.748187
+      },
+      {
+        "id": "ap_link_suvarnabhumi",
+        "name": "Suvarnabhumi",
+        "name_en": "Suvarnabhumi",
+        "name_th": "สุวรรณภูมิ",
+        "lat": 13.6975004,
+        "lng": 100.7520399
+      }
+    ]
+  }
+}

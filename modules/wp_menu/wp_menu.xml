@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="3.1"
+	client="site">
+	<name>Webportal Menu</name>
+	<version>0.0.1</version>
+	<creationDate>2014-05-01</creationDate>
+	<author>Jonathan Ablanida</author>
+	<authorEmail>jonathan@softverk.is</authorEmail>
+	<authorUrl>http://www.softverk.is</authorUrl>
+	<copyright>Copyright © 2014 Softverk Ltd, All rights reserved.</copyright>
+	<description>
+		<![CDATA[
+			Provides a responsive menu that is able to toggle on/off mobile menus. Cannot co-exist with the traditional mod_menu as of yet.
+		]]>
+	</description>
+	<files>
+		<filename module="wp_menu">wp_menu.php</filename>
+		<folder>tmpl</folder>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>		<filename>wp_menu.xml</filename>
+	</files>
+	<help key="JHELP_EXTENSIONS_MODULE_MANAGER_MENU" />
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="menutype"
+					type="menu"
+					label="Select Menu"
+					description="Select a menu in the list" />
+				<field
+					name="base"
+					type="menuitem"
+					label="Base Item"
+					description="Base Item - Select a menu item to always be used as the base for the menu display. You must set the Start Level to the same level or higher than the level of the base item. This will cause the module to be displayed on all assigned pages. If Current is selected the currently active item is used as the base. This causes the module to only display when the parent menu item is active."
+					>
+					<option value="">JCURRENT</option>
+				</field>
+				<field
+					name="startLevel"
+					type="list"
+					default="1"
+					label="Start Level"
+					description="Start Level - Level to start rendering the menu at. Setting the start and end levels to the same # and setting 'Show Sub-menu Items' to yes will only display that single level."
+				>
+					<option value="1">J1</option>
+					<option value="2">J2</option>
+					<option value="3">J3</option>
+					<option value="4">J4</option>
+					<option value="5">J5</option>
+					<option value="6">J6</option>
+					<option value="7">J7</option>
+					<option value="8">J8</option>
+					<option value="9">J9</option>
+					<option value="10">J10</option>
+				</field>
+
+				<field
+					name="endLevel"
+					type="list"
+					default="0"
+					label="End Level"
+					description="End Level - Level to stop rendering the menu at. If you choose 'All', all levels will be shown depending on 'Show Sub-menu Items' setting."
+					>
+					<option value="0">JALL</option>
+					<option value="1">J1</option>
+					<option value="2">J2</option>
+					<option value="3">J3</option>
+					<option value="4">J4</option>
+					<option value="5">J5</option>
+					<option value="6">J6</option>
+					<option value="7">J7</option>
+					<option value="8">J8</option>
+					<option value="9">J9</option>
+					<option value="10">J10</option>
+				</field>
+
+				<field
+					name="showAllChildren"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="1"
+					label="Show Sub-menu Items"
+					description="Show Sub-menu Items - Expand the menu and make its sub-menu items always visible.">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+
+				<field
+					name="responsiveMenu"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="1"
+					label="Mobile Responsive Menu"
+					description="Adds a mobile responsive menu.">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+			</fieldset>
+
+			<fieldset
+				name="advanced">
+				<field
+					name="tag_id"
+					type="text"
+					label="Menu Tag ID"
+					description="Menu Tag ID - An ID attribute to assign to the root UL tag of the menu (optional)" />
+
+				<field
+					name="class_sfx"
+					type="text"
+					label="Menu Class Suffix"
+					description="Menu Class Suffix - A suffix to be applied to the CSS class of the menu items" />
+
+				<field
+					name="window_open"
+					type="text"
+					label="Target Position"
+					description="Target Position - JavaScript values to position a popup window, e.g. top=50,left=50,width=200,height=300" />
+
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+
+				<field
+					name="moduleclass_sfx"
+					type="textarea" rows="3"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="1">JGLOBAL_USE_GLOBAL</option>
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+				<field
+					name="cachemode"
+					type="hidden"
+					default="itemid">
+					<option
+						value="itemid"></option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--This is Dummy, created in order to generate a bacnet menu item.-->
+<metadata>
+	<layout title="Webportal Properties-list URL">
+		<message>
+
+		</message>
+	</layout>
+
+	<config>
+	<fields name="params">
+		<fieldset name="Options">
+			<field name="property_type" type="sql" default="1" label="Select Mode"
+				   query="SELECT id, description FROM #__portal_property_modes order by id"
+				   key_field="id"
+				   value_field="description"
+				   required="false"/>
+
+			<field name="category_id" type="sql" default="0" label="Select Category"
+				   query="SELECT id, description FROM #__portal_property_categories order by id"
+				   key_field="id"
+				   value_field="description"
+				   required="false"/>
+
+			<field name="buy_rent" type="sql" default="0" label="Select Sale Type"
+				   query="SELECT id, description FROM #__portal_property_types order by id"
+				   key_field="id"
+				   value_field="description"
+				   required="false"/>
+
+			<field name="show_featured" class="" type="list"
+				   label="Featured"
+				   default="false"
+				   description="Select Featured Properties" >
+				<option value="all">Both</option>
+				<option value="true">Only featured</option>
+				<option value="false">Only non featured</option>
+			</field>
+		</fieldset>
+	</fields>
+	</config>
+</metadata>

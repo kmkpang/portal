@@ -1,0 +1,27 @@
+<div class="slider--prices--container">
+    <!-- hidden  1= ALL,2=RESIDENTIAL,3=COMMERCIAL -->
+    <div class="slider--wrapper"
+         ng-class="loaded && ( searchfilter.mode_id == 1 || searchfilter.mode_id == 2 ) ? '' : 'render--offcanvas' ">
+        <span class="search-filters__slider-label"><?php echo JText::_('ROOMS') ?></span>
+        <slider
+                ng-model="searchfilter.total_number_of_rooms[0]"
+                ng-model-range="searchfilter.total_number_of_rooms[1]"
+                translate-fn="rooms_scale"
+                translate-range-fn=""
+                floor="{{sliders.total_number_of_rooms.floor}}"
+                ceiling="{{sliders.total_number_of_rooms.ceiling}}"></slider>
+    </div>
+
+    <!-- hidden   1= ALL,2=RESIDENTIAL,3=COMMERCIAL -->
+    <div class="slider--wrapper"
+         ng-class="loaded && (searchfilter.mode_id == 3 ) ? '':'render--offcanvas' ">
+        <span class="search-filters__slider-label"><?php echo JText::_('ROOMS') ?></span>
+        <slider
+                ng-model="searchfilter.total_number_of_rooms[0]"
+                ng-model-range="searchfilter.total_number_of_rooms[1]"
+                translate-fn="rooms_scale"
+                translate-range-fn=""
+                floor="{{sliders.total_number_of_rooms.floor}}"
+                ceiling="{{sliders.total_number_of_rooms.ceiling}}"></slider>
+    </div>
+</div>

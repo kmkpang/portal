@@ -1,0 +1,27 @@
+<div class="slider--prices--container">
+        <!-- hidden if type_id == 3 (rent) -->
+        <div class="slider--wrapper"
+             ng-class="loaded && ( searchfilter.mode_id == 1 || searchfilter.mode_id == 2 ) ? '' : 'render--offcanvas' ">
+                <span class="search-filters__slider-label"><?php echo JText::_('SIZE') ?></span>
+                <slider ng-class="loaded && searchfilter.type_id == 3 ? 'render--offcanvas' : ''"
+                        ng-model="searchfilter.total_area[0]"
+                        ng-model-range="searchfilter.total_area[1]"
+                        translate-fn="size_scale"
+                        translate-range-fn=""
+                        floor="{{sliders.total_area.floor}}"
+                        ceiling="{{sliders.total_area.ceiling}}"></slider>
+        </div>
+
+        <!-- hidden if type_id != 3 (not rent) -->
+        <div class="slider--wrapper"
+             ng-class="loaded && (searchfilter.mode_id == 3 ) ? '':'render--offcanvas' ">
+                <span class="search-filters__slider-label"><?php echo JText::_('SIZE') ?></span>
+                <slider ng-class="loaded && searchfilter.type_id != 3 ? 'render--offcanvas' : ''"
+                        ng-model="searchfilter.rent_total_area[0]"
+                        ng-model-range="searchfilter.rent_total_area[1]"
+                        translate-fn="size_scale"
+                        translate-range-fn=""
+                        floor="{{sliders.rent_total_area.floor}}"
+                        ceiling="{{sliders.rent_total_area.ceiling}}"></slider>
+        </div>
+</div>

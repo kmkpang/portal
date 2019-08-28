@@ -1,0 +1,18 @@
+{
+    "name": "vendor_name/package_name",
+    "description": "description_text",
+    "minimum-stability": "stable",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "shrouk khan",
+            "email": "shroukkhan@gmail.com"
+        }
+    ],
+    "require": {
+        "phpunit/phpunit-mock-objects": "2.2.x-dev",
+        "phpunit/phpunit-skeleton-generator": "2.0.x-dev",
+        "phpunit/phpunit-story": "1.0.2",
+        "pda/pheanstalk": "v3.0.0"
+    }
+}

@@ -1,0 +1,66 @@
+<form ng-submit="submit()">
+    <div class="large-24 column">
+        <!--<span class="search-filters__textbox-label">Name</span>-->
+
+        <div class="search-filters--frontpage--row row collapse">
+
+            <div class="column large-11">
+                <div class="input-textbox--wrapper">
+                    <input type="text" ng-model="searchfilter.text" placeholder="Search Homes"/>
+                    <input type="submit" class="input-textbox--wrapper--search__button"/>
+                </div>
+            </div>
+            <postal-code-select-frontpage></postal-code-select-frontpage>
+
+        </div>
+
+        <div class="search-filters--frontpage--row row collapse">
+            <div class="column large-7">
+
+                <div class="search-filters--frontpage--row row collapse">
+                    <filter-slider-price></filter-slider-price>
+                </div>
+                <div class="row collapse">
+                    <div class="column column large-6 large-offset-12">
+                        <div class="search-filters__buy-rent--button left" ng-class="searchfilter.type_id == 2 ? 'active' : ''" ng-click="searchfilter.type_id = 2" ng-init="searchfilter.type_id = 2"><?php echo JText::_('Sale') ?></div>
+                    </div>
+                    <div class="column large-6">
+                        <div class="search-filters__buy-rent--button right" ng-class="searchfilter.type_id == 3 ? 'active' : ''" ng-click="searchfilter.type_id = 3"><?php echo JText::_('Rent')?></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="column large-7 large-offset-1">
+                <div class="row collapse">
+                    <filter-slider-rooms></filter-slider-rooms>
+                </div>
+            </div>
+
+            <div class="column large-8">
+                <prop-categories-select-frontpage></prop-categories-select-frontpage>
+            </div>
+
+        </div>
+
+        <div class="row collapse">
+            <div class="column large-8 large-offset-16">
+
+                <div class="row collapse">
+                    <div class="column large-15">
+                        <input type="submit" value="Search" class="input-submit red"/>
+                    </div>
+                    <div class="column large-8">
+                        <input type="button" value="Clear" ng-click="resetfilters()" class="input-submit"/>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    </div>
+
+
+</form>

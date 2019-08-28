@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metafile version="3.4" client="site">
+	<name>Tagalog (Philippine)</name>
+	<version>3.4.2</version>
+	<creationDate>2015-12-24</creationDate>
+	<author>Jonathan Ablanida</author>
+	<authorEmail>jonathan@softverk.is</authorEmail>
+	<authorUrl>http://www.softverk.is</authorUrl>
+	<copyright>Copyright © 2015 Softverk Ltd, All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<description>tl-TL site language</description>
+	<metadata>
+		<name>Tagalog (tl-TL)</name>
+		<tag>tl-TL</tag>
+		<rtl>0</rtl>
+		<locale>tl-TL.utf8, tl-TL.UTF-8, tl-TL, tl, filipino, filipino-ph, ph, Philippine</locale>
+		<firstDay>0</firstDay>
+		<weekEnd>0,6</weekEnd>
+	</metadata>
+	<params />
+</metafile>

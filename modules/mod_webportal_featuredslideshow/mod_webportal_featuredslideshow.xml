@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+        type="module"
+        version="0.0.1"
+        client="site"
+        method="upgrade">
+    <name>Webportal Featured Slideshow</name>
+    <author>Softverk</author>
+    <creationDate>July 7, 2016</creationDate>
+    <copyright>Copyright (C) 2016 Softverk. All rights reserved.</copyright>
+    <license>GNU/GPL</license>
+    <authorEmail>admin@softverk.is</authorEmail>
+    <authorUrl>www.softverk.is</authorUrl>
+    <version>1.0.0</version>
+    <description>Webportal Featured Slideshow</description>
+    <files>
+        <filename module="mod_webportal_featuredslideshow">mod_webportal_featuredslideshow.php</filename>
+        <folder>tmpl</folder>
+        <filename>index.html</filename>
+        <filename>mod_webportal_featuredslideshow.xml</filename>
+    </files>
+    <languages>
+        <language tag="en-GB">en-GB.mod_webportal_featuredslideshow.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+
+                <field name="minHeight" default="540px" type="text" label="Min-height"
+                       description="Default min-height"/>
+
+                <field name="lazyLoad" default="true" type="radio" label="Lazy load"
+                       description="Lazy Load"
+                       class="btn-group btn-group-yesno">
+                    <option value="true">on</option>
+                    <option value="false">off</option>
+                </field>
+
+                <field name="loop" default="true" type="radio" label="Loop"
+                       description="loop"
+                       class="btn-group btn-group-yesno">
+                    <option value="true">on</option>
+                    <option value="false">off</option>
+                </field>
+
+                <field name="autoPlay" default="true" type="radio" label="Auto play"
+                       description="Folder Path destination"
+                       class="btn-group btn-group-yesno">
+                    <option value="true">on</option>
+                    <option value="false">off</option>
+                </field>
+
+                <field name="timeOut" default="20000" type="number" label="Auto play timeout"
+                       description="timeout"/>
+
+                <field name="smartSpeed" default="1000" type="number" label="Animation speed"
+                       description="Animation speed"/>
+
+            </fieldset>
+            <fieldset name="advanced">
+                <field
+                        name="moduleclass_sfx"
+                        type="text"
+                        default=""
+                        label="Module Class Suffix"
+                        description="PARAMMODULECLASSSUFFIX"/>
+
+            </fieldset>
+        </fields>
+    </config>
+</extension>

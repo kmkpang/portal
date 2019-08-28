@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system">
+    <name>System - Webportal BootStrap</name>
+    <author>Shrouk Khan</author>
+    <creationDate>April 2014</creationDate>
+    <copyright></copyright>
+    <license></license>
+    <authorEmail>shroukkhan@softverk.is</authorEmail>
+    <authorUrl>www.softverk.is</authorUrl>
+    <version>1.0.0</version>
+    <description>Webportal Bootstrap</description>
+    <files>
+        <filename plugin="webportal_bootstrap">webportal_bootstrap.php</filename>
+        <filename>index.html</filename>
+    </files>
+
+    <config>
+        <fields name="params">
+
+
+        </fields>
+    </config>
+</extension>

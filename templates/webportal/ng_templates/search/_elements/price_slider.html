@@ -1,0 +1,26 @@
+<div class="slider--prices--container">
+    <!-- hidden if type_id == 3 (rent) -->
+    <div class="slider--wrapper" ng-class="loaded && searchfilter.type_id == 3 ? 'render--offcanvas' : ''">
+        <span class="search-filters__slider-label"><?php echo JText::_('SALE PRICE') ?></span>
+        <slider
+                ng-model="searchfilter.current_listing_price[0]"
+                ng-model-range="searchfilter.current_listing_price[1]"
+                translate-fn="price_scale"
+                translate-range-fn=""
+                floor="{{sliders.current_listing_price.floor}}"
+                ceiling="{{sliders.current_listing_price.ceiling}}"
+                ></slider>
+    </div>
+
+    <!-- hidden if type_id != 3 (not rent) -->
+    <div class="slider--wrapper" ng-class="loaded && searchfilter.type_id != 3 ? 'render--offcanvas' : ''">
+        <span class="search-filters__slider-label"><?php echo JText::_('RENT PRICE') ?></span>
+        <slider
+                ng-model="searchfilter.rent_price[0]"
+                ng-model-range="searchfilter.rent_price[1]"
+                translate-fn="rent_price_scale"
+                translate-range-fn=""
+                floor="{{sliders.rent_price.floor}}"
+                ceiling="{{sliders.rent_price.ceiling}}"></slider>
+    </div>
+</div>

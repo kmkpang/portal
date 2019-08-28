@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+
+<extension version="2.5" type="template" client="site" method="upgrade">
+	
+	<name>Webportal</name>
+	<version>0.0.1</version>
+	<creationDate>2014-05-01</creationDate>
+	<author>Jonathan Ablanida</author>
+	<authorEmail>jonathan@softverk.is</authorEmail>
+	<authorUrl>http://www.softverk.is</authorUrl>
+	<copyright>Copyright © 2014 Softverk Ltd, All rights reserved.</copyright>
+	<description>
+		<![CDATA[ 
+			<h1>Fegurð Template</h1>
+			<p>Created by <a href="http://www.softverk.is" target="_blank">Jonathan Ablanida | Softverk Ltd</a>.</p>
+		]]>
+	</description>
+	
+	<files>
+		<folder>css</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+		<filename>index.php</filename>
+		<filename>offline.php</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>favicon.ico</filename>
+		<filename>templateDetails.xml</filename>
+	</files>
+	
+	<positions>
+		<position>debug</position>
+		<position>logo-banner</position>
+		<position>breadcrumb-row</position>
+		<position>footer</position>
+		<position>position-0</position>
+		<position>position-1</position>
+		<position>position-2</position>
+	</positions>
+
+	<config>
+		<fields name="params">
+			<fieldset name="advanced">
+				<field name="logoFile" class="" type="media" default=""
+					label="Logo"
+					description="Upload a custom logo for the site template." />
+					
+				<field name="sitetitle"  type="text" default=""
+					label="JGLOBAL_TITLE"
+					description="JFIELD_ALT_PAGE_TITLE_LABEL"
+					filter="string" />
+
+				<field name="sitedescription"  type="text" default=""
+					label="JGLOBAL_DESCRIPTION"
+					description="JGLOBAL_SUBHEADING_DESC"
+					filter="string" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>
